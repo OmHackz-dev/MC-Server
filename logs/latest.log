@@ -1,0 +1,47 @@
+[04:45:36] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[04:45:37] [ServerMain/WARN]: Missing data pack fabric
+[04:45:37] [ServerMain/WARN]: Missing data pack axiom
+[04:45:37] [ServerMain/WARN]: Missing data pack fabric-convention-tags-v2
+[04:45:38] [ServerMain/INFO]: Loaded 1175 recipes
+[04:45:38] [ServerMain/INFO]: Loaded 1276 advancements
+[04:45:39] [Server thread/INFO]: Starting minecraft server version 1.20.5
+[04:45:39] [Server thread/INFO]: Loading properties
+[04:45:39] [Server thread/INFO]: This server is running Paper version git-Paper-22 (MC: 1.20.5) (Implementing API version 1.20.5-R0.1-SNAPSHOT) (Git: 8f7ac62)
+[04:45:39] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[04:45:39] [Server thread/INFO]: Using 4 threads for Netty based IO
+[04:45:40] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[04:45:40] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[04:45:40] [Server thread/INFO]: Default game type: SURVIVAL
+[04:45:40] [Server thread/INFO]: Generating keypair
+[04:45:40] [Server thread/INFO]: Starting Minecraft server on *:25565
+[04:45:40] [Server thread/INFO]: Using epoll channel type
+[04:45:40] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[04:45:40] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
+[04:45:40] [Server thread/INFO]: [playit-gg] Loading server plugin playit-gg v0.1.4
+[04:45:40] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[04:45:40] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[04:45:40] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[04:45:40] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[04:45:40] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[04:45:40] [Server thread/INFO]: Preparing level "world"
+[04:45:40] [Server thread/ERROR]: [Configurations] Loading a newer configuration than is supported (31 > 30)! You may have to backup & delete the world config file to start the server.
+[04:45:41] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[04:45:41] [Server thread/INFO]: Time elapsed: 2 ms
+[04:45:41] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[04:45:41] [Server thread/INFO]: Time elapsed: 1 ms
+[04:45:41] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[04:45:41] [Server thread/INFO]: Time elapsed: 0 ms
+[04:45:41] [Server thread/INFO]: [playit-gg] Enabling playit-gg v0.1.4
+[04:45:42] [Thread-5/INFO]: [gg.playit.minecraft.PlayitKeysSetup] secret key found, checking
+[04:45:42] [Thread-5/INFO]: [gg.playit.minecraft.PlayitKeysSetup] check secret
+[04:45:43] [Server thread/INFO]: Running delayed init tasks
+[04:45:43] [Server thread/INFO]: Done (4.360s)! For help, type "help"
+[04:45:43] [Server thread/INFO]: Timings Reset
+[04:45:45] [Thread-5/INFO]: [gg.playit.minecraft.PlayitKeysSetup] found minecraft java tunnel: hospital-montgomery.gl.joinmc.link
+[04:45:45] [Thread-5/INFO]: [gg.playit.minecraft.PlayitManager] keys and tunnel setup
+[04:45:45] [Thread-5/INFO]: playit.gg: tunnel setup
+[04:45:45] [Thread-5/INFO]: playit.gg: hospital-montgomery.gl.joinmc.link
+[04:45:45] [Thread-5/WARN]: [gg.playit.control.ChannelSetup] Got IO error working with :control.playit.gg/2602:fbaf:850:17:0:0:0:1, error : java.net.SocketException: Network is unreachable
+[04:45:46] [Thread-5/INFO]: [gg.playit.control.ChannelSetup] request queued, waiting 1 second before resend
