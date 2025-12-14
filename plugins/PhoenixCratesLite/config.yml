@@ -1,0 +1,10 @@
+join-reminder: true
+language: UNDEFINED
+notify-if-new-version: true
+debug: false
+crates:
+  knockback: 0.6
+  quick-open: true
+performance:
+  crate-render-radius: 15
+  hologram-refresh-rate: 10

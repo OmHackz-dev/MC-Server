@@ -1,0 +1,40 @@
+auction-duration-hours: 48
+max-price: 1000000000000000000
+shop-m-broadcast: true
+seller-commission-percent: 0
+reopen-auction-after-sell: false
+reopen-auction-after-buy: true
+currency-symbol: $
+money-provider:
+  vault: true
+  playerpoints: false
+  coinsengine: false
+  currency: shards
+currency-symbol-position: before # before or after
+format-money:
+  k: K
+  m: M
+  b: B
+  t: T
+  show-2-0: false
+time-units:
+  days: ᴅᴀʏs
+  day: ᴅᴀʏ
+  hours: ʜᴏᴜʀs
+  hour: ʜᴏᴜʀ
+  minutes: ᴍɪɴᴜᴛᴇs
+  minute: ᴍɪɴᴜᴛᴇ
+expired-item-check-interval: 15
+expired-item-retention-days: 31
+world-guard-block-sell:
+- area_example
+world-block-sell:
+- world_example
+world-guard-block-buy:
+- area_example
+world-block-buy:
+- world_example
+messages-provider:
+  chat-messages: true
+  actionbar-messages: false
+  both: false

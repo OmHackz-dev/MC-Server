@@ -1,0 +1,61 @@
+AuctionGUI:
+  materials:
+    search: OAK_SIGN
+    filter: HOPPER
+    prev-page: ARROW
+    refresh: ANVIL
+    next-page: ARROW
+    back-to-overview: BARRIER
+    transaction-history: BOOK
+    my-listings: CHEST
+  slots:
+    search: 45
+    filter: 46
+    prev-page: 48
+    refresh: 49
+    next-page: 50
+    back-to-overview: 47
+    transaction-history: 52
+    my-listings: 53
+
+BuyConfirmGUI:
+  materials:
+    confirm: LIME_STAINED_GLASS_PANE
+    cancel: RED_STAINED_GLASS_PANE
+  slots:
+    item-display: 13
+    confirm: 15
+    cancel: 11
+
+SellConfirmGUI:
+  materials:
+    confirm: LIME_STAINED_GLASS_PANE
+    cancel: RED_STAINED_GLASS_PANE
+  slots:
+    item-display: 13
+    confirm: 15
+    cancel: 11
+
+TransactionHistoryGUI:
+  materials:
+    no-transactions: BARRIER
+    back: ARROW
+    refresh: ANVIL
+    next: ARROW
+    back-to-main: ARROW
+    stats: BOOK
+  slots:
+    back: 48
+    refresh: 49
+    next: 50
+    back-to-main: 53
+    stats: 45
+    no-transactions: 22
+
+MyListingsGUI:
+  materials:
+    no-listings: BARRIER
+    back: ARROW
+  slots:
+    back: 53
+    no-listings-display: 22

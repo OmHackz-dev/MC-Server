@@ -1,0 +1,15 @@
+success:
+  enabled: true
+  sound: ENTITY_PLAYER_LEVELUP
+  volume: 1.0
+  pitch: 1.0
+error:
+  enabled: true
+  sound: ENTITY_VILLAGER_NO
+  volume: 1.0
+  pitch: 1.0
+ui_click:
+  enabled: true
+  sound: ENTITY_CHICKEN_EGG
+  volume: 0.5
+  pitch: 1.0

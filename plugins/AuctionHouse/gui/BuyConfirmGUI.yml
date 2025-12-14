@@ -1,0 +1,24 @@
+items:
+  confirm: '&#94FF00&lCONFIRM'
+  cancel: '&#FF0000&lCANCEL'
+
+lore:
+  divider-top: ' '
+  divider-bottom: ' '
+  price: '&#FCFF00● Price: &#A9FF00{price}'
+  seller: '&#FCFF00● Seller: &#A9FF00{seller}'
+  
+  confirm-purchase-lore:
+  - ''
+  - '&bPurchase:'
+  - '&fClick here to &#94FF00confirm'
+  - '&fthe purchase of this item'
+  - ''
+  - '&#FFEE00&l▶ &#FFEE00&l&nClick&#FFEE00 to buy'
+  cancel-purchase-lore:
+  - ''
+  - '&bCancellation:'
+  - '&fClick here to &#FF0000cancel'
+  - '&fthe purchase of this item'
+  - ''
+  - '&#FFEE00&l▶ &#FFEE00&l&nClick&#FFEE00 to cancel'

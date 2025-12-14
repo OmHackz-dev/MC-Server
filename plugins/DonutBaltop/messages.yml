@@ -1,0 +1,11 @@
+prefix: ""
+messages:
+  no-permission: "&cYou don't have permission to use this command."
+  reload: "&aConfiguration has been reloaded."
+  plugin-disabled: "&cThis plugin is currently disabled."
+  help-message:
+    - "&f/baltop reload"
+  nobody: "N/A"
+  not-available: "N/A"
+  
+

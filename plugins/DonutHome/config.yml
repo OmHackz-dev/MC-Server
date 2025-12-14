@@ -1,0 +1,77 @@
+teleport-delay: 5 
+blacklisted-worlds: 
+  - test1 
+  - test2 
+blocked-world_guard:
+  - "spawn"
+sounds: 
+  enabled: true 
+  countdown: BLOCK_NOTE_BLOCK_PLING 
+  final-tick: BLOCK_NOTE_BLOCK_PLING 
+  teleport: ENTITY_ENDERMAN_TELEPORT 
+  complete: ENTITY_PLAYER_LEVELUP 
+  cancel: ENTITY_VILLAGER_NO 
+  ui-click: UI_BUTTON_CLICK 
+gui: 
+  homes: 
+    bed-set: 
+      material: LIGHT_BLUE_BED 
+    bed-can-set: 
+      material: LIGHT_GRAY_BED 
+    bed-locked: 
+      material: RED_BED 
+    action-delete: 
+      material: BLUE_DYE 
+    action-set: 
+      material: GRAY_DYE 
+    action-locked: 
+      material: GRAY_DYE 
+  confirm: 
+    info: 
+      material: BLUE_DYE 
+    cancel: 
+      material: RED_STAINED_GLASS_PANE 
+    confirm: 
+      material: LIME_STAINED_GLASS_PANE 
+messages: 
+  only_players: "&cOnly players can use this command!" 
+  world_blacklisted: "&cYou cannot set homes in this world." 
+  region_blacklisted: "&cYou cannot set homes in this area." 
+  menu_title: "&8Home" 
+  confirm_title: "&8Confirm Delete" 
+  home_name: "&#00a4fcʜᴏᴍᴇ %d" 
+  set_home: "&#00a4fcHome %d &fset!" 
+  set_home_named: "&#00a4fcHome renamed to %s" 
+  delete_home: "&fHome deleted!" 
+  delete_usage: "&fUsage: /home delete <home_name>" 
+  no_home: "&fHome doesn't exist!" 
+  delete_prompt: "&f- Click to manage ur home" 
+  set_prompt: "&f- Click to save your location" 
+  confirm_text: "&fClick to confirm" 
+  cancel_text: "&fClick to cancel" 
+  teleport_success: "&7Teleported to home &#0080FA%d!" 
+  teleport_error: "&8Error during &#0080FAteleportation!" 
+  save_error: "&fFailed to save home!" 
+  already_teleporting: "&cYou are already being teleported!" 
+  rename_prompt: "&fRight click to rename" 
+  rename_instruction: "&7Type the new home name in chat" 
+  rename_success: "&fHome renamed to: &#00a4fc%s" 
+  rename_cancelled: "&cRenaming cancelled" 
+  countdown: "&7Teleporting in &#00a4fc%time% &7seconds..." 
+  teleport_cancelled: "&cTeleport cancelled you moved!" 
+  no_permission: "&fBuy &#00a4fcᴅᴏɴᴜᴛ+ &fto get more homes!" 
+  no_free_slots: "&fYou don't have any &cfree &#00a4fchome &fslots left!" 
+  rank_upgrade_needed: "&cɴᴏ ᴘᴇʀᴍɪssɪᴏɴ" 
+  locked_slot: "&cɴᴏ ᴘᴇʀᴍɪssɪᴏɴ"
+  home_not_found: "&fHome with that &#00a4fcname not found!" 
+  config_reloaded: "&fConfiguration reloaded!" 
+  name_already_used: "&fChoose a different &#00a4fcname &ffor this home!" 
+  home_already_exists: "&fHome &#00a4fc%s &falready exists!" 
+  downgrade_warning: "off" 
+  legacy_home_warning: "off" 
+  legacy_suffix: "off" 
+  player_not_found: "&cPlayer not found!" 
+  player_home_not_found: "&cHome '%s' not found for player %s!" 
+  admin_teleport_success: "&7Teleported to &#00a4fc%s's home" 
+  legacy_home_no_rename: "&fHome cannot be renamed!" 
+  home_admin_usage: "&7Usage: /home-admin <player> <number / name>"

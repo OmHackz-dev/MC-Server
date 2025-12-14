@@ -1,0 +1,1337 @@
+settings:
+  prefix: ''
+  item-lore:
+  - '&7Price: &a{price}'
+  - ''
+  - '&7Click to purchase'
+  category-lore:
+  - ''
+  - '&7Click to open'
+back-button:
+  name: '&cBack'
+  material: ARROW
+  lore:
+  - '&fClick to go back'
+  slot: 27
+
+buy-button:
+  name: '&7Buy'
+  material: LIME_STAINED_GLASS_PANE
+  lore:
+  - '&7Confirm your purchase'
+  slot: 26
+cancel-button:
+  name: '&7Cancel'
+  material: RED_STAINED_GLASS_PANE
+  lore:
+  - '&7Cancel the transaction'
+  slot: 18
+
+next-page:
+  name: '&7Next Page'
+  material: ARROW
+  lore:
+  - '&fClick to go to the next page'
+  slot: 35
+
+last-page:
+  name: '&7Last Page'
+  material: ARROW
+  lore:
+  - '&fClick to go to the last page'
+  slot: 27
+price-format:
+  thousand: k
+  million: m
+  billion: b
+main-menu:
+  title: '&8sʜᴏᴘ'
+  rows: 3
+  categories:
+    category1:
+      money-provider:
+        vault: true
+        playerpoints: false
+        coinsengine: false
+        currency: money
+    category2:
+      money-provider:
+        vault: true
+        playerpoints: false
+        coinsengine: false
+        currency: money
+    category3:
+      money-provider:
+        vault: true
+        playerpoints: false
+        coinsengine: false
+        currency: money
+    category4:
+      money-provider:
+        vault: true
+        playerpoints: false
+        coinsengine: false
+        currency: money
+    category5:
+      money-provider:
+        vault: true
+        playerpoints: false
+        coinsengine: false
+        currency: money
+    category6:
+      money-provider:
+        vault: true
+        playerpoints: false
+        coinsengine: false
+        currency: money
+    category7:
+      money-provider:
+        vault: true
+        playerpoints: false
+        coinsengine: false
+        currency: money
+category-settings:
+  category1:
+    name: '&7Building Blocks'
+    title: '&8Building Blocks'
+    material: STONE_BRICKS
+    slot: 10
+    money-provider:
+      vault: true
+      playerpoints: false
+      coinsengine: false
+      currency: money
+  category2:
+    name: '&7Farming'
+    title: '&8Farming Items'
+    material: WHEAT
+    slot: 11
+    money-provider:
+      vault: true
+      playerpoints: false
+      coinsengine: false
+      currency: money
+  category3:
+    name: '&7Ores & Minerals'
+    title: '&8Ores & Minerals'
+    material: DIAMOND_ORE
+    slot: 12
+    money-provider:
+      vault: true
+      playerpoints: false
+      coinsengine: false
+      currency: money
+  category4:
+    name: '&7Mob Drops'
+    title: '&8Mob Drops'
+    material: ROTTEN_FLESH
+    slot: 13
+    money-provider:
+      vault: true
+      playerpoints: false
+      coinsengine: false
+      currency: money
+  category5:
+    name: '&7Redstone'
+    title: '&8Redstone Components'
+    material: REDSTONE
+    slot: 14
+    money-provider:
+      vault: true
+      playerpoints: false
+      coinsengine: false
+      currency: money
+  category6:
+    name: '&7Food'
+    title: '&8Food Items'
+    material: COOKED_BEEF
+    slot: 15
+    money-provider:
+      vault: true
+      playerpoints: false
+      coinsengine: false
+      currency: money
+  category7:
+    name: '&7Tools & Equipment'
+    title: '&8Tools & Equipment'
+    material: IRON_PICKAXE
+    slot: 16
+    money-provider:
+      vault: true
+      playerpoints: false
+      coinsengine: false
+      currency: money
+purchase-gui:
+  title: '&8ᴄᴏɴғɪʀᴍ ᴘᴜʀᴄʜᴀsᴇ'
+  rows: 3
+
+category1:
+  rows: 4
+  items:
+    item1:
+      name: '&7Stone'
+      material: STONE
+      price: 5
+      slot: 10
+    item2:
+      name: '&7Cobblestone'
+      material: COBBLESTONE
+      price: 2
+      slot: 11
+    item3:
+      name: '&7Oak Wood'
+      material: OAK_LOG
+      price: 8
+      slot: 12
+    item4:
+      name: '&7Spruce Wood'
+      material: SPRUCE_LOG
+      price: 8
+      slot: 13
+    item5:
+      name: '&7Birch Wood'
+      material: BIRCH_LOG
+      price: 8
+      slot: 14
+    item6:
+      name: '&7Sand'
+      material: SAND
+      price: 3
+      slot: 15
+    item7:
+      name: '&7Gravel'
+      material: GRAVEL
+      price: 4
+      slot: 16
+    item8:
+      name: '&7Dirt'
+      material: DIRT
+      price: 1
+      slot: 19
+    item9:
+      name: '&7Grass Block'
+      material: GRASS_BLOCK
+      price: 6
+      slot: 20
+    item10:
+      name: '&7Glass'
+      material: GLASS
+      price: 10
+      slot: 21
+    item11:
+      name: '&7Glass Pane'
+      material: GLASS_PANE
+      price: 6
+      slot: 22
+    item12:
+      name: '&7Bricks'
+      material: BRICKS
+      price: 15
+      slot: 23
+    item13:
+      name: '&7Stone Bricks'
+      material: STONE_BRICKS
+      price: 12
+      slot: 24
+    item14:
+      name: '&7Oak Planks'
+      material: OAK_PLANKS
+      price: 4
+      slot: 25
+
+category2:
+  rows: 4
+  items:
+    item1:
+      name: '&7Wheat Seeds'
+      material: WHEAT_SEEDS
+      price: 2
+      slot: 10
+    item2:
+      name: '&7Wheat'
+      material: WHEAT
+      price: 5
+      slot: 11
+    item3:
+      name: '&7Carrot'
+      material: CARROT
+      price: 6
+      slot: 12
+    item4:
+      name: '&7Potato'
+      material: POTATO
+      price: 6
+      slot: 13
+    item5:
+      name: '&7Beetroot'
+      material: BEETROOT
+      price: 7
+      slot: 14
+    item6:
+      name: '&7Pumpkin'
+      material: PUMPKIN
+      price: 15
+      slot: 15
+    item7:
+      name: '&7Melon'
+      material: MELON
+      price: 12
+      slot: 16
+    item8:
+      name: '&7Sugar Cane'
+      material: SUGAR_CANE
+      price: 8
+      slot: 19
+    item9:
+      name: '&7Cactus'
+      material: CACTUS
+      price: 10
+      slot: 20
+    item10:
+      name: '&7Bamboo'
+      material: BAMBOO
+      price: 8
+      slot: 21
+    item11:
+      name: '&7Kelp'
+      material: KELP
+      price: 5
+      slot: 22
+    item12:
+      name: '&7Sea Pickle'
+      material: SEA_PICKLE
+      price: 12
+      slot: 23
+    item13:
+      name: '&7Brown Mushroom'
+      material: BROWN_MUSHROOM
+      price: 8
+      slot: 24
+    item14:
+      name: '&7Red Mushroom'
+      material: RED_MUSHROOM
+      price: 8
+      slot: 25
+
+category3:
+  rows: 4
+  items:
+    item1:
+      name: '&7Coal'
+      material: COAL
+      price: 10
+      slot: 10
+    item2:
+      name: '&7Iron Ingot'
+      material: IRON_INGOT
+      price: 25
+      slot: 11
+    item3:
+      name: '&7Gold Ingot'
+      material: GOLD_INGOT
+      price: 40
+      slot: 12
+    item4:
+      name: '&7Diamond'
+      material: DIAMOND
+      price: 100
+      slot: 13
+    item5:
+      name: '&7Emerald'
+      material: EMERALD
+      price: 150
+      slot: 14
+    item6:
+      name: '&7Lapis Lazuli'
+      material: LAPIS_LAZULI
+      price: 15
+      slot: 15
+    item7:
+      name: '&7Redstone'
+      material: REDSTONE
+      price: 12
+      slot: 16
+    item8:
+      name: '&7Nether Quartz'
+      material: QUARTZ
+      price: 20
+      slot: 19
+    item9:
+      name: '&7Coal Block'
+      material: COAL_BLOCK
+      price: 90
+      slot: 20
+    item10:
+      name: '&7Iron Block'
+      material: IRON_BLOCK
+      price: 225
+      slot: 21
+    item11:
+      name: '&7Gold Block'
+      material: GOLD_BLOCK
+      price: 360
+      slot: 22
+    item12:
+      name: '&7Diamond Block'
+      material: DIAMOND_BLOCK
+      price: 900
+      slot: 23
+    item13:
+      name: '&7Emerald Block'
+      material: EMERALD_BLOCK
+      price: 1350
+      slot: 24
+    item14:
+      name: '&7Lapis Block'
+      material: LAPIS_BLOCK
+      price: 135
+      slot: 25
+
+category4:
+  rows: 4
+  items:
+    item1:
+      name: '&7Rotten Flesh'
+      material: ROTTEN_FLESH
+      price: 3
+      slot: 10
+    item2:
+      name: '&7Bone'
+      material: BONE
+      price: 8
+      slot: 11
+    item3:
+      name: '&7Gunpowder'
+      material: GUNPOWDER
+      price: 12
+      slot: 12
+    item4:
+      name: '&7String'
+      material: STRING
+      price: 6
+      slot: 13
+    item5:
+      name: '&7Spider Eye'
+      material: SPIDER_EYE
+      price: 10
+      slot: 14
+    item6:
+      name: '&7Ender Pearl'
+      material: ENDER_PEARL
+      price: 25
+      slot: 15
+    item7:
+      name: '&7Blaze Rod'
+      material: BLAZE_ROD
+      price: 40
+      slot: 16
+    item8:
+      name: '&7Ghast Tear'
+      material: GHAST_TEAR
+      price: 60
+      slot: 19
+    item9:
+      name: '&7Magma Cream'
+      material: MAGMA_CREAM
+      price: 35
+      slot: 20
+    item10:
+      name: '&7Slime Ball'
+      material: SLIME_BALL
+      price: 20
+      slot: 21
+    item11:
+      name: '&7Phantom Membrane'
+      material: PHANTOM_MEMBRANE
+      price: 45
+      slot: 22
+    item12:
+      name: '&7Shulker Shell'
+      material: SHULKER_SHELL
+      price: 80
+      slot: 23
+    item13:
+      name: '&7Leather'
+      material: LEATHER
+      price: 5
+      slot: 24
+    item14:
+      name: '&7Feather'
+      material: FEATHER
+      price: 4
+      slot: 25
+
+category5:
+  rows: 4
+  items:
+    item1:
+      name: '&7Redstone Torch'
+      material: REDSTONE_TORCH
+      price: 15
+      slot: 10
+    item2:
+      name: '&7Repeater'
+      material: REPEATER
+      price: 25
+      slot: 11
+    item3:
+      name: '&7Comparator'
+      material: COMPARATOR
+      price: 35
+      slot: 12
+    item4:
+      name: '&7Piston'
+      material: PISTON
+      price: 30
+      slot: 13
+    item5:
+      name: '&7Sticky Piston'
+      material: STICKY_PISTON
+      price: 40
+      slot: 14
+    item6:
+      name: '&7Observer'
+      material: OBSERVER
+      price: 45
+      slot: 15
+    item7:
+      name: '&7Dropper'
+      material: DROPPER
+      price: 35
+      slot: 16
+    item8:
+      name: '&7Dispenser'
+      material: DISPENSER
+      price: 40
+      slot: 19
+    item9:
+      name: '&7Hopper'
+      material: HOPPER
+      price: 50
+      slot: 20
+    item10:
+      name: '&7Lever'
+      material: LEVER
+      price: 8
+      slot: 21
+    item11:
+      name: '&7Stone Button'
+      material: STONE_BUTTON
+      price: 5
+      slot: 22
+    item12:
+      name: '&7Oak Pressure Plate'
+      material: OAK_PRESSURE_PLATE
+      price: 10
+      slot: 23
+    item13:
+      name: '&7Stone Pressure Plate'
+      material: STONE_PRESSURE_PLATE
+      price: 12
+      slot: 24
+    item14:
+      name: '&7Target'
+      material: TARGET
+      price: 20
+      slot: 25
+
+category6:
+  rows: 4
+  items:
+    item1:
+      name: '&7Apple'
+      material: APPLE
+      price: 10
+      slot: 10
+    item2:
+      name: '&7Bread'
+      material: BREAD
+      price: 15
+      slot: 11
+    item3:
+      name: '&7Steak'
+      material: COOKED_BEEF
+      price: 25
+      slot: 12
+    item4:
+      name: '&7Cooked Chicken'
+      material: COOKED_CHICKEN
+      price: 20
+      slot: 13
+    item5:
+      name: '&7Cooked Porkchop'
+      material: COOKED_PORKCHOP
+      price: 22
+      slot: 14
+    item6:
+      name: '&7Baked Potato'
+      material: BAKED_POTATO
+      price: 12
+      slot: 15
+    item7:
+      name: '&7Golden Carrot'
+      material: GOLDEN_CARROT
+      price: 80
+      slot: 16
+    item8:
+      name: '&7Golden Apple'
+      material: GOLDEN_APPLE
+      price: 200
+      slot: 19
+    item9:
+      name: '&7Enchanted Golden Apple'
+      material: ENCHANTED_GOLDEN_APPLE
+      price: 2000
+      slot: 20
+    item10:
+      name: '&7Cooked Mutton'
+      material: COOKED_MUTTON
+      price: 18
+      slot: 21
+    item11:
+      name: '&7Cooked Rabbit'
+      material: COOKED_RABBIT
+      price: 16
+      slot: 22
+    item12:
+      name: '&7Cooked Cod'
+      material: COOKED_COD
+      price: 14
+      slot: 23
+    item13:
+      name: '&7Cooked Salmon'
+      material: COOKED_SALMON
+      price: 18
+      slot: 24
+    item14:
+      name: '&7Pumpkin Pie'
+      material: PUMPKIN_PIE
+      price: 20
+      slot: 25
+
+category7:
+  rows: 4
+  items:
+    item1:
+      name: '&7Wooden Pickaxe'
+      material: WOODEN_PICKAXE
+      price: 20
+      slot: 10
+    item2:
+      name: '&7Stone Pickaxe'
+      material: STONE_PICKAXE
+      price: 40
+      slot: 11
+    item3:
+      name: '&7Iron Pickaxe'
+      material: IRON_PICKAXE
+      price: 150
+      slot: 12
+    item4:
+      name: '&7Golden Pickaxe'
+      material: GOLDEN_PICKAXE
+      price: 100
+      slot: 13
+    item5:
+      name: '&7Diamond Pickaxe'
+      material: DIAMOND_PICKAXE
+      price: 800
+      slot: 14
+    item6:
+      name: '&7Netherite Pickaxe'
+      material: NETHERITE_PICKAXE
+      price: 2500
+      slot: 15
+    item7:
+      name: '&7Wooden Sword'
+      material: WOODEN_SWORD
+      price: 15
+      slot: 16
+    item8:
+      name: '&7Stone Sword'
+      material: STONE_SWORD
+      price: 30
+      slot: 19
+    item9:
+      name: '&7Iron Sword'
+      material: IRON_SWORD
+      price: 120
+      slot: 20
+    item10:
+      name: '&7Diamond Sword'
+      material: DIAMOND_SWORD
+      price: 700
+      slot: 21
+    item11:
+      name: '&7Netherite Sword'
+      material: NETHERITE_SWORD
+      price: 2200
+      slot: 22
+    item12:
+      name: '&7Bow'
+      material: BOW
+      price: 50
+      slot: 23
+    item13:
+      name: '&7Crossbow'
+      material: CROSSBOW
+      price: 80
+      slot: 24
+    item14:
+      name: '&7Arrow'
+      material: ARROW
+      price: 2
+      slot: 25
+
+
+category1-2:
+  rows: 4
+  items:
+    item1:
+      name: '&7Stone'
+      material: STONE
+      price: 5
+      slot: 10
+    item2:
+      name: '&7Cobblestone'
+      material: COBBLESTONE
+      price: 2
+      slot: 11
+    item3:
+      name: '&7Oak Wood'
+      material: OAK_LOG
+      price: 8
+      slot: 12
+    item4:
+      name: '&7Spruce Wood'
+      material: SPRUCE_LOG
+      price: 8
+      slot: 13
+    item5:
+      name: '&7Birch Wood'
+      material: BIRCH_LOG
+      price: 8
+      slot: 14
+    item6:
+      name: '&7Sand'
+      material: SAND
+      price: 3
+      slot: 15
+    item7:
+      name: '&7Gravel'
+      material: GRAVEL
+      price: 4
+      slot: 16
+    item8:
+      name: '&7Dirt'
+      material: DIRT
+      price: 1
+      slot: 19
+    item9:
+      name: '&7Grass Block'
+      material: GRASS_BLOCK
+      price: 6
+      slot: 20
+    item10:
+      name: '&7Glass'
+      material: GLASS
+      price: 10
+      slot: 21
+    item11:
+      name: '&7Glass Pane'
+      material: GLASS_PANE
+      price: 6
+      slot: 22
+    item12:
+      name: '&7Bricks'
+      material: BRICKS
+      price: 15
+      slot: 23
+    item13:
+      name: '&7Stone Bricks'
+      material: STONE_BRICKS
+      price: 12
+      slot: 24
+    item14:
+      name: '&7Oak Planks'
+      material: OAK_PLANKS
+      price: 4
+      slot: 25
+    item15:
+      name: '&7Jungle Wood'
+      material: JUNGLE_LOG
+      price: 8
+      slot: 28
+    item16:
+      name: '&7Acacia Wood'
+      material: ACACIA_LOG
+      price: 8
+      slot: 29
+    item17:
+      name: '&7Dark Oak Wood'
+      material: DARK_OAK_LOG
+      price: 8
+      slot: 30
+    item18:
+      name: '&7Spruce Planks'
+      material: SPRUCE_PLANKS
+      price: 4
+      slot: 31
+    item19:
+      name: '&7Birch Planks'
+      material: BIRCH_PLANKS
+      price: 4
+      slot: 32
+    item20:
+      name: '&7Jungle Planks'
+      material: JUNGLE_PLANKS
+      price: 4
+      slot: 33
+    item21:
+      name: '&7Acacia Planks'
+      material: ACACIA_PLANKS
+      price: 4
+      slot: 34
+    item22:
+      name: '&7Dark Oak Planks'
+      material: DARK_OAK_PLANKS
+      price: 4
+      slot: 37
+    item23:
+      name: '&7Sandstone'
+      material: SANDSTONE
+      price: 8
+      slot: 38
+    item24:
+      name: '&7Smooth Sandstone'
+      material: SMOOTH_SANDSTONE
+      price: 12
+      slot: 39
+    item25:
+      name: '&7Clay'
+      material: CLAY
+      price: 6
+      slot: 40
+    item26:
+      name: '&7Terracotta'
+      material: TERRACOTTA
+      price: 10
+      slot: 41
+    item27:
+      name: '&7White Terracotta'
+      material: WHITE_TERRACOTTA
+      price: 12
+      slot: 42
+    item28:
+      name: '&7Cobblestone Slab'
+      material: COBBLESTONE_SLAB
+      price: 1
+      slot: 43
+
+category2-2:
+  rows: 4
+  items:
+    item1:
+      name: '&7Sweet Berries'
+      material: SWEET_BERRIES
+      price: 6
+      slot: 10
+    item2:
+      name: '&7Glow Berries'
+      material: GLOW_BERRIES
+      price: 8
+      slot: 11
+    item3:
+      name: '&7Cocoa Beans'
+      material: COCOA_BEANS
+      price: 10
+      slot: 12
+    item4:
+      name: '&7Chorus Fruit'
+      material: CHORUS_FRUIT
+      price: 20
+      slot: 13
+    item5:
+      name: '&7Nether Wart'
+      material: NETHER_WART
+      price: 15
+      slot: 14
+    item6:
+      name: '&7Beetroot Seeds'
+      material: BEETROOT_SEEDS
+      price: 2
+      slot: 15
+    item7:
+      name: '&7Pumpkin Seeds'
+      material: PUMPKIN_SEEDS
+      price: 2
+      slot: 16
+    item8:
+      name: '&7Melon Seeds'
+      material: MELON_SEEDS
+      price: 2
+      slot: 19
+    item9:
+      name: '&7Poisonous Potato'
+      material: POISONOUS_POTATO
+      price: 3
+      slot: 20
+    item10:
+      name: '&7Sunflower'
+      material: SUNFLOWER
+      price: 5
+      slot: 21
+    item11:
+      name: '&7Rose Bush'
+      material: ROSE_BUSH
+      price: 5
+      slot: 22
+    item12:
+      name: '&7Lilac'
+      material: LILAC
+      price: 5
+      slot: 23
+    item13:
+      name: '&7Peony'
+      material: PEONY
+      price: 5
+      slot: 24
+    item14:
+      name: '&7Large Fern'
+      material: LARGE_FERN
+      price: 4
+      slot: 25
+
+category3-2:
+  rows: 4
+  items:
+    item1:
+      name: '&7Raw Iron'
+      material: RAW_IRON
+      price: 18
+      slot: 10
+    item2:
+      name: '&7Raw Gold'
+      material: RAW_GOLD
+      price: 30
+      slot: 11
+    item3:
+      name: '&7Raw Copper'
+      material: RAW_COPPER
+      price: 12
+      slot: 12
+    item4:
+      name: '&7Copper Ingot'
+      material: COPPER_INGOT
+      price: 20
+      slot: 13
+    item5:
+      name: '&7Copper Block'
+      material: COPPER_BLOCK
+      price: 180
+      slot: 14
+    item6:
+      name: '&7Amethyst Shard'
+      material: AMETHYST_SHARD
+      price: 25
+      slot: 15
+    item7:
+      name: '&7Amethyst Block'
+      material: AMETHYST_BLOCK
+      price: 200
+      slot: 16
+    item8:
+      name: '&7Deepslate'
+      material: DEEPSLATE
+      price: 8
+      slot: 19
+    item9:
+      name: '&7Tuff'
+      material: TUFF
+      price: 8
+      slot: 20
+    item10:
+      name: '&7Calcite'
+      material: CALCITE
+      price: 12
+      slot: 21
+    item11:
+      name: '&7Netherite Scrap'
+      material: NETHERITE_SCRAP
+      price: 500
+      slot: 22
+    item12:
+      name: '&7Netherite Ingot'
+      material: NETHERITE_INGOT
+      price: 2500
+      slot: 23
+    item13:
+      name: '&7Prismarine Crystals'
+      material: PRISMARINE_CRYSTALS
+      price: 20
+      slot: 24
+    item14:
+      name: '&7Prismarine Shard'
+      material: PRISMARINE_SHARD
+      price: 15
+      slot: 25
+
+category4-2:
+  rows: 4
+  items:
+    item1:
+      name: '&7Wither Skeleton Skull'
+      material: WITHER_SKELETON_SKULL
+      price: 500
+      slot: 10
+    item2:
+      name: '&7Skeleton Skull'
+      material: SKELETON_SKULL
+      price: 400
+      slot: 11
+    item3:
+      name: '&7Fermented Spider Eye'
+      material: FERMENTED_SPIDER_EYE
+      price: 20
+      slot: 12
+    item4:
+      name: '&7Ink Sac'
+      material: INK_SAC
+      price: 10
+      slot: 13
+    item5:
+      name: '&7Glow Ink Sac'
+      material: GLOW_INK_SAC
+      price: 20
+      slot: 14
+    item6:
+      name: '&7Nautilus Shell'
+      material: NAUTILUS_SHELL
+      price: 120
+      slot: 15
+    item7:
+      name: '&7Heart of the Sea'
+      material: HEART_OF_THE_SEA
+      price: 1200
+      slot: 16
+    item8:
+      name: '&7Honeycomb'
+      material: HONEYCOMB
+      price: 15
+      slot: 19
+    item9:
+      name: '&7Honey Bottle'
+      material: HONEY_BOTTLE
+      price: 20
+      slot: 20
+    item10:
+      name: '&7Turtle Scute'
+      material: TURTLE_SCUTE
+      price: 150
+      slot: 21
+    item11:
+      name: '&7Goat Horn'
+      material: GOAT_HORN
+      price: 200
+      slot: 22
+    item12:
+      name: '&7Eye of Ender'
+      material: ENDER_EYE
+      price: 60
+      slot: 23
+    item13:
+      name: '&7Blaze Powder'
+      material: BLAZE_POWDER
+      price: 20
+      slot: 24
+    item14:
+      name: '&7Bone Meal'
+      material: BONE_MEAL
+      price: 5
+      slot: 25
+
+category5-2:
+  rows: 4
+  items:
+    item1:
+      name: '&7Redstone Lamp'
+      material: REDSTONE_LAMP
+      price: 30
+      slot: 10
+    item2:
+      name: '&7Daylight Sensor'
+      material: DAYLIGHT_DETECTOR
+      price: 30
+      slot: 11
+    item3:
+      name: '&7Tripwire Hook'
+      material: TRIPWIRE_HOOK
+      price: 8
+      slot: 12
+    item4:
+      name: '&7Note Block'
+      material: NOTE_BLOCK
+      price: 25
+      slot: 13
+    item5:
+      name: '&7Trapped Chest'
+      material: TRAPPED_CHEST
+      price: 25
+      slot: 14
+    item6:
+      name: '&7Lightning Rod'
+      material: LIGHTNING_ROD
+      price: 20
+      slot: 15
+    item7:
+      name: '&7Powered Rail'
+      material: POWERED_RAIL
+      price: 20
+      slot: 16
+    item8:
+      name: '&7Detector Rail'
+      material: DETECTOR_RAIL
+      price: 18
+      slot: 19
+    item9:
+      name: '&7Activator Rail'
+      material: ACTIVATOR_RAIL
+      price: 18
+      slot: 20
+    item10:
+      name: '&7Rail'
+      material: RAIL
+      price: 6
+      slot: 21
+    item11:
+      name: '&7Redstone Block'
+      material: REDSTONE_BLOCK
+      price: 100
+      slot: 22
+    item12:
+      name: '&7TNT'
+      material: TNT
+      price: 50
+      slot: 23
+    item13:
+      name: '&7Bell'
+      material: BELL
+      price: 60
+      slot: 24
+    item14:
+      name: '&7Scaffolding'
+      material: SCAFFOLDING
+      price: 12
+      slot: 25
+
+category6-2:
+  rows: 4
+  items:
+    item1:
+      name: '&7Raw Beef'
+      material: BEEF
+      price: 15
+      slot: 10
+    item2:
+      name: '&7Raw Chicken'
+      material: CHICKEN
+      price: 12
+      slot: 11
+    item3:
+      name: '&7Raw Porkchop'
+      material: PORKCHOP
+      price: 14
+      slot: 12
+    item4:
+      name: '&7Raw Mutton'
+      material: MUTTON
+      price: 14
+      slot: 13
+    item5:
+      name: '&7Raw Rabbit'
+      material: RABBIT
+      price: 12
+      slot: 14
+    item6:
+      name: '&7Beetroot Soup'
+      material: BEETROOT_SOUP
+      price: 14
+      slot: 15
+    item7:
+      name: '&7Mushroom Stew'
+      material: MUSHROOM_STEW
+      price: 12
+      slot: 16
+    item8:
+      name: '&7Rabbit Stew'
+      material: RABBIT_STEW
+      price: 22
+      slot: 19
+    item9:
+      name: '&7Cookie'
+      material: COOKIE
+      price: 8
+      slot: 20
+    item10:
+      name: '&7Cake'
+      material: CAKE
+      price: 80
+      slot: 21
+    item11:
+      name: '&7Melon Slice'
+      material: MELON_SLICE
+      price: 4
+      slot: 22
+    item12:
+      name: '&7Dried Kelp'
+      material: DRIED_KELP
+      price: 6
+      slot: 23
+    item13:
+      name: '&7Suspicious Stew'
+      material: SUSPICIOUS_STEW
+      price: 16
+      slot: 24
+    item14:
+      name: '&7Tropical Fish'
+      material: TROPICAL_FISH
+      price: 10
+      slot: 25
+
+category7-2:
+  rows: 4
+  items:
+    item1:
+      name: '&7Shield'
+      material: SHIELD
+      price: 80
+      slot: 10
+    item2:
+      name: '&7Flint and Steel'
+      material: FLINT_AND_STEEL
+      price: 15
+      slot: 11
+    item3:
+      name: '&7Shears'
+      material: SHEARS
+      price: 25
+      slot: 12
+    item4:
+      name: '&7Compass'
+      material: COMPASS
+      price: 20
+      slot: 13
+    item5:
+      name: '&7Clock'
+      material: CLOCK
+      price: 30
+      slot: 14
+    item6:
+      name: '&7Elytra'
+      material: ELYTRA
+      price: 5000
+      slot: 15
+    item7:
+      name: '&7Fishing Rod'
+      material: FISHING_ROD
+      price: 20
+      slot: 16
+    item8:
+      name: '&7Iron Helmet'
+      material: IRON_HELMET
+      price: 120
+      slot: 19
+    item9:
+      name: '&7Iron Chestplate'
+      material: IRON_CHESTPLATE
+      price: 200
+      slot: 20
+    item10:
+      name: '&7Iron Leggings'
+      material: IRON_LEGGINGS
+      price: 180
+      slot: 21
+    item11:
+      name: '&7Iron Boots'
+      material: IRON_BOOTS
+      price: 100
+      slot: 22
+    item12:
+      name: '&7Diamond Helmet'
+      material: DIAMOND_HELMET
+      price: 600
+      slot: 23
+    item13:
+      name: '&7Diamond Chestplate'
+      material: DIAMOND_CHESTPLATE
+      price: 900
+      slot: 24
+    item14:
+      name: '&7Diamond Boots'
+      material: DIAMOND_BOOTS
+      price: 400
+      slot: 25
+
+messages:
+  player-only: '&fThis command can only be used by players.'
+  no-permission: '&fYou don''t have permission to use this command.'
+  category-not-found: '&fThis category was not found.'
+  item-not-found: '&fThis item was not found.'
+  no-item-in-hand: '&fYou must hold an item in your hand.'
+  invalid-price: '&fThe specified price is invalid.'
+  invalid-slot: '&fThe specified slot is invalid. Choose a slot that is not in the
+    navigation bar.'
+  invalid-slot-format: '&fThe specified slot is not a valid number.'
+  item-added: '&fThe item %item% has been added to category %category% in slot %slot%
+    for %price%.'
+  config-reloaded: '&fThe configuration has been reloaded.'
+  purchase-successful: '&fYou purchased %amount%x %item% for %price%.'
+  not-enough-money: '&fYou don''t have enough money. Price: %price%'
+  transaction-error: '&fAn error occurred during the transaction: %error%'
+  inventory-full: '&fYour inventory is full.'
+sounds:
+  menu_open:
+    sound: none
+    volume: 0.5
+    pitch: 1.0
+  menu_close:
+    sound: ENTITY_CHICKEN_EGG
+    volume: 0.5
+    pitch: 1.0
+  category_click:
+    sound: ENTITY_CHICKEN_EGG
+    volume: 0.5
+    pitch: 1.0
+  item_click:
+    sound: ENTITY_CHICKEN_EGG
+    volume: 0.5
+    pitch: 1.2
+  amount_change:
+    sound: ENTITY_CHICKEN_EGG
+    volume: 0.3
+    pitch: 1.5
+  purchase_success:
+    sound: ENTITY_CHICKEN_EGG
+    volume: 0.5
+    pitch: 1.0
+  purchase_failed:
+    sound: ENTITY_CHICKEN_EGG
+    volume: 0.5
+    pitch: 1.0
+  inventory_full:
+    sound: ENTITY_CHICKEN_EGG
+    volume: 0.5
+    pitch: 0.8
+  transaction_error:
+    sound: ENTITY_CHICKEN_EGG
+    volume: 0.5
+    pitch: 0.5
+  command_execute:
+    sound: ENTITY_CHICKEN_EGG
+    volume: 0.5
+    pitch: 1.2
+money-provider:
+  vault: true
+  playerpoints: false
+  coinsengine: false
+  currency: money

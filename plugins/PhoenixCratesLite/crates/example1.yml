@@ -1,0 +1,64 @@
+enabled: true
+identifier: example1
+display-name: '&eExample #1'
+block-material: CHEST
+engine: VANILLA_BLOCK
+open-money-cost: 0.0
+open-cooldown: 0
+simultaneous-openings: true
+preview-item: false
+permission:
+  required: false
+  permission: phoenixcrates.crate.example1
+animation:
+  idle-effects:
+  - DEFAULT;{REDSTONE;#ff0000;0.0;0.0;0.0;1.0;0.1;2}
+  - DEFAULT;{FLAME;#ffffff;0.0;0.0;0.0;2.0;0.1;2}
+  - STAR;{SMOKE_NORMAL;#ffffff;0.0;0.0;0.0;0.0;0.1;2}
+  opening-animations:
+    '0':
+    - CRACK;{}
+    - BALL;{}
+    - SMOKE_SPIRAL;{#404040}
+hologram:
+  lines:
+  - '&e&l%name% Crate'
+  - ''
+  - '&aʀɪɢʜᴛ &7ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ'
+  - '&cʟᴇꜰᴛ &7ᴄʟɪᴄᴋ ᴛᴏ ᴘʀᴇᴠɪᴇᴡ'
+  offset: 0.0
+menus:
+  rewards: default_rewards_preview
+  select-reward: default_select_reward
+key-required: true
+linked-keys-ids:
+- example1
+broadcast:
+  message: '&ePlayer &a%player% &ejust got &6"%reward%" &ereward from the crate &6%crate%&e!'
+max-win-rewards: 0
+rewards-mode: RANDOM
+rewards:
+  '0':
+    identifier: reward_1765698063556
+    display-item:
+      material: DIRT
+      display-name: '&7Dirt'
+    win-items:
+      '0':
+        material: DIRT
+    win-commands: []
+    broadcast: false
+    percentage: 100.0
+    win-limits: -1
+    guaranteed-win: -1
+    restricted-permissions: []
+    alternative-reward:
+      enabled: false
+      reward:
+        item:
+          material: DIAMOND_PICKAXE
+          display-name: '&aAlternative Item'
+        virtual: false
+        broadcast: false
+        commands: []
+guaranteed-reward-type: DISABLED

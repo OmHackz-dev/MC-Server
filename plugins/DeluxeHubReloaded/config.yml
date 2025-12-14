@@ -1,0 +1,227 @@
+disabled-worlds:
+  invert: true
+  worlds:
+  - world
+custom_join_items:
+  enabled: true
+  disable_inventory_movement: true
+  only_worlds:
+  - world
+  items:
+    infobook:
+      material: BOOK
+      amount: 1
+      slot: 0
+      disable_inventory_movement: true
+      display_name: '&#FF6B00&l⚡ &f&lSERVER INFO &4&l⚡'
+      lore:
+      - '&#FF0000Right-click to unleash the chaos!'
+      - '&7&m-----------------------------------'
+      - '&6&lWebsite: &fMango-Anarchy.pages.dev'
+      - '&6&lStore: &fMango-Anarchy.pages.dev/store'
+      - '&7&m-----------------------------------'
+      - '&#FF0000&oStay alive.'
+      actions:
+      - '[MESSAGE] &r'
+      - '[MESSAGE] &#FF6B00&l» &e&lWebsite: &fMango-Anarchy.pages.dev'
+      - '[MESSAGE] &#FF6B00&l» &e&lShop: &fMango-Anarchy.pages.dev/store'
+      - '[MESSAGE] &r'
+      - '[MESSAGE] &7Good luck surviving the &#FF6B00&lMango-Anarchy&7!'
+    teleport_bow:
+      material: BOW
+      amount: 1
+      slot: 8
+      disable_inventory_movement: true
+      display_name: '&#FF6B00&l▶ &c&lWARP BOW &4&l◀'
+      glow: true
+      lore:
+      - '&#FF0000Shoot an arrow to teleport!'
+      - '&7&m-----------------------------------'
+      - '&eCooldown: &d60s'
+      - '&eRange: &d100 blocks'
+      - '&7&m-----------------------------------'
+      actions:
+      - '[MESSAGE] &#FF6B00&lWarps are now operational!'
+    teleport_arrow:
+      material: ARROW
+      amount: 1
+      slot: 35
+      disable_inventory_movement: true
+      display_name: '&#FF6B00WARP ARROW'
+      lore:
+      - '&#FF0000Load this into the Warp Bow.'
+player_hider:
+  enabled: false
+  slot: 8
+  disable_inventory_movement: true
+  cooldown: 3
+  not_hidden:
+    material: LIME_DYE
+    amount: 1
+    display_name: '&dPlayers &8&l> &aShown &7(Right-Click)'
+    lore:
+    - '&7Click to hide all players!'
+  hidden:
+    material: GRAY_DYE
+    amount: 1
+    display_name: '&dPlayers &8&l> &cHidden &7(Right-Click)'
+    lore:
+    - '&7Click to show all players!'
+pvp_mode:
+  enabled: false
+announcements:
+  enabled: false
+scoreboard:
+  enabled: true
+  only_worlds:
+  - world
+  display_delay:
+    server_enter: 60
+    world_change: 40
+  refresh:
+    enabled: true
+    rate: 200
+  title: '&#FF6B00&l❱❱ &f&lMANGO&#FF0000&l-ANARCHY &4&l❰❰'
+  lines:
+  - '&7&m--------------------'
+  - '&#FF6B00&lProfile:'
+  - '  &#FF0000Player: &f%player_name%'
+  - '  &#FF0000Rank: &f%vault_prefix%'
+  - '  &#FF0000Balance: &a$%vault_eco_balance_formatted%'
+  - '&r'
+  - '&#FF6B00&lStats:'
+  - '  &#FF0000Kills: &f%statistic_player_kills%'
+  - '  &#FF0000Deaths: &f%statistic_deaths%'
+  - '  &#FF0000Ping: &f%player_ping%ms'
+  - '&r'
+  - '&#FF6B00&lServer Info:'
+  - '  &#FF0000Online: &f%server_online%/%server_max_players%'
+  - '  &#FF0000World: &f%player_world%'
+  - '&7&m--------------------'
+  - '&#FF6B00&l&oMango-Anarchy.pages.dev'
+tablist:
+  enabled: true
+  only_worlds:
+  - world
+  refresh:
+    enabled: true
+    rate: 400
+  header:
+  - '&#FF6B00&l    *** &f&lWELCOME TO MANGO&#FF0000&l-ANARCHY &4&l*** '
+  - '&#FF0000&oTotal Players: &f%server_online% &7| &eYour Ping: &f%player_ping%ms'
+  - ''
+  footer:
+  - ''
+  - '&#FF6B00&lWEBSITE: &fMango-Anarchy.pages.dev &7| &e&lSTORE: &fMango-Anarchy.pages.dev/store'
+  - '&#FF0000&oSurvive. Conquer. Repeat.'
+double_jump:
+  enabled: true
+  launch_power: 1.0
+  launch_power_y: 0.9
+  cooldown: 3
+  actions:
+  - '[SOUND] entity.bat.takeoff'
+  disable_hunger_loss: true
+  disable_fall_damage: true
+  disable_player_pvp: true
+  disable_void_death: true
+  disable_fire_damage: true
+  disable_drowning: true
+  disable_off_hand_swap: false
+  disable_weather_change: true
+  disable_death_message: true
+  disable_mob_spawning: true
+  disable_item_drop: true
+  disable_item_pickup: true
+  disable_block_break: true
+  disable_block_place: true
+  disable_block_interact: true
+  disable_block_burn: true
+  disable_block_fire_spread: true
+  disable_block_leaf_decay: true
+launchpad:
+  enabled: true
+  launch_power: 3.0
+  launch_power_y: 1.0
+  top_block: STONE_PRESSURE_PLATE
+  bottom_block: SLIME_BLOCK
+  actions:
+  - '[SOUND] entity.bat.takeoff'
+version: 3.7.2
+check-updates: true
+multiple_worlds: false
+build_mode:
+  # Should privileged players see an actionbar message when build mode is turned on?
+  use_actionbar_message: true
+static_time:
+  # Should StaticTime be enabled?
+  enabled: false
+  # Which time should be set permanently in hub worlds?
+  time: 12000
+anti_wdl:
+  # Should AntiWDL be enabled?
+  enabled: true
+  # Should players with 'deluxehub.antiwdl.alert' will be notified?
+  notify_admins: true
+world_settings:
+  # Player
+  disable_hunger_loss: true
+  disable_fall_damage: true
+  disable_player_pvp: true
+  disable_void_death: true
+  disable_fire_damage: true
+  disable_drowning: true
+  disable_off_hand_swap: true # Requires 1.9+
+  # Misc
+  disable_weather_change: true
+  disable_death_message: true
+  disable_mob_spawning: true
+  # Item entities
+  disable_item_drop: true
+  disable_item_pickup: true
+  # Blocks
+  disable_block_break: false
+  disable_block_place: false
+  disable_block_interact: true # Chest, furnace, crop tample, etc
+  disable_block_burn: true
+  disable_block_fire_spread: true
+  disable_block_leaf_decay: true
+join_leave_messages:
+  # Should deluxehub handle join/quit messages?
+  enabled: true
+  
+  # Set to '' if you want silent join/quit messages
+  join_message: '&2&l+ &6%player% &7Connected'
+  quit_message: '&4&l- &6%player% &7Disconnected'
+hotbar:
+  joinslot: true
+  slot_number: 4 # Slot which is selected at join 0-8
+teleportation_bow:
+  enabled: false
+  # Slot the item should be given to?
+  slot: 6
+  arrow_slot: 35
+  # Should we prevent them from moving/dropping the item?
+  disable_inventory_movement: true
+  # Entity to spawn when the bow is used
+  # Available entities: ARROW, ENDER_PEARL, SNOWBALL, EGG, LLAMA_SPIT, SHULKER_BULLET, SPECTRAL_ARROW, TRIDENT
+  entity: ARROW
+  # Cooldown in seconds between each use
+  cooldown: 60
+  max_range: 100
+  item:
+    display_name: '&dTeleportation Bow'
+    glow: true
+    lore:
+    - '&7Right-click to teleport to where the arrow lands!'
+    - '&7Cooldown: &d60s'
+    - '&7Range: &d100 blocks'
+  arrow:
+    display_name: '&dTeleportation Arrow'
+    lore:
+    - '&dWhat a beautiful arrow!'
+legacySystems:
+  # Should we use the new lobby permission system?
+  # If this is disabled build, destroy, interact, pvp, pickup and drop will be only possible in the build mode instead all the time as a admin
+  # If this is enabled, the old system will be used (permission based https://strafbefehl.github.io/DeluxeHubReloadedDocs/goodtoknow/worldprotection)
+  permissionsEnabled: false

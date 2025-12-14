@@ -1,0 +1,28 @@
+items:
+  back: '&#FF0000&lBACK'
+  no-listings: '&#FF0000&lNO LISTINGS'
+
+lore:
+  divider-top: ' '
+  divider-bottom: ' '
+  price: '&#FCFF00● Price: &#A9FF00{price}'
+  status-active: '&#FCFF00● Status: &#0DFB00ACTIVE'
+  status-expired: '&#FCFF00● Status: &#FB0000EXPIRED'
+  expires-in: '&#FCFF00● Expires in: &#FCFF00{time}'
+  removal-in: '&#FCFF00● Will be removed in: &#FCFF00{time}'
+  click-to-take-back: '&fClick to take your item back from the auction house'
+  
+  back-to-main-lore:
+  - ''
+  - '&bNavigation:'
+  - '&fClick here to return to'
+  - '&fthe &#FCFF00main menu'
+  - ''
+  - '&#FFEE00&l▶ &#FFEE00&l&nClick&#FFEE00 to go back'
+  no-listings-lore:
+  - ''
+  - '&bStatus:'
+  - '&fYou currently have &#FCFF00no items'
+  - '&flisted in the &#FCFF00auction house'
+  - ''
+  - '&#FFEE00&l▶ &#FFEE00Start selling items!'

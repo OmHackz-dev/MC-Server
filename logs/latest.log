@@ -1,409 +1,975 @@
-[05:06:54] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.1+8-LTS; Microsoft Microsoft-12574222) on Linux 6.8.0-1030-azure (amd64)
-[05:06:54] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.5-114-ver/1.21.5@a1b3058 (2025-06-18T10:59:02Z) for Minecraft 1.21.5
-[05:06:55] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[05:06:55] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins/Vault.jar'...
-[05:06:55] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins/Vault.jar' in 658ms.
-[05:06:55] [ServerMain/ERROR]: [PluginRemapper] Encountered exception remapping plugins
-java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/ViaVersion.jar
-	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
-	at java.base/java.util.concurrent.CompletableFuture.reportJoin(CompletableFuture.java:457) ~[?:?]
-	at java.base/java.util.concurrent.CompletableFuture.join(CompletableFuture.java:2139) ~[?:?]
-	at io.papermc.paper.pluginremap.PluginRemapper.waitForAll(PluginRemapper.java:414) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-	at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:210) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:42) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-	at net.minecraft.server.Main.main(Main.java:111) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-	at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-	at org.bukkit.craftbukkit.Main.main(Main.java:243) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+[07:40:15] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.1+8-LTS; Microsoft Microsoft-12574222) on Linux 6.8.0-1030-azure (amd64)
+[07:40:15] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.5-114-ver/1.21.5@a1b3058 (2025-06-18T10:59:02Z) for Minecraft 1.21.5
+[07:40:15] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[07:40:16] [Paper Plugin Remapper Thread - 0/INFO]: [PluginRemapper] Remapping plugin 'plugins/multiverse-core-5.3.4.jar'...
+[07:40:16] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins/BetterTeams-4.15.2.jar'...
+[07:40:16] [Paper Plugin Remapper Thread - 3/INFO]: [PluginRemapper] Remapping plugin 'plugins/DonutHome-4.jar'...
+[07:40:16] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Remapping plugin 'plugins/TAB v5.4.0.jar'...
+[07:40:18] [Paper Plugin Remapper Thread - 3/INFO]: [PluginRemapper] Done remapping plugin 'plugins/DonutHome-4.jar' in 2064ms.
+[07:40:18] [Paper Plugin Remapper Thread - 3/INFO]: [PluginRemapper] Remapping plugin 'plugins/DonutBaltop-4.jar'...
+[07:40:18] [Paper Plugin Remapper Thread - 3/INFO]: [PluginRemapper] Done remapping plugin 'plugins/DonutBaltop-4.jar' in 492ms.
+[07:40:18] [Paper Plugin Remapper Thread - 3/INFO]: [PluginRemapper] Remapping plugin 'plugins/BetterRTP-3.4.2-1.jar'...
+[07:40:19] [Paper Plugin Remapper Thread - 3/INFO]: [PluginRemapper] Done remapping plugin 'plugins/BetterRTP-3.4.2-1.jar' in 247ms.
+[07:40:19] [Paper Plugin Remapper Thread - 3/INFO]: [PluginRemapper] Remapping plugin 'plugins/PhoenixCratesLite-4.3.4.jar'...
+[07:40:19] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins/BetterTeams-4.15.2.jar' in 3206ms.
+[07:40:19] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins/worldedit-bukkit-7.3.17.jar'...
+[07:40:21] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Done remapping plugin 'plugins/TAB v5.4.0.jar' in 4984ms.
+[07:40:21] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Remapping plugin 'plugins/Shop-8.jar'...
+[07:40:21] [Paper Plugin Remapper Thread - 0/INFO]: [PluginRemapper] Done remapping plugin 'plugins/multiverse-core-5.3.4.jar' in 5429ms.
+[07:40:21] [Paper Plugin Remapper Thread - 0/INFO]: [PluginRemapper] Remapping plugin 'plugins/Stats-2.jar'...
+[07:40:21] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Done remapping plugin 'plugins/Shop-8.jar' in 338ms.
+[07:40:21] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Remapping plugin 'plugins/worldguard-bukkit-7.0.14-dist.jar'...
+[07:40:22] [Paper Plugin Remapper Thread - 0/INFO]: [PluginRemapper] Done remapping plugin 'plugins/Stats-2.jar' in 261ms.
+[07:40:22] [Paper Plugin Remapper Thread - 0/INFO]: [PluginRemapper] Remapping plugin 'plugins/multiverse-portals-5.1.1.jar'...
+[07:40:22] [Paper Plugin Remapper Thread - 0/INFO]: [PluginRemapper] Done remapping plugin 'plugins/multiverse-portals-5.1.1.jar' in 108ms.
+[07:40:22] [Paper Plugin Remapper Thread - 0/INFO]: [PluginRemapper] Remapping plugin 'plugins/SkinsRestorer.jar'...
+[07:40:22] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Done remapping plugin 'plugins/worldguard-bukkit-7.0.14-dist.jar' in 633ms.
+[07:40:22] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Remapping plugin 'plugins/DeluxeHub-3.5.1.jar'...
+[07:40:22] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Done remapping plugin 'plugins/DeluxeHub-3.5.1.jar' in 294ms.
+[07:40:22] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Remapping plugin 'plugins/multiverse-inventories-5.2.2.jar'...
+[07:40:23] [Paper Plugin Remapper Thread - 3/INFO]: [PluginRemapper] Done remapping plugin 'plugins/PhoenixCratesLite-4.3.4.jar' in 4222ms.
+[07:40:23] [Paper Plugin Remapper Thread - 3/INFO]: [PluginRemapper] Remapping plugin 'plugins/AuctionHouse-11.jar'...
+[07:40:23] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins/worldedit-bukkit-7.3.17.jar' in 3970ms.
+[07:40:23] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins/znpcs-5.2.jar'...
+[07:40:23] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins/znpcs-5.2.jar' in 183ms.
+[07:40:23] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Done remapping plugin 'plugins/multiverse-inventories-5.2.2.jar' in 1002ms.
+[07:40:24] [Paper Plugin Remapper Thread - 3/INFO]: [PluginRemapper] Done remapping plugin 'plugins/AuctionHouse-11.jar' in 1160ms.
+[07:40:24] [Paper Plugin Remapper Thread - 0/INFO]: [PluginRemapper] Done remapping plugin 'plugins/SkinsRestorer.jar' in 2679ms.
+[07:40:25] [ServerMain/INFO]: [PluginInitializerManager] Initialized 26 plugins
+[07:40:25] [ServerMain/INFO]: [PluginInitializerManager] Paper plugins (1):
+ - SmartSpawner (1.5.7.1)
+[07:40:25] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (25):
+ - AuctionHouse (11), BetterRTP (3.4.2-1), BetterTeams (4.15.2), DeluxeHub (3.5.1), DonutBaltop (4), DonutHome (4), Essentials (2.21.1), EssentialsChat (2.21.1), EssentialsSpawn (2.21.1), LuckPerms (5.5.17), Multiverse-Core (5.3.4), Multiverse-Inventories (5.2.2), Multiverse-Portals (5.1.1), PhoenixCratesLite (4.3.4), ServersNPC (5.2), Shop (8), SkinsRestorer (15.9.1), Stats (2), TAB (5.4.0), Vault (1.7.3-b131), ViaBackwards (5.6.0), ViaVersion (5.6.0), WorldEdit (7.3.17+7262-c7fbe08), WorldGuard (7.0.14+2339-43997ec), playit-gg (0.1.4)
+[07:40:29] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[07:40:31] [ServerMain/INFO]: Loaded 1373 recipes
+[07:40:31] [ServerMain/INFO]: Loaded 1484 advancements
+[07:40:31] [Server thread/INFO]: Starting minecraft server version 1.21.5
+[07:40:31] [Server thread/INFO]: Loading properties
+[07:40:31] [Server thread/INFO]: This server is running Paper version 1.21.5-114-ver/1.21.5@a1b3058 (2025-06-18T10:59:02Z) (Implementing API version 1.21.5-R0.1-SNAPSHOT)
+[07:40:31] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[07:40:31] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[07:40:31] [Server thread/INFO]: Using 4 threads for Netty based IO
+[07:40:32] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[07:40:32] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[07:40:32] [Server thread/INFO]: Default game type: SURVIVAL
+[07:40:32] [Server thread/INFO]: Generating keypair
+[07:40:32] [Server thread/INFO]: Starting Minecraft server on *:25565
+[07:40:32] [Server thread/INFO]: Using epoll channel type
+[07:40:32] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[07:40:32] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[07:40:33] [Server thread/INFO]: [PhoenixCratesLite] Created plugin data folder.
+[07:40:33] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.6.0
+[07:40:33] [Server thread/INFO]: [ViaVersion] ViaVersion 5.6.0 is now loaded. Registering protocol transformers and injecting...
+[07:40:34] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading block connection mappings ...
+[07:40:34] [Via-Mappingloader-1/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[07:40:35] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[07:40:35] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[07:40:35] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.17
+[07:40:39] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[07:40:39] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[07:40:39] [Server thread/INFO]: [CoreLogging] Loading server plugin Multiverse-Core v5.3.4
+[07:40:39] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.17+7262-c7fbe08
+[07:40:39] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@72d05f54]
+[07:40:39] [Server thread/INFO]: [WorldEdit] Default configuration file written: config.yml
+[07:40:39] [Server thread/INFO]: [DeluxeHub] Loading server plugin DeluxeHub v3.5.1
+[07:40:39] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.6.0
+[07:40:39] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.14+2339-43997ec
+[07:40:39] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.21.1
+[07:40:39] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.9.1
+[07:40:39] [Server thread/INFO]: [ServersNPC] Loading server plugin ServersNPC v5.2
+[07:40:39] [Server thread/INFO]: [AuctionHouse] Loading server plugin AuctionHouse v11
+[07:40:39] [Server thread/INFO]: [Multiverse-Inventories] Loading server plugin Multiverse-Inventories v5.2.2
+[07:40:39] [Server thread/INFO]: [SmartSpawner] Loading server plugin SmartSpawner v1.5.7.1
+[07:40:39] [Server thread/INFO]: [Multiverse-Portals] Loading server plugin Multiverse-Portals v5.1.1
+[07:40:39] [Server thread/INFO]: [EssentialsSpawn] Loading server plugin EssentialsSpawn v2.21.1
+[07:40:39] [Server thread/INFO]: [Stats] Loading server plugin Stats v2
+[07:40:39] [Server thread/INFO]: [Shop] Loading server plugin Shop v8
+[07:40:39] [Server thread/INFO]: [PhoenixCratesLite] Loading server plugin PhoenixCratesLite v4.3.4
+[07:40:39] [Server thread/INFO]: [BetterRTP] Loading server plugin BetterRTP v3.4.2-1
+[07:40:39] [Server thread/INFO]: [DonutBaltop] Loading server plugin DonutBaltop v4
+[07:40:39] [Server thread/INFO]: [playit-gg] Loading server plugin playit-gg v0.1.4
+[07:40:39] [Server thread/INFO]: [TAB] Loading server plugin TAB v5.4.0
+[07:40:39] [Server thread/INFO]: [DonutHome] Loading server plugin DonutHome v4
+[07:40:39] [Server thread/INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.21.1
+[07:40:39] [Server thread/INFO]: [BetterTeams] Loading server plugin BetterTeams v4.15.2
+[07:40:39] [Server thread/INFO]: [BetterTeams] [BetterTeams] Checking if the file config.yml is up to date
+[07:40:39] [Server thread/INFO]: [BetterTeams] [BetterTeams] File is up to date
+[07:40:39] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[07:40:39] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.17
+[07:40:40] [Server thread/INFO]:         __    
+[07:40:40] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.17
+[07:40:40] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[07:40:40] [Server thread/INFO]: 
+[07:40:40] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[07:40:41] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[07:40:41] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[07:40:41] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1573ms)
+[07:40:41] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[07:40:41] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[07:40:41] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[07:40:41] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[07:40:41] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[07:40:41] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.17+7262-c7fbe08
+[07:40:42] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[07:40:42] [Server thread/INFO]: WEPIF: Updated config file
+[07:40:42] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[07:40:42] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_21_5.PaperweightAdapter as the Bukkit adapter
+[07:40:43] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.9.1
+[07:40:44] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.21.5.
+[07:40:44] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[07:40:44] [Server thread/INFO]: [Stats] Enabling Stats v2
+[07:40:44] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer] ----------------------------------------------
+[07:40:44] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer]     +==================+
+[07:40:44] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[07:40:44] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer]     |------------------|
+[07:40:44] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[07:40:44] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer]     +==================+
+[07:40:44] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer] ----------------------------------------------
+[07:40:44] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer]     Version: 15.9.1
+[07:40:44] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer]     Commit: ee713cb
+[07:40:44] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer]     This is the latest version!
+[07:40:44] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer] ----------------------------------------------
+[07:40:44] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
+[07:40:44] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
+[07:40:45] [Server thread/INFO]: [Stats]   ____ _____ ____  _   _    _    ____ _____ 
+[07:40:45] [Server thread/INFO]: [Stats]  / ___| ____|  _ \| | | |  / \  |  _ \_   _| 
+[07:40:45] [Server thread/INFO]: [Stats] | |  _|  _| | |_) | |_| | / _ \ | |_) || |  
+[07:40:45] [Server thread/INFO]: [Stats] | |_| | |___|  _ <|  _  |/ ___ \|  _ < | |  
+[07:40:45] [Server thread/INFO]: [Stats]  \____|_____|_| \_\_| |_/_/   \_\_| \_\|_|  
+[07:40:45] [Server thread/INFO]: [Stats] / ___|_   _| | | |  _ \_ _/ _ \/ ___|       
+[07:40:45] [Server thread/INFO]: [Stats] \___ \ | | | | | | | | | | | | | \___ \       
+[07:40:45] [Server thread/INFO]: [Stats]  ___) || | | |_| | |_| | | |_| |___) |      
+[07:40:45] [Server thread/INFO]: [Stats] |____/ |_|  \___/|____/___\___/|____/       
+[07:40:45] [Server thread/INFO]: [Stats] 
+[07:40:45] [Server thread/INFO]: [Stats] ╔══════════════════════════════════════════╗
+[07:40:45] [Server thread/INFO]: [Stats] ║               LICENSE ACTIVATED          ║
+[07:40:45] [Server thread/INFO]: [Stats] ╠══════════════════════════════════════════╣
+[07:40:45] [Server thread/INFO]: [Stats] ║ Key: 300H-BFW3-7FXI                      ║
+[07:40:45] [Server thread/INFO]: [Stats] ║ Status: VALID                            ║
+[07:40:45] [Server thread/INFO]: [Stats] ╚══════════════════════════════════════════╝
+[07:40:45] [Server thread/INFO]: [Stats]               Gerhart Studios
+[07:40:45] [Server thread/INFO]: [Shop] Enabling Shop v8
+[07:40:45] [Server thread/INFO]: [Shop] 
+[07:40:45] [Server thread/INFO]: [Shop] 
+[07:40:45] [Server thread/INFO]: [Shop]    _____           _                _    
+[07:40:45] [Server thread/INFO]: [Shop]   / ____|         | |              | |   
+[07:40:45] [Server thread/INFO]: [Shop]  | |  __  ___ _ __| |__   __ _ _ __| |_  
+[07:40:45] [Server thread/INFO]: [Shop]  | | |_ |/ _ \ '__| '_ \ / _` | '__| __| 
+[07:40:45] [Server thread/INFO]: [Shop]  | |__| |  __/ |  | | | | (_| | |  | |_  
+[07:40:45] [Server thread/INFO]: [Shop]   \_____|\___|_|  |_| |_|\__,_|_|   \__| 
+[07:40:45] [Server thread/INFO]: [Shop]   / ____| |           | (_)              
+[07:40:45] [Server thread/INFO]: [Shop]  | (___ | |_ _   _  __| |_  ___  ___     
+[07:40:45] [Server thread/INFO]: [Shop]   \___ \| __| | | |/ _` | |/ _ \/ __|    
+[07:40:45] [Server thread/INFO]: [Shop]   ____) | |_| |_| | (_| | | (_) \__ \    
+[07:40:45] [Server thread/INFO]: [Shop]  |_____/ \__|\__,_|\__,_|_|\___/|___/    
+[07:40:45] [Server thread/INFO]: [Shop]  
+[07:40:45] [Server thread/INFO]: [Shop]                                    
+[07:40:45] [Server thread/INFO]: [Shop] License: IYDT-PPSV-VU9X
+[07:40:45] [Server thread/INFO]: [Shop] Status: Valid   
+[07:40:45] [Server thread/INFO]: [Shop]                                    
+[07:40:45] [Server thread/INFO]: [Shop] 
+[07:40:45] [Server thread/INFO]: [Shop] 
+[07:40:45] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[07:40:45] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[07:40:45] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[07:40:45] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[07:40:45] [Server thread/INFO]: Preparing level "world"
+[07:40:46] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[07:40:46] [Server thread/INFO]: Time elapsed: 3 ms
+[07:40:46] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[07:40:46] [Server thread/INFO]: Time elapsed: 1 ms
+[07:40:46] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[07:40:46] [Server thread/INFO]: Time elapsed: 0 ms
+[07:40:46] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.6.0
+[07:40:46] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.21.5 (770)
+[07:40:46] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v5.3.4
+[07:40:48] [Server thread/INFO]: [Multiverse-Core] API service loaded!
+[07:40:48] [Server thread/INFO]: [Multiverse-Core] Version 5.3.4 (API v5.3) Enabled - By dumptruckman, Rigby, fernferret, lithium3141, main--, benwoo1110 and Zax71
+[07:40:48] [Server thread/INFO]: [Multiverse-Core] Loving Multiverse-Core? Please consider supporting the project with a small donation: https://github.com/sponsors/Multiverse
+[07:40:48] [Server thread/INFO]: [DeluxeHub] Enabling DeluxeHub v3.5.1
+[07:40:48] [Server thread/INFO]: [DeluxeHub]  _   _            _          _    _ 
+[07:40:48] [Server thread/INFO]: [DeluxeHub] | \ |_ |  | | \/ |_ |_| | | |_)   _)
+[07:40:48] [Server thread/INFO]: [DeluxeHub] |_/ |_ |_ |_| /\ |_ | | |_| |_)   _)
+[07:40:48] [Server thread/INFO]: [DeluxeHub] 
+[07:40:48] [Server thread/INFO]: [DeluxeHub] Version: 3.5.1
+[07:40:48] [Server thread/INFO]: [DeluxeHub] Author: ItsLewizzz
+[07:40:48] [Server thread/INFO]: [DeluxeHub] 
+[07:40:48] [Server thread/INFO]: [DeluxeHub] Loaded custom menu 'serverselector'.
+[07:40:48] [Server thread/WARN]: [NBTAPI] [NBTAPI] Error while trying to resolve the class 'inventory.CraftItemStack'!
+java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.MinecraftVersion.getVersion(MinecraftVersion.java:103) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.MinecraftVersion.isAtLeastVersion(MinecraftVersion.java:80) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.nmsmappings.ClassWrapper.<init>(ClassWrapper.java:70) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.nmsmappings.ClassWrapper.<init>(ClassWrapper.java:56) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.nmsmappings.ClassWrapper.<clinit>(ClassWrapper.java:17) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.nmsmappings.ReflectionMethod.<clinit>(ReflectionMethod.java:23) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.NBTCompound.setString(NBTCompound.java:101) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.module.modules.hotbar.HotbarItem.<init>(HotbarItem.java:37) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.module.modules.hotbar.items.CustomItem.<init>(CustomItem.java:16) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.module.modules.hotbar.HotbarManager.onEnable(HotbarManager.java:34) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.module.ModuleManager.loadModules(ModuleManager.java:73) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.DeluxeHubPlugin.onEnable(DeluxeHubPlugin.java:95) ~[DeluxeHub-3.5.1.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:280) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:653) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:608) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:741) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:486) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:280) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1161) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:308) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
 	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
-	Suppressed: java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/EssentialsXChat.jar
-		at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
-		at java.base/java.util.concurrent.CompletableFuture.reportJoin(CompletableFuture.java:457) ~[?:?]
-		at java.base/java.util.concurrent.CompletableFuture.join(CompletableFuture.java:2139) ~[?:?]
-		at io.papermc.paper.pluginremap.PluginRemapper.waitForAll(PluginRemapper.java:414) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:210) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:42) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at net.minecraft.server.Main.main(Main.java:111) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at org.bukkit.craftbukkit.Main.main(Main.java:243) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
-		at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
-	Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/EssentialsXChat.jar
-		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		... 9 more
-	Caused by: java.util.zip.ZipException: zip END header not found
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1362) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1571) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:215) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:122) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117) ~[jdk.zipfs:?]
-		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:507) ~[?:?]
-		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:421) ~[?:?]
-		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		... 9 more
-	Suppressed: java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/Spark.jar
-		at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
-		at java.base/java.util.concurrent.CompletableFuture.reportJoin(CompletableFuture.java:457) ~[?:?]
-		at java.base/java.util.concurrent.CompletableFuture.join(CompletableFuture.java:2139) ~[?:?]
-		at io.papermc.paper.pluginremap.PluginRemapper.waitForAll(PluginRemapper.java:414) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:210) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:42) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at net.minecraft.server.Main.main(Main.java:111) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at org.bukkit.craftbukkit.Main.main(Main.java:243) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
-		at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
-	Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/Spark.jar
-		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		... 9 more
-	Caused by: java.util.zip.ZipException: zip END header not found
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1362) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1571) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:215) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:122) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117) ~[jdk.zipfs:?]
-		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:507) ~[?:?]
-		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:421) ~[?:?]
-		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		... 9 more
-	Suppressed: java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/CoreProtect.jar
-		at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
-		at java.base/java.util.concurrent.CompletableFuture.reportJoin(CompletableFuture.java:457) ~[?:?]
-		at java.base/java.util.concurrent.CompletableFuture.join(CompletableFuture.java:2139) ~[?:?]
-		at io.papermc.paper.pluginremap.PluginRemapper.waitForAll(PluginRemapper.java:414) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:210) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:42) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at net.minecraft.server.Main.main(Main.java:111) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at org.bukkit.craftbukkit.Main.main(Main.java:243) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
-		at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
-	Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/CoreProtect.jar
-		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		... 9 more
-	Caused by: java.util.zip.ZipException: zip END header not found
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1362) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1571) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:215) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:122) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117) ~[jdk.zipfs:?]
-		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:507) ~[?:?]
-		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:421) ~[?:?]
-		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		... 9 more
-	Suppressed: java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/Chunky.jar
-		at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
-		at java.base/java.util.concurrent.CompletableFuture.reportJoin(CompletableFuture.java:457) ~[?:?]
-		at java.base/java.util.concurrent.CompletableFuture.join(CompletableFuture.java:2139) ~[?:?]
-		at io.papermc.paper.pluginremap.PluginRemapper.waitForAll(PluginRemapper.java:414) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:210) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:42) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at net.minecraft.server.Main.main(Main.java:111) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at org.bukkit.craftbukkit.Main.main(Main.java:243) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
-		at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
-	Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/Chunky.jar
-		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		... 9 more
-	Caused by: java.util.zip.ZipException: zip END header not found
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1362) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1571) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:215) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:122) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117) ~[jdk.zipfs:?]
-		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:507) ~[?:?]
-		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:421) ~[?:?]
-		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		... 9 more
-	Suppressed: java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/ViaBackwards.jar
-		at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
-		at java.base/java.util.concurrent.CompletableFuture.reportJoin(CompletableFuture.java:457) ~[?:?]
-		at java.base/java.util.concurrent.CompletableFuture.join(CompletableFuture.java:2139) ~[?:?]
-		at io.papermc.paper.pluginremap.PluginRemapper.waitForAll(PluginRemapper.java:414) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:210) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:42) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at net.minecraft.server.Main.main(Main.java:111) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at org.bukkit.craftbukkit.Main.main(Main.java:243) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
-		at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
-	Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/ViaBackwards.jar
-		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		... 9 more
-	Caused by: java.util.zip.ZipException: zip END header not found
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1362) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1571) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:215) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:122) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117) ~[jdk.zipfs:?]
-		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:507) ~[?:?]
-		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:421) ~[?:?]
-		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		... 9 more
-	Suppressed: java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/EssentialsX.jar
-		at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
-		at java.base/java.util.concurrent.CompletableFuture.reportJoin(CompletableFuture.java:457) ~[?:?]
-		at java.base/java.util.concurrent.CompletableFuture.join(CompletableFuture.java:2139) ~[?:?]
-		at io.papermc.paper.pluginremap.PluginRemapper.waitForAll(PluginRemapper.java:414) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:210) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:42) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at net.minecraft.server.Main.main(Main.java:111) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at org.bukkit.craftbukkit.Main.main(Main.java:243) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
-		at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
-	Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/EssentialsX.jar
-		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		... 9 more
-	Caused by: java.util.zip.ZipException: zip END header not found
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1362) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1571) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:215) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:122) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117) ~[jdk.zipfs:?]
-		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:507) ~[?:?]
-		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:421) ~[?:?]
-		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		... 9 more
-	Suppressed: java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/EssentialsXSpawn.jar
-		at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
-		at java.base/java.util.concurrent.CompletableFuture.reportJoin(CompletableFuture.java:457) ~[?:?]
-		at java.base/java.util.concurrent.CompletableFuture.join(CompletableFuture.java:2139) ~[?:?]
-		at io.papermc.paper.pluginremap.PluginRemapper.waitForAll(PluginRemapper.java:414) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:210) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:42) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at net.minecraft.server.Main.main(Main.java:111) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at org.bukkit.craftbukkit.Main.main(Main.java:243) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
-		at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
-	Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/EssentialsXSpawn.jar
-		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		... 9 more
-	Caused by: java.util.zip.ZipException: zip END header not found
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1362) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1571) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:215) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:122) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117) ~[jdk.zipfs:?]
-		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:507) ~[?:?]
-		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:421) ~[?:?]
-		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		... 9 more
-	Suppressed: java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/LuckPerms.jar
-		at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
-		at java.base/java.util.concurrent.CompletableFuture.reportJoin(CompletableFuture.java:457) ~[?:?]
-		at java.base/java.util.concurrent.CompletableFuture.join(CompletableFuture.java:2139) ~[?:?]
-		at io.papermc.paper.pluginremap.PluginRemapper.waitForAll(PluginRemapper.java:414) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:210) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:42) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at net.minecraft.server.Main.main(Main.java:111) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at org.bukkit.craftbukkit.Main.main(Main.java:243) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
-		at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
-	Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/LuckPerms.jar
-		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		... 9 more
-	Caused by: java.util.zip.ZipException: zip END header not found
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1362) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1571) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:215) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:122) ~[jdk.zipfs:?]
-		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117) ~[jdk.zipfs:?]
-		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:507) ~[?:?]
-		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:421) ~[?:?]
-		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-		... 9 more
-Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/ViaVersion.jar
-	at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-	at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-	at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+[07:40:48] [Server thread/WARN]: [NBTAPI] [NBTAPI] Error while trying to resolve the class 'inventory.CraftMetaItem'!
+java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.MinecraftVersion.getVersion(MinecraftVersion.java:103) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.MinecraftVersion.isAtLeastVersion(MinecraftVersion.java:80) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.nmsmappings.ClassWrapper.<init>(ClassWrapper.java:70) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.nmsmappings.ClassWrapper.<init>(ClassWrapper.java:56) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.nmsmappings.ClassWrapper.<clinit>(ClassWrapper.java:18) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.nmsmappings.ReflectionMethod.<clinit>(ReflectionMethod.java:23) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.NBTCompound.setString(NBTCompound.java:101) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.module.modules.hotbar.HotbarItem.<init>(HotbarItem.java:37) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.module.modules.hotbar.items.CustomItem.<init>(CustomItem.java:16) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.module.modules.hotbar.HotbarManager.onEnable(HotbarManager.java:34) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.module.ModuleManager.loadModules(ModuleManager.java:73) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.DeluxeHubPlugin.onEnable(DeluxeHubPlugin.java:95) ~[DeluxeHub-3.5.1.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:280) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:653) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:608) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:741) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:486) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:280) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1161) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:308) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+[07:40:48] [Server thread/WARN]: [NBTAPI] [NBTAPI] Error while trying to resolve the class 'entity.CraftEntity'!
+java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.MinecraftVersion.getVersion(MinecraftVersion.java:103) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.MinecraftVersion.isAtLeastVersion(MinecraftVersion.java:80) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.nmsmappings.ClassWrapper.<init>(ClassWrapper.java:70) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.nmsmappings.ClassWrapper.<init>(ClassWrapper.java:56) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.nmsmappings.ClassWrapper.<clinit>(ClassWrapper.java:19) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.nmsmappings.ReflectionMethod.<clinit>(ReflectionMethod.java:23) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.NBTCompound.setString(NBTCompound.java:101) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.module.modules.hotbar.HotbarItem.<init>(HotbarItem.java:37) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.module.modules.hotbar.items.CustomItem.<init>(CustomItem.java:16) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.module.modules.hotbar.HotbarManager.onEnable(HotbarManager.java:34) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.module.ModuleManager.loadModules(ModuleManager.java:73) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.DeluxeHubPlugin.onEnable(DeluxeHubPlugin.java:95) ~[DeluxeHub-3.5.1.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:280) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:653) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:608) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:741) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:486) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:280) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1161) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:308) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+[07:40:48] [Server thread/WARN]: [NBTAPI] [NBTAPI] Error while trying to resolve the class 'CraftWorld'!
+java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.MinecraftVersion.getVersion(MinecraftVersion.java:103) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.MinecraftVersion.isAtLeastVersion(MinecraftVersion.java:80) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.nmsmappings.ClassWrapper.<init>(ClassWrapper.java:70) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.nmsmappings.ClassWrapper.<init>(ClassWrapper.java:56) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.nmsmappings.ClassWrapper.<clinit>(ClassWrapper.java:20) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.nmsmappings.ReflectionMethod.<clinit>(ReflectionMethod.java:23) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.NBTCompound.setString(NBTCompound.java:101) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.module.modules.hotbar.HotbarItem.<init>(HotbarItem.java:37) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.module.modules.hotbar.items.CustomItem.<init>(CustomItem.java:16) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.module.modules.hotbar.HotbarManager.onEnable(HotbarManager.java:34) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.module.ModuleManager.loadModules(ModuleManager.java:73) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.DeluxeHubPlugin.onEnable(DeluxeHubPlugin.java:95) ~[DeluxeHub-3.5.1.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:280) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:653) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:608) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:741) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:486) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:280) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1161) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:308) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+[07:40:48] [Server thread/ERROR]: Error occurred while enabling DeluxeHub v3.5.1 (Is it up to date?)
+java.lang.ExceptionInInitializerError: null
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.nmsmappings.ReflectionMethod.<clinit>(ReflectionMethod.java:23) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.NBTCompound.setString(NBTCompound.java:101) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.module.modules.hotbar.HotbarItem.<init>(HotbarItem.java:37) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.module.modules.hotbar.items.CustomItem.<init>(CustomItem.java:16) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.module.modules.hotbar.HotbarManager.onEnable(HotbarManager.java:34) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.module.ModuleManager.loadModules(ModuleManager.java:73) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.DeluxeHubPlugin.onEnable(DeluxeHubPlugin.java:95) ~[DeluxeHub-3.5.1.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:280) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:653) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:608) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:741) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:486) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:280) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1161) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:308) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.MinecraftVersion.getVersion(MinecraftVersion.java:103) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.nmsmappings.ClassWrapper.<init>(ClassWrapper.java:62) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.nmsmappings.ClassWrapper.<init>(ClassWrapper.java:56) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.nbtapi.utils.nmsmappings.ClassWrapper.<clinit>(ClassWrapper.java:21) ~[DeluxeHub-3.5.1.jar:?]
+	... 19 more
+[07:40:48] [Server thread/INFO]: [DeluxeHub] Disabling DeluxeHub v3.5.1
+[07:40:48] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "java.util.Set.forEach(java.util.function.Consumer)" because "this.holograms" is null
+[07:40:48] [Server thread/WARN]: 	at DeluxeHub-3.5.1.jar//fun.lewisdev.deluxehub.module.modules.hologram.HologramManager.saveHolograms(HologramManager.java:61)
+[07:40:48] [Server thread/WARN]: 	at DeluxeHub-3.5.1.jar//fun.lewisdev.deluxehub.module.modules.hologram.HologramManager.onDisable(HologramManager.java:36)
+[07:40:48] [Server thread/WARN]: 	at DeluxeHub-3.5.1.jar//fun.lewisdev.deluxehub.module.ModuleManager.unloadModules(ModuleManager.java:92)
+[07:40:48] [Server thread/WARN]: 	at DeluxeHub-3.5.1.jar//fun.lewisdev.deluxehub.DeluxeHubPlugin.onDisable(DeluxeHubPlugin.java:113)
+[07:40:48] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:286)
+[07:40:48] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.disablePlugin(PaperPluginInstanceManager.java:237)
+[07:40:48] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.disablePlugin(PaperPluginManagerImpl.java:114)
+[07:40:48] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.disablePlugin(SimplePluginManager.java:550)
+[07:40:48] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:206)
+[07:40:48] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109)
+[07:40:48] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520)
+[07:40:48] [Server thread/WARN]: 	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:653)
+[07:40:48] [Server thread/WARN]: 	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:608)
+[07:40:48] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:741)
+[07:40:48] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:486)
+[07:40:48] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:280)
+[07:40:48] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1161)
+[07:40:48] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:308)
+[07:40:48] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:1474)
+[07:40:48] [Server thread/ERROR]: [DeluxeHub] There was an error unloading the HOLOGRAMS module.
+[07:40:48] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.6.0
+[07:40:48] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.14+2339-43997ec
+[07:40:48] [Server thread/INFO]: [WorldGuard] Default configuration file written: config.yml
+[07:40:48] [Server thread/INFO]: [WorldGuard] Default configuration file written: config_world.yml
+[07:40:48] [Server thread/INFO]: [WorldGuard] Default configuration file written: blacklist.txt
+[07:40:48] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[07:40:48] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[07:40:48] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
+[07:40:48] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[07:40:48] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[07:40:48] [Server thread/INFO]: [WorldGuard] Default configuration file written: config_world.yml
+[07:40:48] [Server thread/INFO]: [WorldGuard] Default configuration file written: blacklist.txt
+[07:40:48] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[07:40:48] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[07:40:48] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is PERMITTED.
+[07:40:48] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+[07:40:48] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[07:40:48] [Server thread/INFO]: [WorldGuard] Default configuration file written: config_world.yml
+[07:40:48] [Server thread/INFO]: [WorldGuard] Default configuration file written: blacklist.txt
+[07:40:48] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[07:40:48] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[07:40:48] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
+[07:40:48] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[07:40:48] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[07:40:48] [Server thread/INFO]: [WorldGuard] Loading region data...
+[07:40:48] [Server thread/INFO]: [WorldGuard] Unloading and saving region data that is currently loaded...
+[07:40:48] [Server thread/INFO]: [WorldGuard] Loading region data for loaded worlds...
+[07:40:48] [Server thread/INFO]: [WorldGuard] Loading region data...
+[07:40:48] [Server thread/INFO]: [WorldGuard] Regions saved after UUID migration! This won't happen again unless you change the relevant configuration option in WorldGuard's config.
+[07:40:49] [Server thread/INFO]: [Essentials] Enabling Essentials v2.21.1
+[07:40:49] [Server thread/WARN]: [Essentials] Beginning Adventure locale file conversion.
+[07:40:49] [Server thread/INFO]: [Essentials] Creating config from template: plugins/Essentials/config.yml
+[07:40:49] [Server thread/WARN]: [Essentials] Missing userdata folder, aborting
+[07:40:49] [Server thread/INFO]: [Essentials] Creating config from template: plugins/Essentials/kits.yml
+[07:40:49] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[07:40:49] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[07:40:49] [Server thread/INFO]: [Essentials] Starting Essentials ban format conversion
+[07:40:49] [Server thread/INFO]: [Essentials] Attempting to migrate ignore list to UUIDs
+[07:40:49] [Server thread/INFO]: [Essentials] Attempting to migrate legacy userdata keys to Configurate
+[07:40:49] [Server thread/INFO]: [Essentials] Done converting random teleport config.
+[07:40:49] [Server thread/INFO]: [Essentials] Creating config from template: plugins/Essentials/worth.yml
+[07:40:49] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Selected 1.21.4+ Sync Commands Provider as the provider for SyncCommandsProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Selected 1.20.4+ Damage Event Provider as the provider for DamageEventProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Selected 1.21+ InventoryView Interface ABI Provider as the provider for InventoryViewProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Selected 1.20.6+ Potion Meta Provider as the provider for PotionMetaProvider
+[07:40:49] [Server thread/INFO]: [Essentials] Creating config from template: plugins/Essentials/tpr.yml
+[07:40:49] [Server thread/INFO]: [Essentials] Loaded 43517 items from items.json.
+[07:40:49] [Server thread/INFO]: [Essentials] Creating config from template: plugins/Essentials/custom_items.yml
+[07:40:49] [Server thread/INFO]: [Essentials] Using locale en
+[07:40:50] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[07:40:50] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[07:40:50] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[07:40:50] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[07:40:50] [Server thread/INFO]: [ServersNPC] Enabling ServersNPC v5.2
+[07:40:50] [Server thread/INFO]: [AuctionHouse] Enabling AuctionHouse v11
+[07:40:50] [Server thread/INFO]: [AuctionHouse] 
+[07:40:50] [Server thread/INFO]: [AuctionHouse] 
+[07:40:50] [Server thread/INFO]: [AuctionHouse]    _____           _                _    
+[07:40:50] [Server thread/INFO]: [AuctionHouse]   / ____|         | |              | |   
+[07:40:50] [Server thread/INFO]: [AuctionHouse]  | |  __  ___ _ __| |__   __ _ _ __| |_  
+[07:40:50] [Server thread/INFO]: [AuctionHouse]  | | |_ |/ _ \ '__| '_ \ / _` | '__| __| 
+[07:40:50] [Server thread/INFO]: [AuctionHouse]  | |__| |  __/ |  | | | | (_| | |  | |_  
+[07:40:50] [Server thread/INFO]: [AuctionHouse]   \_____|\___|_|  |_| |_|\__,_|_|   \__| 
+[07:40:50] [Server thread/INFO]: [AuctionHouse]   / ____| |           | (_)              
+[07:40:50] [Server thread/INFO]: [AuctionHouse]  | (___ | |_ _   _  __| |_  ___  ___     
+[07:40:50] [Server thread/INFO]: [AuctionHouse]   \___ \| __| | | |/ _` | |/ _ \/ __|    
+[07:40:50] [Server thread/INFO]: [AuctionHouse]   ____) | |_| |_| | (_| | | (_) \__ \    
+[07:40:50] [Server thread/INFO]: [AuctionHouse]  |_____/ \__|\__,_|\__,_|_|\___/|___/    
+[07:40:50] [Server thread/INFO]: [AuctionHouse]  
+[07:40:50] [Server thread/INFO]: [AuctionHouse]                                    
+[07:40:50] [Server thread/INFO]: [AuctionHouse] License: U7KL-M1HT-5ITX
+[07:40:50] [Server thread/INFO]: [AuctionHouse] Status: Valid   
+[07:40:50] [Server thread/INFO]: [AuctionHouse]                                    
+[07:40:50] [Server thread/INFO]: [AuctionHouse] 
+[07:40:50] [Server thread/INFO]: [AuctionHouse] 
+[07:40:51] [Server thread/WARN]: [org.bukkit.craftbukkit.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[07:41:02] [Server thread/INFO]: [Multiverse-Inventories] Enabling Multiverse-Inventories v5.2.2
+[07:41:02] [Server thread/INFO]: [Multiverse-Inventories] Loading player names map...
+[07:41:02] [Server thread/INFO]: [Multiverse-Inventories] Generating player names map... This may take a while.
+[07:41:02] [Server thread/INFO]: [Multiverse-Inventories] Generated player names map.
+[07:41:02] [Server thread/INFO]: [Multiverse-Inventories] Version 5.2.2 (API v5.2) Enabled - By dumptruckman and benwoo1110
+[07:41:02] [Server thread/INFO]: [SmartSpawner] Enabling SmartSpawner v1.5.7.1
+[07:41:02] [Server thread/INFO]: [SmartSpawner] Server supports DataComponent API (Paper 1.21.5+)
+[07:41:02] [Server thread/INFO]: [SmartSpawner] WorldGuard integration enabled successfully!
+[07:41:02] [Server thread/INFO]: [SmartSpawner] Data file does not exist. No migration needed.
+[07:41:03] [Server thread/INFO]: [SmartSpawner] Running on standard Paper server.
+[07:41:03] [Server thread/INFO]: [SmartSpawner] Successfully connected to Vault & Economy provider: EssentialsX Economy
+[07:41:03] [Server thread/INFO]: [SmartSpawner] No compatible shop plugins found. Shop integration is disabled.
+[07:41:03] [Server thread/INFO]: [SmartSpawner] Created default spawners_settings.yml configuration
+[07:41:03] [Server thread/WARN]: [SmartSpawner] Entity type 'COPPER_GOLEM' is invalid or not available in server version 1.21.5-R0.1-SNAPSHOT
+[07:41:03] [Server thread/WARN]: [SmartSpawner] Entity type 'HAPPY_GHAST' is invalid or not available in server version 1.21.5-R0.1-SNAPSHOT
+[07:41:03] [Server thread/INFO]: [SmartSpawner] Created default item_spawners_settings.yml configuration
+[07:41:03] [Server thread/INFO]: [SmartSpawner] Loaded 7 item spawner configurations
+[07:41:03] [Server thread/INFO]: [SmartSpawner] Loaded storage GUI layout: default
+[07:41:03] [Server thread/INFO]: [SmartSpawner] Loaded main GUI layout: default
+[07:41:03] [Server thread/INFO]: [SmartSpawner] Initial spawner load complete. Loaded: 0, Pending (missing worlds): 0
+[07:41:03] [Server thread/INFO]: [SmartSpawner] SmartSpawner has been enabled! (Loaded in 219ms)
+[07:41:03] [Server thread/INFO]: [Multiverse-Portals] Enabling Multiverse-Portals v5.1.1
+[07:41:03] [Server thread/INFO]: [Multiverse-Portals] 0 - Portals(s) loaded
+[07:41:03] [Server thread/INFO]: [Multiverse-Portals] Found WorldEdit. Using it for selections.
+[07:41:03] [Server thread/INFO]: [Multiverse-Portals 5.1.1]  Enabled - By Rigby, fernferret and benwoo1110
+[07:41:03] [Server thread/INFO]: [EssentialsSpawn] Enabling EssentialsSpawn v2.21.1
+[07:41:03] [Server thread/INFO]: [EssentialsSpawn] Starting Metrics. Opt-out using the global bStats config.
+[07:41:03] [Server thread/INFO]: [PhoenixCratesLite] Enabling PhoenixCratesLite v4.3.4
+[07:41:03] [Server thread/INFO]: Loading cross version adapter...
+[07:41:03] [Server thread/INFO]:   ____    ____                               
+[07:41:03] [Server thread/INFO]:  |  _ \  / ___|                              
+[07:41:03] [Server thread/INFO]:  | |_) || |       Phoenix Crates Lite v4.3.4      
+[07:41:03] [Server thread/INFO]:  |  __/ | |___    https://phoenixplugins.com/
+[07:41:03] [Server thread/INFO]:  |_|     \____|                             
+[07:41:03] [Server thread/INFO]:                                                  
+[07:41:03] [Server thread/INFO]: Loading settings...
+[07:41:03] [Server thread/INFO]: File "config.yml" not found. Creating file...
+[07:41:03] [Server thread/INFO]: Vault founded. Preparing hook...
+[07:41:03] [Server thread/INFO]: Checking for internal patchs...
+[07:41:03] [Server thread/INFO]: [PhoenixCratesLite] Patch files not found.
+[07:41:03] [Server thread/INFO]: [PhoenixCratesLite] No patches to run.
+[07:41:03] [Server thread/INFO]: PlaceholderAPI is not installed. If you want to support more placeholders in this plugin install it.
+[07:41:03] [Server thread/INFO]: -> See more at: https://www.spigotmc.org/resources/placeholderapi.6245/
+[07:41:03] [Server thread/INFO]: Model Engine is not installed. If you want to support custom models in this plugin install it.
+[07:41:03] [Server thread/INFO]: -> (Meg 3) See more at: https://www.spigotmc.org/resources/conxeptworks-legacy-model-engine-1-16-5-1-20.79477/
+[07:41:03] [Server thread/INFO]: -> (Meg 4) See more at: https://mythiccraft.io/index.php?resources/20-off-model-engine%E2%80%94ultimate-entity-model-manager-1-19-4-1-20-1.1213/
+[07:41:03] [Server thread/INFO]: Loading components...
+[07:41:03] [Server thread/INFO]: Loading database...
+[07:41:03] [Server thread/WARN]: 4 [Server thread] INFO com.phoenixplugins.phoenixcrates.lib.hikari.HikariDataSource - CyberSQLitePool - Starting...
+[07:41:03] [Server thread/WARN]: 21 [Server thread] INFO com.phoenixplugins.phoenixcrates.lib.hikari.HikariDataSource - CyberSQLitePool - Start completed.
+[07:41:03] [Server thread/INFO]: Loading menus...
+[07:41:03] [Server thread/INFO]: File "menus/default_rewards_preview.yml" not found. Creating file...
+[07:41:03] [Server thread/INFO]: File "menus/default_select_reward.yml" not found. Creating file...
+[07:41:03] [Server thread/INFO]: File "internal_storage.yml" not found. Creating file...
+[07:41:03] [Server thread/INFO]: Loading players data...
+[07:41:03] [Server thread/INFO]: Loading keys...
+[07:41:03] [Server thread/INFO]: Loaded 3 keys.
+[07:41:03] [Server thread/INFO]: Loading crates...
+[07:41:03] [Server thread/INFO]: File "locations.yml" not found. Creating file...
+[07:41:03] [Server thread/INFO]: Loaded 3 types.
+[07:41:03] [Server thread/INFO]: Loaded 0 crates.
+[07:41:03] [Server thread/INFO]: Loading commands...
+[07:41:03] [Server thread/INFO]: 
+[07:41:03] [Server thread/INFO]: Plugin loaded successfully!
+[07:41:03] [Server thread/INFO]: [Any questions or problems that may arise, contact us through
+[07:41:03] [Server thread/INFO]: the website or our discord: https://phoenixplugins.com/discord]
+[07:41:03] [Server thread/INFO]: 
+[07:41:03] [Server thread/INFO]: [BetterRTP] Enabling BetterRTP v3.4.2-1
+[07:41:03] [Server thread/ERROR]: [BetterRTP] The particle 'EXPLOSION_NORMAL' created a fatal error when loading particles! Your MC version isn't supported!
+[07:41:03] [Server thread/INFO]: [DonutBaltop] Enabling DonutBaltop v4
+[07:41:04] [Server thread/INFO]: [DonutBaltop] 
+[07:41:04] [Server thread/INFO]: [DonutBaltop] 
+[07:41:04] [Server thread/INFO]: [DonutBaltop]    _____           _                _    
+[07:41:04] [Server thread/INFO]: [DonutBaltop]   / ____|         | |              | |   
+[07:41:04] [Server thread/INFO]: [DonutBaltop]  | |  __  ___ _ __| |__   __ _ _ __| |_  
+[07:41:04] [Server thread/INFO]: [DonutBaltop]  | | |_ |/ _ \ '__| '_ \ / _` | '__| __| 
+[07:41:04] [Server thread/INFO]: [DonutBaltop]  | |__| |  __/ |  | | | | (_| | |  | |_  
+[07:41:04] [Server thread/INFO]: [DonutBaltop]   \_____|\___|_|  |_| |_|\__,_|_|   \__| 
+[07:41:04] [Server thread/INFO]: [DonutBaltop]   / ____| |           | (_)              
+[07:41:04] [Server thread/INFO]: [DonutBaltop]  | (___ | |_ _   _  __| |_  ___  ___     
+[07:41:04] [Server thread/INFO]: [DonutBaltop]   \___ \| __| | | |/ _` | |/ _ \/ __|    
+[07:41:04] [Server thread/INFO]: [DonutBaltop]   ____) | |_| |_| | (_| | | (_) \__ \    
+[07:41:04] [Server thread/INFO]: [DonutBaltop]  |_____/ \__|\__,_|\__,_|_|\___/|___/    
+[07:41:04] [Server thread/INFO]: [DonutBaltop]  
+[07:41:04] [Server thread/INFO]: [DonutBaltop]                                    
+[07:41:04] [Server thread/INFO]: [DonutBaltop] License: M3VU-9EMG-CH3Z
+[07:41:04] [Server thread/INFO]: [DonutBaltop] Status: Valid   
+[07:41:04] [Server thread/INFO]: [DonutBaltop]                                    
+[07:41:04] [Server thread/INFO]: [DonutBaltop] 
+[07:41:04] [Server thread/INFO]: [DonutBaltop] 
+[07:41:04] [Server thread/INFO]: [playit-gg] Enabling playit-gg v0.1.4
+[07:41:04] [Thread-16/INFO]: [gg.playit.minecraft.PlayitKeysSetup] secret key found, checking
+[07:41:04] [Thread-16/INFO]: [gg.playit.minecraft.PlayitKeysSetup] check secret
+[07:41:04] [Server thread/INFO]: [TAB] Enabling TAB v5.4.0
+[07:41:04] [Server thread/INFO]: [TAB] Enabled in 190ms
+[07:41:04] [Server thread/INFO]: [DonutHome] Enabling DonutHome v4
+[07:41:05] [Server thread/INFO]: [DonutHome] 
+[07:41:05] [Server thread/INFO]: [DonutHome] 
+[07:41:05] [Server thread/INFO]: [DonutHome]    _____           _                _    
+[07:41:05] [Server thread/INFO]: [DonutHome]   / ____|         | |              | |   
+[07:41:05] [Server thread/INFO]: [DonutHome]  | |  __  ___ _ __| |__   __ _ _ __| |_  
+[07:41:05] [Server thread/INFO]: [DonutHome]  | | |_ |/ _ \ '__| '_ \ / _` | '__| __| 
+[07:41:05] [Server thread/INFO]: [DonutHome]  | |__| |  __/ |  | | | | (_| | |  | |_  
+[07:41:05] [Server thread/INFO]: [DonutHome]   \_____|\___|_|  |_| |_|\__,_|_|   \__| 
+[07:41:05] [Server thread/INFO]: [DonutHome]   / ____| |           | (_)              
+[07:41:05] [Server thread/INFO]: [DonutHome]  | (___ | |_ _   _  __| |_  ___  ___     
+[07:41:05] [Server thread/INFO]: [DonutHome]   \___ \| __| | | |/ _` | |/ _ \/ __|    
+[07:41:05] [Server thread/INFO]: [DonutHome]   ____) | |_| |_| | (_| | | (_) \__ \    
+[07:41:05] [Server thread/INFO]: [DonutHome]  |_____/ \__|\__,_|\__,_|_|\___/|___/    
+[07:41:05] [Server thread/INFO]: [DonutHome]  
+[07:41:05] [Server thread/INFO]: [DonutHome]                                    
+[07:41:05] [Server thread/INFO]: [DonutHome] License: 1LJX-UDT3-41I4
+[07:41:05] [Server thread/INFO]: [DonutHome] Status: Valid   
+[07:41:05] [Server thread/INFO]: [DonutHome]                                    
+[07:41:05] [Server thread/INFO]: [DonutHome] 
+[07:41:05] [Server thread/INFO]: [DonutHome] 
+[07:41:05] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.21.1
+[07:41:05] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
+[07:41:05] [Server thread/INFO]: [BetterTeams] Enabling BetterTeams v4.15.2
+[07:41:05] [Thread-16/INFO]: [gg.playit.minecraft.PlayitKeysSetup] found minecraft java tunnel: hospital-montgomery.gl.joinmc.link
+[07:41:05] [Thread-16/INFO]: [gg.playit.minecraft.PlayitManager] keys and tunnel setup
+[07:41:06] [Thread-16/WARN]: [gg.playit.control.ChannelSetup] Got IO error working with :control.playit.gg/2602:fbaf:850:17:0:0:0:1, error : java.net.SocketException: Network is unreachable
+[07:41:07] [Thread-16/INFO]: [gg.playit.control.ChannelSetup] request queued, waiting 1 second before resend
+[07:41:14] [Server thread/INFO]: [BetterTeams] MessageSender declared: com.booksaw.betterTeams.message.AdventureMessageSender@543067dd
+[07:41:14] [Server thread/INFO]: [BetterTeams] [BetterTeams] Checking if the file messages.yml is up to date
+[07:41:14] [Server thread/INFO]: [BetterTeams] [BetterTeams] File is up to date
+[07:41:14] [Server thread/INFO]: [BetterTeams] Converting storage type, this may take a while
+[07:41:14] [Server thread/INFO]: [BetterTeams] Backing up teams.yml file
+[07:41:14] [Server thread/INFO]: [BetterTeams] Loading team information
+[07:41:14] [Server thread/INFO]: [BetterTeams] Beginning convertion
+[07:41:14] [Server thread/INFO]: [BetterTeams] Convertion complete
+[07:41:14] [Server thread/WARN]: [BetterTeams] Could not find the message with the reference command.deposit
+[07:41:14] [Server thread/WARN]: [BetterTeams] Could not find the message with the reference command.bal
+[07:41:15] [Server thread/WARN]: [BetterTeams] Could not find the message with the reference command.withdraw
+[07:41:15] [Server thread/INFO]: [BetterTeams] Display team name config value: prefix
+[07:41:15] [Server thread/INFO]: [BetterTeams] Loading below name. Type: PREFIX
+[07:41:15] [Server thread/INFO]: [BetterTeams] teamManagement declared: com.booksaw.betterTeams.events.MCTeamManagement@144337c0
+[07:41:15] [Server thread/INFO]: [spark] Starting background profiler...
+[07:41:16] [Server thread/INFO]: Done preparing level "world" (30.691s)
+[07:41:16] [Server thread/INFO]: Running delayed init tasks
+[07:41:16] [Craft Scheduler Thread - 6 - Essentials/INFO]: [Essentials] Fetching version information...
+[07:41:16] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[07:41:16] [Craft Scheduler Thread - 5 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[07:41:16] [Craft Scheduler Thread - 5 - Vault/INFO]: [Vault] Checking for Updates ... 
+[07:41:16] [Craft Scheduler Thread - 7 - SmartSpawner/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[07:41:16] [Server thread/INFO]: [Multiverse-Inventories] First run!
+[07:41:16] [Server thread/INFO]: [Multiverse-Inventories] Created a default group for you containing all of your default worlds: world, world_nether, world_the_end
+[07:41:16] [Server thread/INFO]: Done (63.030s)! For help, type "help"
+[07:41:16] [Craft Scheduler Thread - 5 - Vault/INFO]: [Vault] No new version available
+[07:41:16] [Craft Scheduler Thread - 10 - DonutBaltop/WARN]: Failed to load player data for 
+[07:41:17] [Craft Scheduler Thread - 6 - Essentials/WARN]: [Essentials] There is a new EssentialsX version available for download: 2.21.2.
+[07:41:17] [Craft Scheduler Thread - 6 - Essentials/WARN]: [Essentials] Download it here: https://essentialsx.net/downloads.html?branch=stable
+[07:41:17] [Craft Scheduler Thread - 9 - DonutBaltop/WARN]: Failed to load player data for 
+[07:41:17] [Craft Scheduler Thread - 9 - DonutBaltop/WARN]: Failed to load player data for 
+[07:41:17] [Craft Scheduler Thread - 9 - DonutBaltop/WARN]: Failed to load player data for 
+[07:41:17] [Craft Scheduler Thread - 9 - DonutBaltop/WARN]: Failed to load player data for 
+[07:41:17] [Craft Scheduler Thread - 9 - DonutBaltop/WARN]: Failed to load player data for 
+[07:41:21] [Craft Scheduler Thread - 9 - DonutBaltop/INFO]: [Essentials] Created a User for null (067632f8-fd23-4226-9406-fac366a62480) for non Bukkit type: com.earth2me.essentials.OfflinePlayerStub
+[07:42:16] [Thread-16/INFO]: [gg.playit.minecraft.PlayitManager] got new client: NewClient{connectAddr=147.185.221.24:25019, peerAddr=112.79.28.205:3068, claimAddress=69.9.191.2:42760, claimToken=[44, 0, 112, -109, -71, -35, 24, 97, -69, 112, 79, 28, -51, 11, -4, 53, -54, 8, 82, -89, 8, 105, 62, 106, 88, 0, 0, 0, 0, 0, 27, -115, 11, 0, 0, 0, 0, 0, 82, 77, -114, 0, 0, 0, 0, 0, 43, 25, -37, 114, 41, -89, 8, 0, 0, 0, 0, 28, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 42, 41, 0, -126, 6, 34, 104, 111, 115, 112, 105, 116, 97, 108, 45, 109, 111, 110, 116, 103, 111, 109, 101, 114, 121, 46, 103, 108, 46, 106, 111, 105, 110, 109, 99, 46, 108, 105, 110, 107, 99, -35, 1, 97, 112, 7, -120, 9, -56, 11, 91, 112, 103, 0, -72, -26, -96, -73, 44], tunnelServerId=1, dataCenterId=28}
+[07:42:16] [Thread-16/INFO]: [gg.playit.minecraft.PlayitManager] starting tcp tunnel for client
+[07:42:16] [Thread-16/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] start connection to /69.9.191.2:42760 to claim client
+[07:42:16] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connected to tunnel server, sending claim token
+[07:42:16] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] claim token sent
+[07:42:16] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connection to tunnel server has been established
+[07:42:16] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] Reflect: ReflectionHelper{ServerConnection=class net.minecraft.server.network.ServerConnectionListener, LegacyPingHandler=class net.minecraft.server.network.LegacyQueryHandler, MinecraftServer=class net.minecraft.server.MinecraftServer, PacketSplitter=class net.minecraft.network.Varint21FrameDecoder, PacketDecoder=class net.minecraft.network.PacketDecoder, EnumProtocolDirection=class net.minecraft.network.protocol.PacketFlow, PacketPrepender=class net.minecraft.network.Varint21LengthFieldPrepender, PacketEncoder=class net.minecraft.network.PacketEncoder, NetworkManagerServer=class net.minecraft.network.RateKickingConnection, NetworkManager=class net.minecraft.network.Connection, HandshakeListener=class net.minecraft.server.network.ServerHandshakePacketListenerImpl, PacketListener=interface net.minecraft.network.PacketListener, CraftServer=class org.bukkit.craftbukkit.CraftServer}
+[07:42:16] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] legacyPingHandler is null
+[07:42:16] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connecting to minecraft server at localhost/127.0.0.1:25565
+[07:42:16] [nioEventLoopGroup-2-2/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connected to local minecraft server
+[07:42:20] [Thread-16/INFO]: [gg.playit.minecraft.PlayitManager] got new client: NewClient{connectAddr=147.185.221.24:25019, peerAddr=112.79.28.205:3055, claimAddress=69.9.191.2:42760, claimToken=[44, 0, 119, -109, -71, -35, 24, 99, -35, 112, 79, 28, -51, 11, -17, -123, -76, 70, -39, -89, 8, 105, 62, 106, 92, 0, 0, 0, 0, 0, 27, -115, 11, 0, 0, 0, 0, 0, 82, 77, -114, 0, 0, 0, 0, 0, 43, 25, -37, 102, -80, -89, 8, 1, 4, -109, -71, -35, 24, 97, -69, 0, 0, 0, 28, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 42, 41, 0, -126, 6, 34, 104, 111, 115, 112, 105, 116, 97, 108, 45, 109, 111, 110, 116, 103, 111, 109, 101, 114, 121, 46, 103, 108, 46, 106, 111, 105, 110, 109, 99, 46, 108, 105, 110, 107, 99, -35, 1, -27, 54, -81, 78, -21, -38, 87, 52, 39, 55, 45, 98, 25, -54, 38, -28], tunnelServerId=1, dataCenterId=28}
+[07:42:20] [Thread-16/INFO]: [gg.playit.minecraft.PlayitManager] starting tcp tunnel for client
+[07:42:20] [Thread-16/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] start connection to /69.9.191.2:42760 to claim client
+[07:42:21] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connected to tunnel server, sending claim token
+[07:42:21] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] claim token sent
+[07:42:21] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connection to tunnel server has been established
+[07:42:21] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] Reflect: ReflectionHelper{ServerConnection=class net.minecraft.server.network.ServerConnectionListener, LegacyPingHandler=class net.minecraft.server.network.LegacyQueryHandler, MinecraftServer=class net.minecraft.server.MinecraftServer, PacketSplitter=class net.minecraft.network.Varint21FrameDecoder, PacketDecoder=class net.minecraft.network.PacketDecoder, EnumProtocolDirection=class net.minecraft.network.protocol.PacketFlow, PacketPrepender=class net.minecraft.network.Varint21LengthFieldPrepender, PacketEncoder=class net.minecraft.network.PacketEncoder, NetworkManagerServer=class net.minecraft.network.RateKickingConnection, NetworkManager=class net.minecraft.network.Connection, HandshakeListener=class net.minecraft.server.network.ServerHandshakePacketListenerImpl, PacketListener=interface net.minecraft.network.PacketListener, CraftServer=class org.bukkit.craftbukkit.CraftServer}
+[07:42:21] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] legacyPingHandler is null
+[07:42:21] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connecting to minecraft server at localhost/127.0.0.1:25565
+[07:42:21] [nioEventLoopGroup-2-4/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connected to local minecraft server
+[07:42:31] [Thread-16/INFO]: [gg.playit.minecraft.PlayitManager] got new client: NewClient{connectAddr=147.185.221.24:25019, peerAddr=112.79.28.205:3048, claimAddress=69.9.191.2:42760, claimToken=[44, 0, 119, -109, -71, -35, 24, 99, -35, 112, 79, 28, -51, 11, -24, -125, 4, -24, 99, -89, 8, 105, 62, 106, 103, 0, 0, 0, 0, 0, 27, -115, 11, 0, 0, 0, 0, 0, 82, 77, -114, 0, 0, 0, 0, 0, 43, 25, -37, 29, 58, -89, 8, 1, 4, -109, -71, -35, 24, 97, -69, 0, 0, 0, 28, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 42, 41, 0, -126, 6, 34, 104, 111, 115, 112, 105, 116, 97, 108, 45, 109, 111, 110, 116, 103, 111, 109, 101, 114, 121, 46, 103, 108, 46, 106, 111, 105, 110, 109, 99, 46, 108, 105, 110, 107, 99, -35, 2, 28, -118, 51, 24, 61, -123, -116, 63, -126, 88, -77, 42, 5, -15, 0, -36], tunnelServerId=1, dataCenterId=28}
+[07:42:31] [Thread-16/INFO]: [gg.playit.minecraft.PlayitManager] starting tcp tunnel for client
+[07:42:31] [Thread-16/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] start connection to /69.9.191.2:42760 to claim client
+[07:42:31] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connected to tunnel server, sending claim token
+[07:42:31] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] claim token sent
+[07:42:31] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connection to tunnel server has been established
+[07:42:31] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] Reflect: ReflectionHelper{ServerConnection=class net.minecraft.server.network.ServerConnectionListener, LegacyPingHandler=class net.minecraft.server.network.LegacyQueryHandler, MinecraftServer=class net.minecraft.server.MinecraftServer, PacketSplitter=class net.minecraft.network.Varint21FrameDecoder, PacketDecoder=class net.minecraft.network.PacketDecoder, EnumProtocolDirection=class net.minecraft.network.protocol.PacketFlow, PacketPrepender=class net.minecraft.network.Varint21LengthFieldPrepender, PacketEncoder=class net.minecraft.network.PacketEncoder, NetworkManagerServer=class net.minecraft.network.RateKickingConnection, NetworkManager=class net.minecraft.network.Connection, HandshakeListener=class net.minecraft.server.network.ServerHandshakePacketListenerImpl, PacketListener=interface net.minecraft.network.PacketListener, CraftServer=class org.bukkit.craftbukkit.CraftServer}
+[07:42:31] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] legacyPingHandler is null
+[07:42:31] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connecting to minecraft server at localhost/127.0.0.1:25565
+[07:42:31] [nioEventLoopGroup-2-2/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connected to local minecraft server
+[07:42:32] [User Authenticator #0/INFO]: UUID of player OmHackz is 93a5bf97-e66a-3f0f-893a-c928d492afdb
+[07:42:38] [Server thread/INFO]: OmHackz joined the game
+[07:42:38] [Server thread/INFO]: OmHackz[/127.0.0.1:60984] logged in with entity id 2 at ([world]233.40387930276074, 261.6261155240518, -402.5244214099)
+[07:42:38] [Server thread/WARN]: [Essentials] File motd.txt does not exist. Creating one for you.
+[07:42:58] [Server thread/INFO]: OmHackz issued server command: /pl
+[07:43:30] [Server thread/INFO]: OmHackz issued server command: /home
+[07:43:36] [Server thread/INFO]: OmHackz issued server command: /stats
+[07:44:23] [Server thread/INFO]: OmHackz issued server command: /spawner give spawner OmHackz
+[07:44:29] [Server thread/INFO]: OmHackz issued server command: /shop
+[07:44:54] [Server thread/INFO]: OmHackz issued server command: /spawner give vanilla_spawner OmHackz bogged
+[07:45:07] [Server thread/WARN]: OmHackz moved too quickly! 18.835062262719816,0.9379799824886845,-6.132702425778689
+[07:45:08] [Thread-16/INFO]: [gg.playit.control.ChannelSetup] send keep alive
+[07:45:20] [Thread-16/INFO]: [gg.playit.control.ChannelSetup] send keep alive
+[07:45:29] [Server thread/INFO]: OmHackz issued server command: /time set night
+[07:45:38] [Server thread/INFO]: OmHackz issued server command: /gamemode creative
+[07:45:38] [Server thread/ERROR]: Command exception: /gamemode creative
+java.lang.IllegalStateException: The plugin classloader for DeluxeHub has thrown a zip file error.
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:217) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:557) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:169) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:164) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490) ~[?:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.scopeMatches(CommandsManager.java:657) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.executeMethod(CommandsManager.java:525) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.executeMethod(CommandsManager.java:475) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.execute(CommandsManager.java:451) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.command.CommandManager.execute(CommandManager.java:52) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.DeluxeHubPlugin.onCommand(DeluxeHubPlugin.java:136) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.bukkit.util.DynamicPluginCommand.execute(DynamicPluginCommand.java:55) ~[DeluxeHub-3.5.1.jar:?]
+	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:83) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:105) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:449) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:357) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:347) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:341) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2269) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:2242) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:155) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1446) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:175) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:129) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1426) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1420) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:139) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.managedBlock(MinecraftServer.java:1377) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1385) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1262) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:308) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+Caused by: java.lang.IllegalStateException: zip file closed
+	at java.base/java.util.zip.ZipFile.ensureOpen(ZipFile.java:826) ~[?:?]
+	at java.base/java.util.zip.ZipFile.getEntry(ZipFile.java:290) ~[?:?]
+	at java.base/java.util.jar.JarFile.getEntry(JarFile.java:505) ~[?:?]
+	at java.base/java.util.jar.JarFile.getJarEntry(JarFile.java:460) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:212) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	... 38 more
+[07:45:40] [Server thread/INFO]: OmHackz was shot by Skeleton
+[07:45:44] [Server thread/INFO]: OmHackz issued server command: /gamemode creative
+[07:45:44] [Server thread/ERROR]: Command exception: /gamemode creative
+java.lang.IllegalStateException: The plugin classloader for DeluxeHub has thrown a zip file error.
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:217) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:557) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:169) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:164) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490) ~[?:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.scopeMatches(CommandsManager.java:657) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.executeMethod(CommandsManager.java:525) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.executeMethod(CommandsManager.java:475) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.execute(CommandsManager.java:451) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.command.CommandManager.execute(CommandManager.java:52) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.DeluxeHubPlugin.onCommand(DeluxeHubPlugin.java:136) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.bukkit.util.DynamicPluginCommand.execute(DynamicPluginCommand.java:55) ~[DeluxeHub-3.5.1.jar:?]
+	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:83) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:105) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:449) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:357) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:347) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:341) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2269) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:2242) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:155) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1446) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:175) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:129) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1426) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1420) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:139) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.managedBlock(MinecraftServer.java:1377) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1385) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1262) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:308) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+Caused by: java.lang.IllegalStateException: zip file closed
+	at java.base/java.util.zip.ZipFile.ensureOpen(ZipFile.java:826) ~[?:?]
+	at java.base/java.util.zip.ZipFile.getEntry(ZipFile.java:290) ~[?:?]
+	at java.base/java.util.jar.JarFile.getEntry(JarFile.java:505) ~[?:?]
+	at java.base/java.util.jar.JarFile.getJarEntry(JarFile.java:460) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:212) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	... 38 more
+[07:45:48] [Server thread/INFO]: OmHackz issued server command: /gamemode creative
+[07:45:48] [Server thread/ERROR]: Command exception: /gamemode creative
+java.lang.IllegalStateException: The plugin classloader for DeluxeHub has thrown a zip file error.
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:217) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:557) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:169) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:164) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490) ~[?:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.scopeMatches(CommandsManager.java:657) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.executeMethod(CommandsManager.java:525) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.executeMethod(CommandsManager.java:475) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.execute(CommandsManager.java:451) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.command.CommandManager.execute(CommandManager.java:52) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.DeluxeHubPlugin.onCommand(DeluxeHubPlugin.java:136) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.bukkit.util.DynamicPluginCommand.execute(DynamicPluginCommand.java:55) ~[DeluxeHub-3.5.1.jar:?]
+	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:83) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:105) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:449) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:357) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:347) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:341) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2269) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:2242) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:155) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1446) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:175) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:129) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1426) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1420) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:139) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.managedBlock(MinecraftServer.java:1377) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1385) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1262) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:308) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+Caused by: java.lang.IllegalStateException: zip file closed
+	at java.base/java.util.zip.ZipFile.ensureOpen(ZipFile.java:826) ~[?:?]
+	at java.base/java.util.zip.ZipFile.getEntry(ZipFile.java:290) ~[?:?]
+	at java.base/java.util.jar.JarFile.getEntry(JarFile.java:505) ~[?:?]
+	at java.base/java.util.jar.JarFile.getJarEntry(JarFile.java:460) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:212) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	... 38 more
+[07:45:59] [Server thread/INFO]: OmHackz issued server command: /gamemode creative
+[07:45:59] [Server thread/ERROR]: Command exception: /gamemode creative
+java.lang.IllegalStateException: The plugin classloader for DeluxeHub has thrown a zip file error.
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:217) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:557) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:169) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:164) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490) ~[?:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.scopeMatches(CommandsManager.java:657) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.executeMethod(CommandsManager.java:525) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.executeMethod(CommandsManager.java:475) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.execute(CommandsManager.java:451) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.command.CommandManager.execute(CommandManager.java:52) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.DeluxeHubPlugin.onCommand(DeluxeHubPlugin.java:136) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.bukkit.util.DynamicPluginCommand.execute(DynamicPluginCommand.java:55) ~[DeluxeHub-3.5.1.jar:?]
+	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:83) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:105) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:449) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:357) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:347) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:341) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2269) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:2242) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:155) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1446) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:175) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:129) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1426) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1420) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:139) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.managedBlock(MinecraftServer.java:1377) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1385) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1262) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:308) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+Caused by: java.lang.IllegalStateException: zip file closed
+	at java.base/java.util.zip.ZipFile.ensureOpen(ZipFile.java:826) ~[?:?]
+	at java.base/java.util.zip.ZipFile.getEntry(ZipFile.java:290) ~[?:?]
+	at java.base/java.util.jar.JarFile.getEntry(JarFile.java:505) ~[?:?]
+	at java.base/java.util.jar.JarFile.getJarEntry(JarFile.java:460) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:212) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	... 38 more
+[07:46:14] [Server thread/INFO]: OmHackz was shot by Bogged
+[07:46:27] [Server thread/INFO]: OmHackz was shot by Bogged
+[07:46:30] [Server thread/WARN]: Unexpected exception while parsing console command "gamemode 1 @a"
+org.bukkit.command.CommandException: Unhandled exception executing 'gamemode 1 @a' in fun.lewisdev.deluxehub.libs.commandframework.bukkit.util.DynamicPluginCommand(gamemode)
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:168) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.dispatchCommand(CraftServer.java:1004) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at org.bukkit.craftbukkit.CraftServer.dispatchServerCommand(CraftServer.java:989) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.dedicated.DedicatedServer.handleConsoleInputs(DedicatedServer.java:436) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.dedicated.DedicatedServer.tickConnection(DedicatedServer.java:386) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1736) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1527) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1249) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:308) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+Caused by: java.lang.IllegalStateException: The plugin classloader for DeluxeHub has thrown a zip file error.
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:217) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:557) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:169) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:164) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490) ~[?:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.scopeMatches(CommandsManager.java:657) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.executeMethod(CommandsManager.java:525) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.executeMethod(CommandsManager.java:475) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.execute(CommandsManager.java:451) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.command.CommandManager.execute(CommandManager.java:52) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.DeluxeHubPlugin.onCommand(DeluxeHubPlugin.java:136) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.bukkit.util.DynamicPluginCommand.execute(DynamicPluginCommand.java:55) ~[DeluxeHub-3.5.1.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:158) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
 	... 9 more
-Caused by: java.util.zip.ZipException: zip END header not found
-	at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1362) ~[jdk.zipfs:?]
-	at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1571) ~[jdk.zipfs:?]
-	at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:215) ~[jdk.zipfs:?]
-	at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:122) ~[jdk.zipfs:?]
-	at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117) ~[jdk.zipfs:?]
-	at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:507) ~[?:?]
-	at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:421) ~[?:?]
-	at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-	at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
-	at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+Caused by: java.lang.IllegalStateException: zip file closed
+	at java.base/java.util.zip.ZipFile.ensureOpen(ZipFile.java:826) ~[?:?]
+	at java.base/java.util.zip.ZipFile.getEntry(ZipFile.java:290) ~[?:?]
+	at java.base/java.util.jar.JarFile.getEntry(JarFile.java:505) ~[?:?]
+	at java.base/java.util.jar.JarFile.getJarEntry(JarFile.java:460) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:212) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:557) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:169) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:164) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490) ~[?:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.scopeMatches(CommandsManager.java:657) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.executeMethod(CommandsManager.java:525) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.executeMethod(CommandsManager.java:475) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.minecraft.util.commands.CommandsManager.execute(CommandsManager.java:451) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.command.CommandManager.execute(CommandManager.java:52) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.DeluxeHubPlugin.onCommand(DeluxeHubPlugin.java:136) ~[DeluxeHub-3.5.1.jar:?]
+	at DeluxeHub-3.5.1.jar/fun.lewisdev.deluxehub.libs.commandframework.bukkit.util.DynamicPluginCommand.execute(DynamicPluginCommand.java:55) ~[DeluxeHub-3.5.1.jar:?]
+	at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:158) ~[paper-api-1.21.5-R0.1-SNAPSHOT.jar:?]
 	... 9 more
-[05:06:56] [ServerMain/INFO]: [PluginInitializerManager] Initialized 2 plugins
-[05:06:56] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (2):
- - Vault (1.7.3-b131), playit-gg (0.1.4)
-[05:07:00] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[05:07:02] [ServerMain/INFO]: Loaded 1373 recipes
-[05:07:02] [ServerMain/INFO]: Loaded 1484 advancements
-[05:07:02] [Server thread/INFO]: Starting minecraft server version 1.21.5
-[05:07:02] [Server thread/INFO]: Loading properties
-[05:07:02] [Server thread/INFO]: This server is running Paper version 1.21.5-114-ver/1.21.5@a1b3058 (2025-06-18T10:59:02Z) (Implementing API version 1.21.5-R0.1-SNAPSHOT)
-[05:07:02] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[05:07:02] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[05:07:02] [Server thread/INFO]: Using 4 threads for Netty based IO
-[05:07:03] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
-[05:07:03] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
-[05:07:03] [Server thread/INFO]: Default game type: SURVIVAL
-[05:07:03] [Server thread/INFO]: Generating keypair
-[05:07:03] [Server thread/INFO]: Starting Minecraft server on *:25565
-[05:07:03] [Server thread/INFO]: Using epoll channel type
-[05:07:03] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[05:07:03] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
-[05:07:03] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
-[05:07:03] [Server thread/INFO]: [playit-gg] Loading server plugin playit-gg v0.1.4
-[05:07:03] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[05:07:03] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
-[05:07:03] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
-[05:07:03] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
-[05:07:03] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[05:07:03] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[05:07:03] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[05:07:03] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[05:07:03] [Server thread/INFO]: Preparing level "world"
-[05:07:04] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[05:07:04] [Server thread/INFO]: Time elapsed: 5 ms
-[05:07:04] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[05:07:04] [Server thread/INFO]: Time elapsed: 0 ms
-[05:07:04] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[05:07:04] [Server thread/INFO]: Time elapsed: 1 ms
-[05:07:04] [Server thread/INFO]: [playit-gg] Enabling playit-gg v0.1.4
-[05:07:04] [Thread-6/INFO]: [gg.playit.minecraft.PlayitKeysSetup] secret key found, checking
-[05:07:04] [Thread-6/INFO]: [gg.playit.minecraft.PlayitKeysSetup] check secret
-[05:07:04] [Server thread/INFO]: [spark] Starting background profiler...
-[05:07:05] [Server thread/INFO]: Done preparing level "world" (1.218s)
-[05:07:05] [Server thread/INFO]: Running delayed init tasks
-[05:07:05] [Server thread/INFO]: Done (11.125s)! For help, type "help"
-[05:07:05] [Craft Scheduler Thread - 3 - Vault/INFO]: [Vault] Checking for Updates ... 
-[05:07:05] [Craft Scheduler Thread - 3 - Vault/INFO]: [Vault] No new version available
-[05:07:06] [Thread-6/INFO]: [gg.playit.minecraft.PlayitKeysSetup] found minecraft java tunnel: hospital-montgomery.gl.joinmc.link
-[05:07:06] [Thread-6/INFO]: [gg.playit.minecraft.PlayitManager] keys and tunnel setup
-[05:07:06] [Thread-6/INFO]: playit.gg: tunnel setup
-[05:07:06] [Thread-6/INFO]: playit.gg: hospital-montgomery.gl.joinmc.link
-[05:07:06] [Thread-6/WARN]: [gg.playit.control.ChannelSetup] Got IO error working with :control.playit.gg/2602:fbaf:850:17:0:0:0:1, error : java.net.SocketException: Network is unreachable
-[05:07:07] [Thread-6/INFO]: [gg.playit.control.ChannelSetup] request queued, waiting 1 second before resend
-[05:07:17] [Thread-6/INFO]: [gg.playit.minecraft.PlayitManager] got new client: NewClient{connectAddr=147.185.221.24:25019, peerAddr=112.79.29.19:5732, claimAddress=69.9.191.2:42760, claimToken=[44, 0, 112, -109, -71, -35, 24, 97, -69, 112, 79, 29, 19, 22, 100, -61, 9, 38, 25, -89, 8, 105, 62, 70, 5, 0, 0, 0, 0, 0, 27, -115, 11, 0, 0, 0, 0, 0, 82, 77, -114, 0, 0, 0, 0, 0, 43, 25, -37, -53, -16, -89, 8, 0, 0, 0, 0, 28, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 42, 41, 0, -126, 6, 34, 104, 111, 115, 112, 105, 116, 97, 108, 45, 109, 111, 110, 116, 103, 111, 109, 101, 114, 121, 46, 103, 108, 46, 106, 111, 105, 110, 109, 99, 46, 108, 105, 110, 107, 99, -35, 1, -98, 81, -53, 12, -92, -55, -99, 34, 107, 4, 56, 75, 50, 101, -121, 36], tunnelServerId=1, dataCenterId=28}
-[05:07:17] [Thread-6/INFO]: [gg.playit.minecraft.PlayitManager] starting tcp tunnel for client
-[05:07:17] [Thread-6/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] start connection to /69.9.191.2:42760 to claim client
-[05:07:17] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connected to tunnel server, sending claim token
-[05:07:17] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] claim token sent
-[05:07:17] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connection to tunnel server has been established
-[05:07:17] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] Reflect: ReflectionHelper{ServerConnection=class net.minecraft.server.network.ServerConnectionListener, LegacyPingHandler=class net.minecraft.server.network.LegacyQueryHandler, MinecraftServer=class net.minecraft.server.MinecraftServer, PacketSplitter=class net.minecraft.network.Varint21FrameDecoder, PacketDecoder=class net.minecraft.network.PacketDecoder, EnumProtocolDirection=class net.minecraft.network.protocol.PacketFlow, PacketPrepender=class net.minecraft.network.Varint21LengthFieldPrepender, PacketEncoder=class net.minecraft.network.PacketEncoder, NetworkManagerServer=class net.minecraft.network.RateKickingConnection, NetworkManager=class net.minecraft.network.Connection, HandshakeListener=class net.minecraft.server.network.ServerHandshakePacketListenerImpl, PacketListener=interface net.minecraft.network.PacketListener, CraftServer=class org.bukkit.craftbukkit.CraftServer}
-[05:07:17] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] legacyPingHandler is null
-[05:07:17] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connecting to minecraft server at localhost/127.0.0.1:25565
-[05:07:17] [nioEventLoopGroup-2-2/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connected to local minecraft server
-[05:07:21] [Thread-6/INFO]: [gg.playit.minecraft.PlayitManager] got new client: NewClient{connectAddr=147.185.221.24:25019, peerAddr=112.79.29.19:5747, claimAddress=69.9.191.2:42760, claimToken=[44, 0, 111, -109, -71, -35, 24, 97, -69, 112, 79, 29, 19, 22, 115, -119, 87, 20, 46, -89, 8, 105, 62, 70, 9, 0, 0, 0, 0, 0, 27, -115, 11, 0, 0, 0, 0, 0, 82, 77, -114, 0, 0, 0, 0, 0, 43, 25, -37, 72, 6, -89, 8, 0, 0, 0, 0, 28, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 41, 40, 0, -126, 6, 33, 104, 111, 115, 112, 105, 116, 97, 108, 45, 109, 111, 110, 116, 103, 111, 109, 101, 114, 121, 46, 103, 108, 46, 97, 116, 46, 112, 108, 121, 46, 103, 103, 46, 97, -69, 2, -125, -49, 113, -83, 120, 45, 14, 15, 61, -123, -30, -49, 64, 24, 61, 123], tunnelServerId=1, dataCenterId=28}
-[05:07:21] [Thread-6/INFO]: [gg.playit.minecraft.PlayitManager] starting tcp tunnel for client
-[05:07:21] [Thread-6/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] start connection to /69.9.191.2:42760 to claim client
-[05:07:21] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connected to tunnel server, sending claim token
-[05:07:21] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] claim token sent
-[05:07:21] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connection to tunnel server has been established
-[05:07:21] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] Reflect: ReflectionHelper{ServerConnection=class net.minecraft.server.network.ServerConnectionListener, LegacyPingHandler=class net.minecraft.server.network.LegacyQueryHandler, MinecraftServer=class net.minecraft.server.MinecraftServer, PacketSplitter=class net.minecraft.network.Varint21FrameDecoder, PacketDecoder=class net.minecraft.network.PacketDecoder, EnumProtocolDirection=class net.minecraft.network.protocol.PacketFlow, PacketPrepender=class net.minecraft.network.Varint21LengthFieldPrepender, PacketEncoder=class net.minecraft.network.PacketEncoder, NetworkManagerServer=class net.minecraft.network.RateKickingConnection, NetworkManager=class net.minecraft.network.Connection, HandshakeListener=class net.minecraft.server.network.ServerHandshakePacketListenerImpl, PacketListener=interface net.minecraft.network.PacketListener, CraftServer=class org.bukkit.craftbukkit.CraftServer}
-[05:07:21] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] legacyPingHandler is null
-[05:07:21] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connecting to minecraft server at localhost/127.0.0.1:25565
-[05:07:21] [nioEventLoopGroup-2-4/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connected to local minecraft server
-[05:07:22] [User Authenticator #0/INFO]: UUID of player OmHackz is 93a5bf97-e66a-3f0f-893a-c928d492afdb
-[05:07:27] [Server thread/INFO]: OmHackz joined the game
-[05:07:27] [Server thread/INFO]: OmHackz[/127.0.0.1:49096] logged in with entity id 1 at ([world]230.10240473235947, 261.6576713631159, -428.3802602404696)
-[05:07:34] [Server thread/INFO]: OmHackz issued server command: /pl
-[05:11:08] [Thread-6/INFO]: [gg.playit.control.ChannelSetup] send keep alive
-[05:11:21] [Thread-6/INFO]: [gg.playit.control.ChannelSetup] send keep alive
-[05:11:22] [Server thread/INFO]: Stopping server
-[05:11:22] [Server thread/INFO]: [playit-gg] Disabling playit-gg v0.1.4
-[05:11:22] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
-[05:11:22] [Server thread/INFO]: Saving players
-[05:11:22] [Server thread/INFO]: OmHackz lost connection: Server closed
-[05:11:22] [Server thread/INFO]: OmHackz left the game
-[05:11:22] [Server thread/INFO]: Saving worlds
-[05:11:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[05:11:22] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[05:11:22] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[05:11:22] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[05:11:22] [nioEventLoopGroup-2-4/WARN]: [gg.playit.minecraft.PlayitTcpTunnel] failed to send data to minecraft server
-[05:11:22] [Server thread/INFO]: [ChunkHolderManager] Saved 778 block chunks, 778 entity chunks, 0 poi chunks in world 'world' in 0.72s
-[05:11:22] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
-[05:11:22] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
-[05:11:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[05:11:22] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[05:11:22] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[05:11:22] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[05:11:22] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
-[05:11:22] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
-[05:11:22] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
-[05:11:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[05:11:22] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[05:11:22] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[05:11:22] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[05:11:22] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
-[05:11:22] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
-[05:11:22] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
-[05:11:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[05:11:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[05:11:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[05:11:22] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[05:11:22] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
-[05:11:22] [Server thread/INFO]: All RegionFile I/O tasks to complete
-[05:11:22] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
-[05:11:22] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+[07:46:33] [Server thread/INFO]: OmHackz was shot by Bogged
+[07:46:40] [Server thread/INFO]: OmHackz was shot by Bogged
+[07:46:47] [Server thread/INFO]: OmHackz was shot by Skeleton
+[07:47:08] [Server thread/INFO]: OmHackz was slain by Spider
+[07:47:22] [Server thread/INFO]: OmHackz was shot by Skeleton
+[07:47:30] [Thread-16/INFO]: [gg.playit.minecraft.PlayitManager] got new client: NewClient{connectAddr=147.185.221.24:25019, peerAddr=112.79.28.205:3031, claimAddress=69.9.191.2:42760, claimToken=[44, 0, 112, -109, -71, -35, 24, 97, -69, 112, 79, 28, -51, 11, -41, 69, -35, -103, 53, -89, 8, 105, 62, 107, -110, 0, 0, 0, 0, 0, 27, -115, 11, 0, 0, 0, 0, 0, 82, 77, -114, 0, 0, 0, 0, 0, 43, 25, -37, 116, 12, -89, 8, 0, 0, 0, 0, 28, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 42, 41, 0, -126, 6, 34, 104, 111, 115, 112, 105, 116, 97, 108, 45, 109, 111, 110, 116, 103, 111, 109, 101, 114, 121, 46, 103, 108, 46, 106, 111, 105, 110, 109, 99, 46, 108, 105, 110, 107, 99, -35, 1, 111, -126, 38, 34, -111, 112, -59, 77, -70, -26, 46, 17, 94, 95, 32, -78], tunnelServerId=1, dataCenterId=28}
+[07:47:30] [Thread-16/INFO]: [gg.playit.minecraft.PlayitManager] starting tcp tunnel for client
+[07:47:30] [Thread-16/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] start connection to /69.9.191.2:42760 to claim client
+[07:47:30] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connected to tunnel server, sending claim token
+[07:47:30] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] claim token sent
+[07:47:30] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connection to tunnel server has been established
+[07:47:30] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] Reflect: ReflectionHelper{ServerConnection=class net.minecraft.server.network.ServerConnectionListener, LegacyPingHandler=class net.minecraft.server.network.LegacyQueryHandler, MinecraftServer=class net.minecraft.server.MinecraftServer, PacketSplitter=class net.minecraft.network.Varint21FrameDecoder, PacketDecoder=class net.minecraft.network.PacketDecoder, EnumProtocolDirection=class net.minecraft.network.protocol.PacketFlow, PacketPrepender=class net.minecraft.network.Varint21LengthFieldPrepender, PacketEncoder=class net.minecraft.network.PacketEncoder, NetworkManagerServer=class net.minecraft.network.RateKickingConnection, NetworkManager=class net.minecraft.network.Connection, HandshakeListener=class net.minecraft.server.network.ServerHandshakePacketListenerImpl, PacketListener=interface net.minecraft.network.PacketListener, CraftServer=class org.bukkit.craftbukkit.CraftServer}
+[07:47:30] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] legacyPingHandler is null
+[07:47:30] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connecting to minecraft server at localhost/127.0.0.1:25565
+[07:47:30] [nioEventLoopGroup-2-4/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connected to local minecraft server
+[07:47:36] [Server thread/INFO]: OmHackz was slain by Zombie
+[07:47:37] [Server thread/INFO]: Stopping server
+[07:47:37] [Server thread/INFO]: [BetterTeams] Disabling BetterTeams v4.15.2
+[07:47:37] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.21.1
+[07:47:37] [Server thread/INFO]: [DonutHome] Disabling DonutHome v4
+[07:47:37] [Server thread/INFO]: [TAB] Disabling TAB v5.4.0
+[07:47:37] [Server thread/INFO]: [TAB] Disabled in 2ms
+[07:47:37] [Server thread/INFO]: [playit-gg] Disabling playit-gg v0.1.4
+[07:47:37] [Server thread/INFO]: [DonutBaltop] Disabling DonutBaltop v4
+[07:47:37] [Server thread/INFO]: [BetterRTP] Disabling BetterRTP v3.4.2-1
+[07:47:37] [Server thread/INFO]: [PhoenixCratesLite] Disabling PhoenixCratesLite v4.3.4
+[07:47:37] [Server thread/INFO]: [Shop] Disabling Shop v8
+[07:47:37] [Server thread/INFO]: [Stats] Disabling Stats v2
+[07:47:37] [Server thread/INFO]: [EssentialsSpawn] Disabling EssentialsSpawn v2.21.1
+[07:47:37] [Server thread/INFO]: [Multiverse-Portals] Disabling Multiverse-Portals v5.1.1
+[07:47:37] [Server thread/INFO]: [SmartSpawner] Disabling SmartSpawner v1.5.7.1
+[07:47:37] [Server thread/INFO]: [SmartSpawner] SmartSpawner has been disabled!
+[07:47:37] [Server thread/INFO]: [Multiverse-Inventories] Disabling Multiverse-Inventories v5.2.2
+[07:47:37] [Server thread/INFO]: [AuctionHouse] Disabling AuctionHouse v11
+[07:47:37] [Server thread/INFO]: [ServersNPC] Disabling ServersNPC v5.2
+[07:47:37] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.9.1
+[07:47:37] [Server thread/INFO]: [Essentials] Disabling Essentials v2.21.1
+[07:47:37] [Server thread/INFO]: [Vault] [Economy] Essentials Economy unhooked.
+[07:47:37] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v7.0.14+2339-43997ec
+[07:47:37] [Server thread/INFO]: [WorldGuard] Shutting down executor and cancelling any pending tasks...
+[07:47:37] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.6.0
+[07:47:37] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.17+7262-c7fbe08
+[07:47:37] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[07:47:37] [Server thread/INFO]: [Multiverse-Core] Disabling Multiverse-Core v5.3.4
+[07:47:37] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
+[07:47:37] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.5.17
+[07:47:37] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[07:47:37] [Server thread/INFO]: [LuckPerms] Closing storage...
+[07:47:37] [Server thread/INFO]: [LuckPerms] Goodbye!
+[07:47:37] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.6.0
+[07:47:37] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[07:47:37] [Server thread/INFO]: Saving players
+[07:47:37] [Server thread/INFO]: OmHackz lost connection: Server closed
+[07:47:37] [Server thread/INFO]: OmHackz left the game
+[07:47:37] [Server thread/INFO]: Saving worlds
+[07:47:37] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[07:47:37] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[07:47:37] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[07:47:37] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[07:47:38] [Server thread/INFO]: [ChunkHolderManager] Saved 1069 block chunks, 934 entity chunks, 0 poi chunks in world 'world' in 0.49s
+[07:47:38] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[07:47:38] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[07:47:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[07:47:38] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[07:47:38] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[07:47:38] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[07:47:38] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
+[07:47:38] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[07:47:38] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[07:47:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[07:47:38] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[07:47:38] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[07:47:38] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[07:47:38] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.15s
+[07:47:38] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[07:47:38] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[07:47:38] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[07:47:38] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[07:47:38] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[07:47:38] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[07:47:38] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
+[07:47:38] [Server thread/INFO]: All RegionFile I/O tasks to complete
+[07:47:38] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[07:47:38] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

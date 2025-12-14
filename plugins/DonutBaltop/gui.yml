@@ -1,0 +1,60 @@
+slots:
+  prev-page: 47
+  refresh: 49
+  next-page: 51
+  player-info: 48
+  sort: 50
+items:
+  title: '&8Baltop (%page%/%maxpage%)'
+  player-item:
+    material: 'PLAYER_HEAD'
+    name: '&#54FC54#%position% &f%player_name%'
+    lore:
+      - ''
+      - '&#FCFF00● &fBalance: &#A9FF00%balance%'
+      - '&#FCFF00● &fRank: &#A9FF00#%position%'
+      - ''
+  previous-page:
+    material: 'ARROW'
+    name: '&#FF0000&lPREVIOUS PAGE'
+    lore:
+      - ''
+      - '&fClick to go to previous page'
+      - ''
+  next-page:
+    material: 'ARROW'
+    name: '&#94FF00&lNEXT PAGE'
+    lore:
+      - ''
+      - '&fClick to go to next page'
+      - ''
+  player-info:
+    material: 'PLAYER_HEAD'
+    name: '&fYour Stats'
+    lore:
+      - ''
+      - '&#FCFF00● &fYour Balance: &#A9FF00%balance%'
+      - '&#FCFF00● &fYour Rank: &#A9FF00#%rank%'
+      - '&#FCFF00● &fTotal Players: &#A9FF00%total_players%'
+      - ''
+      - '&cYou are not ranked yet.'
+  refresh:
+    material: 'EMERALD'
+    name: '&#FCFF00&lREFRESH'
+    lore:
+      - ''
+      - '&bUsage:'
+      - '&fClick to refresh'
+      - ''
+  sort:
+    material: 'HOPPER'
+    name: '&#FCFF00&lSort'
+    sort-lore:
+      top-top-divider: ''
+      richest-active: '&#A9FF00● Richest First'
+      richest-inactive: '&7● Richest First'
+      poorest-active: '&#FC5454● Poorest First'
+      poorest-inactive: '&7● Poorest First'
+      divider-top: ''
+      click-to-switch: '&fClick to Switch'
+      divider-bottom: ''

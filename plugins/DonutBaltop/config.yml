@@ -1,0 +1,42 @@
+disabled: false
+update:
+  on-startup: true
+  startup-delay: 5 
+  on-command: true
+update-interval: 0
+entries-per-page: 45
+limit: -1
+include-zero-balance: false
+default-sort: "HIGHEST"
+update-title-on-page-change: true
+sounds:
+  enabled: true
+  gui:
+    open: "BLOCK_CHEST_OPEN:1.0:1.0"
+  navigation: "UI_BUTTON_CLICK:0.8:1.2"
+  action: "ENTITY_EXPERIENCE_ORB_PICKUP:1.0:1.0"
+  click: "UI_BUTTON_CLICK:0.5:1.0"
+  error: "ENTITY_VILLAGER_NO:1.0:1.0"
+  command:
+    gui: "BLOCK_CHEST_OPEN:1.0:1.0"
+    help: "ENTITY_EXPERIENCE_ORB_PICKUP:1.0:1.0"
+    reload: "ENTITY_PLAYER_LEVELUP:1.0:1.0"
+    update: "ENTITY_EXPERIENCE_ORB_PICKUP:1.0:1.0"
+    error: "ENTITY_VILLAGER_NO:1.0:1.0"
+colors:
+  primary: "&9" 
+  secondary: "&7"   
+  highlight: "#54fc54" 
+  warning: "#fc5454"   
+  info: "&b"        
+  success: "&a"     
+  error: "&c"       
+  border: "&8"      
+use-texture-cache: true       
+player-head-cache-size: 500  
+player-head-cache-time: 10
+money-provider:
+  vault: true
+  playerpoints: false
+  coinsengine: false
+  currency: "shards"

@@ -1,0 +1,29 @@
+enabled: false # true to enable webhook
+url: "discord webhook here"
+username: "AuctionHouse"
+avatar-url: "avatar url here"
+events:
+  item-listed: true
+  item-bought: true
+message:
+  listing-color: 5814783
+  purchase-color: 16755200
+  embed-title-listing: "New Auction Listing"
+  embed-title-purchase: "Item Purchased"
+  webhook-sell:
+    - "Seller: %seller%"
+    - "Item: %amount%%item%"
+    - "Price: %price%"
+    - "Description: %lore%"
+    - ""
+    - "Happy trading!"
+  webhook-buy:
+    - "Buyer: %buyer%"
+    - "Item: %amount%%item%"
+    - "Price: %price%"
+    - "Description: %lore%"
+    - ""
+    - "Thank you for your purchase!"
+  item-format:
+    show-item-name-uppercase: true
+    show-item-lore: true

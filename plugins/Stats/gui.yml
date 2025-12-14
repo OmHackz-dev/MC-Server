@@ -1,0 +1,40 @@
+gui:
+  rows: 3
+  title: "&8ᴍʏ sᴛᴀᴛs"
+  title-other: "&8sᴛᴀᴛs %player_name%"
+items:
+  '10':
+    material: EMERALD
+    name: "&7Money"
+    lore:
+      - "&fᴍᴏɴᴇʏ: %vault_eco_balance_formatted%"
+  '11':
+    material: DIAMOND_SWORD
+    name: "&7ᴋɪʟʟꜱ "
+    lore:
+      - "&fᴋɪʟʟꜱ: %statistic_player_kills%"
+  '12':
+    material: SKELETON_SKULL
+    name: "&7ᴅᴇᴀᴛʜs "
+    lore:
+      - "&fᴅᴇᴀᴛʜs: %statistic_deaths%"
+  '13':
+    material: CLOCK
+    name: "&7ᴘʟᴀʏᴛɪᴍᴇ "
+    lore:
+      - "&fᴘʟᴀʏᴛɪᴍᴇ: %statistic_time_played:days%d %statistic_time_played:hours%h"
+  '14':
+    material: ZOMBIE_HEAD
+    name: "&7ᴍᴏʙ ᴋɪʟʟꜱ "
+    lore:
+      - "&fᴍᴏʙ ᴋɪʟʟꜱ: %statistic_mob_kills%"
+  '15':
+    material: WHITE_BANNER
+    name: "&7ᴛᴇᴀᴍ"
+    lore:
+      - "&fᴛᴇᴀᴍ: &b%team_name%"
+  '16':
+    material: COBBLESTONE
+    name: "&7ʙʟᴏᴄᴋꜱ ʙʀᴏᴋᴇɴ"
+    lore:
+      - "&fʙʟᴏᴄᴋꜱ ʙʀᴏᴋᴇɴ: %statistic_mine_block%"

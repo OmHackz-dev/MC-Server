@@ -1,0 +1,6 @@
+messages:
+  prefix: ""
+  no-permission: "&cYou don't have permission to do that."
+  reload: "&aConfig reloaded successfully!"
+  player-not-found: "&cPlayer %player% not found or offline."
+  console-error: "&cThis command can only be used by players." 
