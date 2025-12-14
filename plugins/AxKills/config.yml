@@ -1,0 +1,64 @@
+# The plugin will only work if the showDeathMessages gamerule is set to true
+#
+# Builtin placeholders:
+#  %victim%
+#
+# These only work in the KILLED message:
+#  %attacker%
+#  %item% - It's recommended to install InteractiveChat
+#
+# Also in the KILLED message you can parse placeholders as the killer like this:
+# normal: %statistic_player_kills%
+# parsed as attacker: %[ATTACKER]statistic_player_kills%
+#
+# To remove a death message set the text to an empty string: ""
+
+# list of all the valid death causes: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html
+# note: the plugin already auto generates them when the server starts
+death-messages:
+  KILLED: '&#33ff33%victim% &fwas &#FFCC00killed &fby &#FF3333%attacker% &fusing &#00FFFF%item%'
+  FALL: '&#33ff33%victim% &#FFCC00fell down &ffrom a high place!'
+  VOID: '&#33ff33%victim% &ffell in the &#FFCC00void&f!'
+  LAVA: '&#33ff33%victim% &fgot burnt by &#FFCC00lava&f!'
+  DROWNING: '&#33ff33%victim% &fwent underwater for too long and &#FFCC00drowned&f!'
+  KILL: '&#33ff33%victim% &fdied!'
+  WORLD_BORDER: '&#33ff33%victim% &fdied!'
+  CONTACT: '&#33ff33%victim% &fdied!'
+  ENTITY_ATTACK: '&#33ff33%victim% &fdied!'
+  ENTITY_SWEEP_ATTACK: '&#33ff33%victim% &fdied!'
+  PROJECTILE: '&#33ff33%victim% &fdied!'
+  SUFFOCATION: '&#33ff33%victim% &fdied!'
+  FIRE: '&#33ff33%victim% &fdied!'
+  FIRE_TICK: '&#33ff33%victim% &fdied!'
+  MELTING: '&#33ff33%victim% &fdied!'
+  BLOCK_EXPLOSION: '&#33ff33%victim% &fdied!'
+  ENTITY_EXPLOSION: '&#33ff33%victim% &fdied!'
+  LIGHTNING: '&#33ff33%victim% &fdied!'
+  SUICIDE: '&#33ff33%victim% &fdied!'
+  STARVATION: '&#33ff33%victim% &fdied!'
+  POISON: '&#33ff33%victim% &fdied!'
+  MAGIC: '&#33ff33%victim% &fdied!'
+  WITHER: '&#33ff33%victim% &fdied!'
+  FALLING_BLOCK: '&#33ff33%victim% &fdied!'
+  THORNS: '&#33ff33%victim% &fdied!'
+  DRAGON_BREATH: '&#33ff33%victim% &fdied!'
+  FLY_INTO_WALL: '&#33ff33%victim% &fdied!'
+  HOT_FLOOR: '&#33ff33%victim% &fdied!'
+  CAMPFIRE: '&#33ff33%victim% &fdied!'
+  CRAMMING: '&#33ff33%victim% &fdied!'
+  DRYOUT: '&#33ff33%victim% &fdied!'
+  FREEZE: '&#33ff33%victim% &fdied!'
+  SONIC_BOOM: '&#33ff33%victim% &fdied!'
+  CUSTOM: '&#33ff33%victim% &fdied!'
+
+prefix: '&#EE3333&lAxKills&r &7» '
+reload: '&#33FF33Successfully reloaded the plugin!'
+
+item-format: '%item%'
+empty-hand-text: air
+
+errors:
+  no-permission: '&#FF3333You don''t have a permission to use this!'
+
+# do not change this
+version: 3

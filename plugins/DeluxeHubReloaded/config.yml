@@ -177,8 +177,8 @@ world_settings:
   disable_death_message: true
   disable_mob_spawning: true
   # Item entities
-  disable_item_drop: true
-  disable_item_pickup: true
+  disable_item_drop: false
+  disable_item_pickup: false
   # Blocks
   disable_block_break: false
   disable_block_place: false

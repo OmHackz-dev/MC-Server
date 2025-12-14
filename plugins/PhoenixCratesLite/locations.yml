@@ -1,1 +1,5 @@
-locations: {}
+locations:
+  votecrate:
+  - world;224;259;-388;NORTH
+  spawnercrt:
+  - world;216;259;-386;NORTH

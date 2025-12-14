@@ -1,0 +1,7 @@
+enabled: true
+identifier: spawnerkey
+virtual: true
+glow: true
+item:
+  material: custom:black_candle
+  display-name: '&f&lSpawner &e&lKey'

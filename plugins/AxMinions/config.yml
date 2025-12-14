@@ -1,0 +1,137 @@
+# How often should the plugin save all minions?
+# The plugin saves changes live, this is only for updating minion stats in the database.
+# For this change to take effect, you need to restart your server!
+auto-save-minutes: 3
+
+# How far the storage chest can be from the minion
+max-linking-distance: 30
+
+# If players need to have 'axminions.place.<minion>' permission
+# to be able to place this minion
+place-permissions: false
+
+# The default amount of minions a player can have.
+# This setting can be overwritten by setting the 'axminions.limit.<amount>' permission!
+default-minion-limit: 5
+
+# If true, only the owner of this minion can break it
+# If false, everyone, who can break blocks at said location can break this minion
+# You should enable this, if you aren't using a supported protection plugin!
+only-owner-break: true
+
+# If true, only the owner of this minion can open it's GUI
+# If false, everyone, who can break blocks at said location can open the GUI of this minion
+# You should enable this, if you aren't using a supported protection plugin!
+only-owner-gui: true
+
+# Should minions show holograms if they have an issue?
+# (They won't complain about not having a girlfriend, though!)
+# You can configure these messages in the messages.yml
+display-warnings: true
+
+# If set to true, the minion will not break the tool, it will just stay at 1 durability (and the minion will be stopped)
+# If set to false, the minion can break the tool
+can-break-tools: true
+
+# The limit to use for islands
+island-limit: 10
+
+# If the minion should be able to take durability from it's held item
+use-durability: true
+
+# If the minion should pull new tools from the chest it's connected to
+pull-tools-from-chest: false
+
+# If the minion should work when the owner is offline (only if the chunk is loaded)
+work-when-owner-offline: true
+
+# The maximum amount of blocks a single lumber minion may break at a time
+max-breaks-per-tick: 200
+
+# What type of message we should send when the upgrade fails
+# due to insufficient funds
+# Possible options: chat, title, subtitle, actionbar
+upgrade-fail: chat
+
+# The sound played when you upgrade a minion
+# set to "" to disable!
+# For a list of sounds visit: https://jd.papermc.io/paper/1.20/org/bukkit/Sound.html
+upgrade-sound: ENTITY_PLAYER_LEVELUP
+
+database:
+  # Can be H2 (SqLite support is planned)
+  type: H2
+
+hooks:
+  # Supported stacker plugins: WildStacker, RoseStacker, none
+  stacker: none
+  # Supported economy providers: Vault, PlayerPoints, custom
+  economy: Vault
+  # Supported prices providers: ShopGUIPlus, Essentials, EconomyShopGUI, CMI, custom
+  prices: ShopGUIPlus
+
+charge:
+  enabled: false
+  amount: 1800 # in seconds
+  max-charge: 1440 # in minutes
+  price: 10000
+  minimum-charge: 30 # in seconds
+  items:
+    '1':
+      type: coal
+      name: <red>Fuel
+      charge: 1000 # In seconds
+
+# 1 - HH:MM:SS, for example 01:25:35
+# 2 - short format, for example 20m
+# 3 - text format, for example 01h 25m 35s
+timer-format: 1
+
+gui:
+  size: 27
+  items:
+    filler:
+      type: black_stained_glass_pane
+      name: ''
+    rotate:
+      type: ender_eye
+      name: <#33FF33><b>Rotate
+      lore:
+      - ''
+      - ' <gray>- <white>Current: <#33FF33><direction>'
+      - ''
+      - <#33FF33><b>(!)</b> Click here to rotate your minion!
+      slot: 10
+    link:
+      type: chest
+      name: <#FFCC00><b>Link to container
+      lore:
+      - ''
+      - ' <gray>- <white>Status: <#FFCC00><linked>'
+      - ''
+      - <#FFCC00><b>(!)</b> Click here to link your minion to a container!
+      slot: 11
+    item:
+      type: air
+      slot: 13
+    charge:
+      type: lava_bucket
+      name: <#FB8E08><b>Charge
+      lore:
+      - ''
+      - ' <gray>- <white>Current charge: <#FFCC00><charge>'
+      - ''
+      - <#FB8E08><b>(!)</b> Click here to charge your minion for <white>30 minutes</white>!
+      slot: 9
+    
+    # These settings are minion-specific, you can edit them in each minion's file!
+    upgrade:
+      slot: 15
+    statistics:
+      slot: 16
+# Only change this, if you are asked to! This will make your performance worse, and will spam messages in your console!
+# Requires restart!
+debug: false
+
+# Do not change!
+config-version: 10

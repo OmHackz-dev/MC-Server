@@ -1,0 +1,84 @@
+prefix: '<gradient:#00aaff:#00ccff>AxMinions</gradient> <gray>»</gray> '
+
+reload: <green>Plugin successfully reloaded in <white><time></white>ms!
+
+place:
+  success: <green>Successfully placed a new <type> minion! <gray>(<placed>/<max>) # There also is island-placed and island-max for island limits
+  limit-reached: <red>Could not place minion! You have reached the limit! <gray>(<placed>/<max>)
+  minion-at-location: <red>Could not place minion! There already is a minion at that location!
+  missing-permission: <red>You do not have the required permissions to place this minion!
+  island-limit-reached: <red>You have reached the island limit for minions! <gray>(<placed>/<max>)
+
+pickup:
+  success: <green>Successfully picked up a minion! <gray>(<placed>/<max>)
+
+errors:
+  inventory-full: <red>You don't have enough space in your inventory to do this! Go, and make some space!
+
+convert:
+  start: '<green>Starting data conversion... '
+  finish: <green>Successfully finished data conversion!
+
+warnings:
+  no-container: <#FF3333>⚠ <#FFAAAA>You must link the minion to a container </#FFAAAA>⚠
+  no-tool: <#FF3333>⚠ <#FFAAAA>The minion needs a tool </#FFAAAA>⚠
+  no-water-nearby: <#FF3333>⚠ <#FFAAAA>The minion needs water nearby </#FFAAAA>⚠
+  container-full: <#FF3333>⚠ <#FFAAAA>The container of this minion is full </#FFAAAA>⚠
+  no-charge: <#FF3333>⚠ <#FFAAAA>The minion ran out of charge! Refuel it!</#FFAAAA>⚠
+
+time:
+  day: d
+  hour: h
+  minute: m
+  second: s
+
+statistics: |
+  <white>Ticking minions: <gradient:#00aaff:#00ccff><ticking></gradient>
+  <white>Not ticking minions: <gradient:#00aaff:#00ccff><not-ticking></gradient>
+  <white>Total: <gradient:#00aaff:#00ccff><total></gradient>
+upgrades:
+  upgraded: '<green>Successfully upgraded the minion to level: <white><level></white>!'
+  limit-reached: <red>You have maxed this minion!
+  fail: <red>Your minion either doesn't have enough actions, or you don't have enough money to buy this upgrade!
+
+link:
+  success: <green>Successfully linked the minion to a container!
+  unlink: <green>You have unliked the minion.
+  fail: <red>You can't link to that block! It's either too far away, or not a container!
+  start: <green>Started linking! Click on a container!
+
+levels:
+  '1': <#33FF33>
+  '2': <#66FF00>
+  '3': <#AAFF00>
+  '4': <#FFFF00>
+  '5': <#FFCC00>
+  '6': <#FFAA00>
+  '7': <#FF8800>
+  '8': <#FF5500>
+  '9': <#FF3333>
+  '10': <#FF0000>
+
+directions:
+  north: North
+  east: East
+  south: South
+  west: West
+
+charge:
+  charge: <green>You have added <white>30 minutes</white> of charge to your minion!
+  not-enough-money: <red>You don't have enough money to charge this minion!
+  not-enough-time-passed: <red>Your minion is nearly fully charged! Wait a bit before charging it again!
+
+tools:
+  wrong-tool: <red>You can't place this item as the tool if this minion!
+
+reset: <green>You have reset <player>'s minion count!
+not-on-island: <#FF0000>You are currently not on an island!
+slot-give: <green>You have given <player> <amount> island minion slots!
+slot-receive: <green>You were given <amount> new island minion slots! (<from> -> <to>)
+
+location-format: <world>;<x>;<y>;<z>
+
+# Do not change!
+config-version: 9

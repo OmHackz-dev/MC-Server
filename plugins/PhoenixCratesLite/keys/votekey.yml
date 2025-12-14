@@ -1,0 +1,7 @@
+enabled: true
+identifier: votekey
+virtual: true
+glow: true
+item:
+  material: custom:green_candle
+  display-name: '&a&lVote &f&lKey'

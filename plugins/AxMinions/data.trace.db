@@ -1,0 +1,34 @@
+2025-12-14 11:38:30 database: close
+com.artillexstudios.axminions.libs.h2.message.DbException: (Message 90028 not found) [90028-220]
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.message.DbException.get(DbException.java:212)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.mvstore.db.Store.close(Store.java:374)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1263)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.engine.Database.closeImpl(Database.java:1225)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.engine.Database.close(Database.java:1144)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.engine.OnExitDatabaseCloser.onShutdown(OnExitDatabaseCloser.java:85)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.engine.OnExitDatabaseCloser.run(OnExitDatabaseCloser.java:114)
+Caused by: com.artillexstudios.axminions.libs.h2.jdbc.JdbcSQLNonTransientException: (Message 90028 not found) [90028-220]
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 7 more
+Caused by: com.artillexstudios.axminions.libs.h2.mvstore.MVStoreException: File corrupted in chunk 8, expected map id 0, got 36 [2.2.220/6]
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.mvstore.Page.read(Page.java:612)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.mvstore.Page.read(Page.java:262)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.mvstore.FileStore.readPage(FileStore.java:1969)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.mvstore.MVStore.readPage(MVStore.java:1022)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.mvstore.MVMap.readPage(MVMap.java:632)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.mvstore.MVMap.rewritePage(MVMap.java:682)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.mvstore.FileStore.rewriteChunks(FileStore.java:1921)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.mvstore.FileStore.compactRewrite(FileStore.java:1897)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.mvstore.FileStore.rewriteChunks(FileStore.java:1858)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.mvstore.FileStore.lambda$compact$0(FileStore.java:878)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.mvstore.MVStore.tryExecuteUnderStoreLock(MVStore.java:938)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.mvstore.FileStore.compact(FileStore.java:878)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.mvstore.RandomAccessStore.compactStore(RandomAccessStore.java:441)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.mvstore.FileStore.compactStore(FileStore.java:889)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.mvstore.FileStore.stop(FileStore.java:275)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.mvstore.MVStore.closeStore(MVStore.java:693)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.mvstore.MVStore.close(MVStore.java:643)
+	at AxMinions-1.0.17-all.jar//com.artillexstudios.axminions.libs.h2.mvstore.db.Store.close(Store.java:364)
+	... 5 more
