@@ -1,47 +1,370 @@
-[04:45:36] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[04:45:37] [ServerMain/WARN]: Missing data pack fabric
-[04:45:37] [ServerMain/WARN]: Missing data pack axiom
-[04:45:37] [ServerMain/WARN]: Missing data pack fabric-convention-tags-v2
-[04:45:38] [ServerMain/INFO]: Loaded 1175 recipes
-[04:45:38] [ServerMain/INFO]: Loaded 1276 advancements
-[04:45:39] [Server thread/INFO]: Starting minecraft server version 1.20.5
-[04:45:39] [Server thread/INFO]: Loading properties
-[04:45:39] [Server thread/INFO]: This server is running Paper version git-Paper-22 (MC: 1.20.5) (Implementing API version 1.20.5-R0.1-SNAPSHOT) (Git: 8f7ac62)
-[04:45:39] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[04:45:39] [Server thread/INFO]: Using 4 threads for Netty based IO
-[04:45:40] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
-    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
-    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[04:45:40] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
-[04:45:40] [Server thread/INFO]: Default game type: SURVIVAL
-[04:45:40] [Server thread/INFO]: Generating keypair
-[04:45:40] [Server thread/INFO]: Starting Minecraft server on *:25565
-[04:45:40] [Server thread/INFO]: Using epoll channel type
-[04:45:40] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[04:45:40] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
-[04:45:40] [Server thread/INFO]: [playit-gg] Loading server plugin playit-gg v0.1.4
-[04:45:40] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[04:45:40] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[04:45:40] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[04:45:40] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[04:45:40] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[04:45:40] [Server thread/INFO]: Preparing level "world"
-[04:45:40] [Server thread/ERROR]: [Configurations] Loading a newer configuration than is supported (31 > 30)! You may have to backup & delete the world config file to start the server.
-[04:45:41] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[04:45:41] [Server thread/INFO]: Time elapsed: 2 ms
-[04:45:41] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[04:45:41] [Server thread/INFO]: Time elapsed: 1 ms
-[04:45:41] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[04:45:41] [Server thread/INFO]: Time elapsed: 0 ms
-[04:45:41] [Server thread/INFO]: [playit-gg] Enabling playit-gg v0.1.4
-[04:45:42] [Thread-5/INFO]: [gg.playit.minecraft.PlayitKeysSetup] secret key found, checking
-[04:45:42] [Thread-5/INFO]: [gg.playit.minecraft.PlayitKeysSetup] check secret
-[04:45:43] [Server thread/INFO]: Running delayed init tasks
-[04:45:43] [Server thread/INFO]: Done (4.360s)! For help, type "help"
-[04:45:43] [Server thread/INFO]: Timings Reset
-[04:45:45] [Thread-5/INFO]: [gg.playit.minecraft.PlayitKeysSetup] found minecraft java tunnel: hospital-montgomery.gl.joinmc.link
-[04:45:45] [Thread-5/INFO]: [gg.playit.minecraft.PlayitManager] keys and tunnel setup
-[04:45:45] [Thread-5/INFO]: playit.gg: tunnel setup
-[04:45:45] [Thread-5/INFO]: playit.gg: hospital-montgomery.gl.joinmc.link
-[04:45:45] [Thread-5/WARN]: [gg.playit.control.ChannelSetup] Got IO error working with :control.playit.gg/2602:fbaf:850:17:0:0:0:1, error : java.net.SocketException: Network is unreachable
-[04:45:46] [Thread-5/INFO]: [gg.playit.control.ChannelSetup] request queued, waiting 1 second before resend
+[05:06:54] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.1+8-LTS; Microsoft Microsoft-12574222) on Linux 6.8.0-1030-azure (amd64)
+[05:06:54] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.5-114-ver/1.21.5@a1b3058 (2025-06-18T10:59:02Z) for Minecraft 1.21.5
+[05:06:55] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[05:06:55] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins/Vault.jar'...
+[05:06:55] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins/Vault.jar' in 658ms.
+[05:06:55] [ServerMain/ERROR]: [PluginRemapper] Encountered exception remapping plugins
+java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/ViaVersion.jar
+	at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.reportJoin(CompletableFuture.java:457) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.join(CompletableFuture.java:2139) ~[?:?]
+	at io.papermc.paper.pluginremap.PluginRemapper.waitForAll(PluginRemapper.java:414) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:210) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:42) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at net.minecraft.server.Main.main(Main.java:111) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at org.bukkit.craftbukkit.Main.main(Main.java:243) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+	Suppressed: java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/EssentialsXChat.jar
+		at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+		at java.base/java.util.concurrent.CompletableFuture.reportJoin(CompletableFuture.java:457) ~[?:?]
+		at java.base/java.util.concurrent.CompletableFuture.join(CompletableFuture.java:2139) ~[?:?]
+		at io.papermc.paper.pluginremap.PluginRemapper.waitForAll(PluginRemapper.java:414) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:210) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:42) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at net.minecraft.server.Main.main(Main.java:111) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at org.bukkit.craftbukkit.Main.main(Main.java:243) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+		at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+	Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/EssentialsXChat.jar
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		... 9 more
+	Caused by: java.util.zip.ZipException: zip END header not found
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1362) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1571) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:215) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:122) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117) ~[jdk.zipfs:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:507) ~[?:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:421) ~[?:?]
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		... 9 more
+	Suppressed: java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/Spark.jar
+		at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+		at java.base/java.util.concurrent.CompletableFuture.reportJoin(CompletableFuture.java:457) ~[?:?]
+		at java.base/java.util.concurrent.CompletableFuture.join(CompletableFuture.java:2139) ~[?:?]
+		at io.papermc.paper.pluginremap.PluginRemapper.waitForAll(PluginRemapper.java:414) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:210) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:42) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at net.minecraft.server.Main.main(Main.java:111) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at org.bukkit.craftbukkit.Main.main(Main.java:243) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+		at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+	Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/Spark.jar
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		... 9 more
+	Caused by: java.util.zip.ZipException: zip END header not found
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1362) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1571) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:215) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:122) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117) ~[jdk.zipfs:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:507) ~[?:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:421) ~[?:?]
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		... 9 more
+	Suppressed: java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/CoreProtect.jar
+		at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+		at java.base/java.util.concurrent.CompletableFuture.reportJoin(CompletableFuture.java:457) ~[?:?]
+		at java.base/java.util.concurrent.CompletableFuture.join(CompletableFuture.java:2139) ~[?:?]
+		at io.papermc.paper.pluginremap.PluginRemapper.waitForAll(PluginRemapper.java:414) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:210) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:42) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at net.minecraft.server.Main.main(Main.java:111) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at org.bukkit.craftbukkit.Main.main(Main.java:243) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+		at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+	Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/CoreProtect.jar
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		... 9 more
+	Caused by: java.util.zip.ZipException: zip END header not found
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1362) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1571) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:215) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:122) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117) ~[jdk.zipfs:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:507) ~[?:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:421) ~[?:?]
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		... 9 more
+	Suppressed: java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/Chunky.jar
+		at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+		at java.base/java.util.concurrent.CompletableFuture.reportJoin(CompletableFuture.java:457) ~[?:?]
+		at java.base/java.util.concurrent.CompletableFuture.join(CompletableFuture.java:2139) ~[?:?]
+		at io.papermc.paper.pluginremap.PluginRemapper.waitForAll(PluginRemapper.java:414) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:210) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:42) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at net.minecraft.server.Main.main(Main.java:111) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at org.bukkit.craftbukkit.Main.main(Main.java:243) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+		at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+	Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/Chunky.jar
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		... 9 more
+	Caused by: java.util.zip.ZipException: zip END header not found
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1362) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1571) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:215) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:122) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117) ~[jdk.zipfs:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:507) ~[?:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:421) ~[?:?]
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		... 9 more
+	Suppressed: java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/ViaBackwards.jar
+		at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+		at java.base/java.util.concurrent.CompletableFuture.reportJoin(CompletableFuture.java:457) ~[?:?]
+		at java.base/java.util.concurrent.CompletableFuture.join(CompletableFuture.java:2139) ~[?:?]
+		at io.papermc.paper.pluginremap.PluginRemapper.waitForAll(PluginRemapper.java:414) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:210) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:42) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at net.minecraft.server.Main.main(Main.java:111) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at org.bukkit.craftbukkit.Main.main(Main.java:243) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+		at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+	Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/ViaBackwards.jar
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		... 9 more
+	Caused by: java.util.zip.ZipException: zip END header not found
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1362) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1571) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:215) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:122) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117) ~[jdk.zipfs:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:507) ~[?:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:421) ~[?:?]
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		... 9 more
+	Suppressed: java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/EssentialsX.jar
+		at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+		at java.base/java.util.concurrent.CompletableFuture.reportJoin(CompletableFuture.java:457) ~[?:?]
+		at java.base/java.util.concurrent.CompletableFuture.join(CompletableFuture.java:2139) ~[?:?]
+		at io.papermc.paper.pluginremap.PluginRemapper.waitForAll(PluginRemapper.java:414) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:210) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:42) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at net.minecraft.server.Main.main(Main.java:111) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at org.bukkit.craftbukkit.Main.main(Main.java:243) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+		at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+	Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/EssentialsX.jar
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		... 9 more
+	Caused by: java.util.zip.ZipException: zip END header not found
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1362) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1571) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:215) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:122) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117) ~[jdk.zipfs:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:507) ~[?:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:421) ~[?:?]
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		... 9 more
+	Suppressed: java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/EssentialsXSpawn.jar
+		at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+		at java.base/java.util.concurrent.CompletableFuture.reportJoin(CompletableFuture.java:457) ~[?:?]
+		at java.base/java.util.concurrent.CompletableFuture.join(CompletableFuture.java:2139) ~[?:?]
+		at io.papermc.paper.pluginremap.PluginRemapper.waitForAll(PluginRemapper.java:414) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:210) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:42) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at net.minecraft.server.Main.main(Main.java:111) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at org.bukkit.craftbukkit.Main.main(Main.java:243) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+		at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+	Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/EssentialsXSpawn.jar
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		... 9 more
+	Caused by: java.util.zip.ZipException: zip END header not found
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1362) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1571) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:215) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:122) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117) ~[jdk.zipfs:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:507) ~[?:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:421) ~[?:?]
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		... 9 more
+	Suppressed: java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to open plugin jar plugins/LuckPerms.jar
+		at java.base/java.util.concurrent.CompletableFuture.wrapInCompletionException(CompletableFuture.java:323) ~[?:?]
+		at java.base/java.util.concurrent.CompletableFuture.reportJoin(CompletableFuture.java:457) ~[?:?]
+		at java.base/java.util.concurrent.CompletableFuture.join(CompletableFuture.java:2139) ~[?:?]
+		at io.papermc.paper.pluginremap.PluginRemapper.waitForAll(PluginRemapper.java:414) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:210) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:42) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at net.minecraft.server.Main.main(Main.java:111) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at org.bukkit.craftbukkit.Main.main(Main.java:243) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+		at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+	Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/LuckPerms.jar
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		... 9 more
+	Caused by: java.util.zip.ZipException: zip END header not found
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1362) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1571) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:215) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:122) ~[jdk.zipfs:?]
+		at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117) ~[jdk.zipfs:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:507) ~[?:?]
+		at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:421) ~[?:?]
+		at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+		... 9 more
+Caused by: java.lang.RuntimeException: Failed to open plugin jar plugins/ViaVersion.jar
+	at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:343) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	... 9 more
+Caused by: java.util.zip.ZipException: zip END header not found
+	at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.findEND(ZipFileSystem.java:1362) ~[jdk.zipfs:?]
+	at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.initCEN(ZipFileSystem.java:1571) ~[jdk.zipfs:?]
+	at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystem.<init>(ZipFileSystem.java:215) ~[jdk.zipfs:?]
+	at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.getZipFileSystem(ZipFileSystemProvider.java:122) ~[jdk.zipfs:?]
+	at jdk.zipfs@25.0.1/jdk.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:117) ~[jdk.zipfs:?]
+	at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:507) ~[?:?]
+	at java.base/java.nio.file.FileSystems.newFileSystem(FileSystems.java:421) ~[?:?]
+	at io.papermc.paper.pluginremap.PluginRemapper.remap(PluginRemapper.java:294) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at io.papermc.paper.pluginremap.PluginRemapper.remapPlugin(PluginRemapper.java:270) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	at io.papermc.paper.pluginremap.PluginRemapper.rewritePluginDirectory(PluginRemapper.java:208) ~[paper-1.21.5.jar:1.21.5-114-a1b3058]
+	... 9 more
+[05:06:56] [ServerMain/INFO]: [PluginInitializerManager] Initialized 2 plugins
+[05:06:56] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (2):
+ - Vault (1.7.3-b131), playit-gg (0.1.4)
+[05:07:00] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[05:07:02] [ServerMain/INFO]: Loaded 1373 recipes
+[05:07:02] [ServerMain/INFO]: Loaded 1484 advancements
+[05:07:02] [Server thread/INFO]: Starting minecraft server version 1.21.5
+[05:07:02] [Server thread/INFO]: Loading properties
+[05:07:02] [Server thread/INFO]: This server is running Paper version 1.21.5-114-ver/1.21.5@a1b3058 (2025-06-18T10:59:02Z) (Implementing API version 1.21.5-R0.1-SNAPSHOT)
+[05:07:02] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[05:07:02] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[05:07:02] [Server thread/INFO]: Using 4 threads for Netty based IO
+[05:07:03] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[05:07:03] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[05:07:03] [Server thread/INFO]: Default game type: SURVIVAL
+[05:07:03] [Server thread/INFO]: Generating keypair
+[05:07:03] [Server thread/INFO]: Starting Minecraft server on *:25565
+[05:07:03] [Server thread/INFO]: Using epoll channel type
+[05:07:03] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[05:07:03] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[05:07:03] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[05:07:03] [Server thread/INFO]: [playit-gg] Loading server plugin playit-gg v0.1.4
+[05:07:03] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[05:07:03] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[05:07:03] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[05:07:03] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[05:07:03] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[05:07:03] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[05:07:03] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[05:07:03] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[05:07:03] [Server thread/INFO]: Preparing level "world"
+[05:07:04] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[05:07:04] [Server thread/INFO]: Time elapsed: 5 ms
+[05:07:04] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[05:07:04] [Server thread/INFO]: Time elapsed: 0 ms
+[05:07:04] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[05:07:04] [Server thread/INFO]: Time elapsed: 1 ms
+[05:07:04] [Server thread/INFO]: [playit-gg] Enabling playit-gg v0.1.4
+[05:07:04] [Thread-6/INFO]: [gg.playit.minecraft.PlayitKeysSetup] secret key found, checking
+[05:07:04] [Thread-6/INFO]: [gg.playit.minecraft.PlayitKeysSetup] check secret
+[05:07:04] [Server thread/INFO]: [spark] Starting background profiler...
+[05:07:05] [Server thread/INFO]: Done preparing level "world" (1.218s)
+[05:07:05] [Server thread/INFO]: Running delayed init tasks
+[05:07:05] [Server thread/INFO]: Done (11.125s)! For help, type "help"
+[05:07:05] [Craft Scheduler Thread - 3 - Vault/INFO]: [Vault] Checking for Updates ... 
+[05:07:05] [Craft Scheduler Thread - 3 - Vault/INFO]: [Vault] No new version available
+[05:07:06] [Thread-6/INFO]: [gg.playit.minecraft.PlayitKeysSetup] found minecraft java tunnel: hospital-montgomery.gl.joinmc.link
+[05:07:06] [Thread-6/INFO]: [gg.playit.minecraft.PlayitManager] keys and tunnel setup
+[05:07:06] [Thread-6/INFO]: playit.gg: tunnel setup
+[05:07:06] [Thread-6/INFO]: playit.gg: hospital-montgomery.gl.joinmc.link
+[05:07:06] [Thread-6/WARN]: [gg.playit.control.ChannelSetup] Got IO error working with :control.playit.gg/2602:fbaf:850:17:0:0:0:1, error : java.net.SocketException: Network is unreachable
+[05:07:07] [Thread-6/INFO]: [gg.playit.control.ChannelSetup] request queued, waiting 1 second before resend
+[05:07:17] [Thread-6/INFO]: [gg.playit.minecraft.PlayitManager] got new client: NewClient{connectAddr=147.185.221.24:25019, peerAddr=112.79.29.19:5732, claimAddress=69.9.191.2:42760, claimToken=[44, 0, 112, -109, -71, -35, 24, 97, -69, 112, 79, 29, 19, 22, 100, -61, 9, 38, 25, -89, 8, 105, 62, 70, 5, 0, 0, 0, 0, 0, 27, -115, 11, 0, 0, 0, 0, 0, 82, 77, -114, 0, 0, 0, 0, 0, 43, 25, -37, -53, -16, -89, 8, 0, 0, 0, 0, 28, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 42, 41, 0, -126, 6, 34, 104, 111, 115, 112, 105, 116, 97, 108, 45, 109, 111, 110, 116, 103, 111, 109, 101, 114, 121, 46, 103, 108, 46, 106, 111, 105, 110, 109, 99, 46, 108, 105, 110, 107, 99, -35, 1, -98, 81, -53, 12, -92, -55, -99, 34, 107, 4, 56, 75, 50, 101, -121, 36], tunnelServerId=1, dataCenterId=28}
+[05:07:17] [Thread-6/INFO]: [gg.playit.minecraft.PlayitManager] starting tcp tunnel for client
+[05:07:17] [Thread-6/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] start connection to /69.9.191.2:42760 to claim client
+[05:07:17] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connected to tunnel server, sending claim token
+[05:07:17] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] claim token sent
+[05:07:17] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connection to tunnel server has been established
+[05:07:17] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] Reflect: ReflectionHelper{ServerConnection=class net.minecraft.server.network.ServerConnectionListener, LegacyPingHandler=class net.minecraft.server.network.LegacyQueryHandler, MinecraftServer=class net.minecraft.server.MinecraftServer, PacketSplitter=class net.minecraft.network.Varint21FrameDecoder, PacketDecoder=class net.minecraft.network.PacketDecoder, EnumProtocolDirection=class net.minecraft.network.protocol.PacketFlow, PacketPrepender=class net.minecraft.network.Varint21LengthFieldPrepender, PacketEncoder=class net.minecraft.network.PacketEncoder, NetworkManagerServer=class net.minecraft.network.RateKickingConnection, NetworkManager=class net.minecraft.network.Connection, HandshakeListener=class net.minecraft.server.network.ServerHandshakePacketListenerImpl, PacketListener=interface net.minecraft.network.PacketListener, CraftServer=class org.bukkit.craftbukkit.CraftServer}
+[05:07:17] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] legacyPingHandler is null
+[05:07:17] [nioEventLoopGroup-2-1/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connecting to minecraft server at localhost/127.0.0.1:25565
+[05:07:17] [nioEventLoopGroup-2-2/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connected to local minecraft server
+[05:07:21] [Thread-6/INFO]: [gg.playit.minecraft.PlayitManager] got new client: NewClient{connectAddr=147.185.221.24:25019, peerAddr=112.79.29.19:5747, claimAddress=69.9.191.2:42760, claimToken=[44, 0, 111, -109, -71, -35, 24, 97, -69, 112, 79, 29, 19, 22, 115, -119, 87, 20, 46, -89, 8, 105, 62, 70, 9, 0, 0, 0, 0, 0, 27, -115, 11, 0, 0, 0, 0, 0, 82, 77, -114, 0, 0, 0, 0, 0, 43, 25, -37, 72, 6, -89, 8, 0, 0, 0, 0, 28, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 41, 40, 0, -126, 6, 33, 104, 111, 115, 112, 105, 116, 97, 108, 45, 109, 111, 110, 116, 103, 111, 109, 101, 114, 121, 46, 103, 108, 46, 97, 116, 46, 112, 108, 121, 46, 103, 103, 46, 97, -69, 2, -125, -49, 113, -83, 120, 45, 14, 15, 61, -123, -30, -49, 64, 24, 61, 123], tunnelServerId=1, dataCenterId=28}
+[05:07:21] [Thread-6/INFO]: [gg.playit.minecraft.PlayitManager] starting tcp tunnel for client
+[05:07:21] [Thread-6/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] start connection to /69.9.191.2:42760 to claim client
+[05:07:21] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connected to tunnel server, sending claim token
+[05:07:21] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] claim token sent
+[05:07:21] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connection to tunnel server has been established
+[05:07:21] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] Reflect: ReflectionHelper{ServerConnection=class net.minecraft.server.network.ServerConnectionListener, LegacyPingHandler=class net.minecraft.server.network.LegacyQueryHandler, MinecraftServer=class net.minecraft.server.MinecraftServer, PacketSplitter=class net.minecraft.network.Varint21FrameDecoder, PacketDecoder=class net.minecraft.network.PacketDecoder, EnumProtocolDirection=class net.minecraft.network.protocol.PacketFlow, PacketPrepender=class net.minecraft.network.Varint21LengthFieldPrepender, PacketEncoder=class net.minecraft.network.PacketEncoder, NetworkManagerServer=class net.minecraft.network.RateKickingConnection, NetworkManager=class net.minecraft.network.Connection, HandshakeListener=class net.minecraft.server.network.ServerHandshakePacketListenerImpl, PacketListener=interface net.minecraft.network.PacketListener, CraftServer=class org.bukkit.craftbukkit.CraftServer}
+[05:07:21] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] legacyPingHandler is null
+[05:07:21] [nioEventLoopGroup-2-3/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connecting to minecraft server at localhost/127.0.0.1:25565
+[05:07:21] [nioEventLoopGroup-2-4/INFO]: [gg.playit.minecraft.PlayitTcpTunnel] connected to local minecraft server
+[05:07:22] [User Authenticator #0/INFO]: UUID of player OmHackz is 93a5bf97-e66a-3f0f-893a-c928d492afdb
+[05:07:27] [Server thread/INFO]: OmHackz joined the game
+[05:07:27] [Server thread/INFO]: OmHackz[/127.0.0.1:49096] logged in with entity id 1 at ([world]230.10240473235947, 261.6576713631159, -428.3802602404696)
+[05:07:34] [Server thread/INFO]: OmHackz issued server command: /pl
