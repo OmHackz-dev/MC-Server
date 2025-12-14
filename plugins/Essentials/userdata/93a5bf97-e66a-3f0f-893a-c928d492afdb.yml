@@ -1,6 +1,6 @@
 npc: false
 last-account-name: OmHackz
-money: '0'
+money: '4114.00'
 teleportenabled: true
 teleportauto: false
 godmode: false
@@ -18,13 +18,21 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1765698457474
-  login: 1765698158343
+  logout: 1765703962675
+  login: 1765699853684
 logoutlocation:
   world: a4c09332-7088-4722-97e8-add6b8852f81
   world-name: world
-  x: 240.0
+  x: 198.86685564460572
   y: 259.0
-  z: -406.97452000080375
-  yaw: -22.800006866455078
-  pitch: 1.950000286102295
+  z: -413.7860104449327
+  yaw: 11.6785888671875
+  pitch: 90.0
+lastlocation:
+  world: a4c09332-7088-4722-97e8-add6b8852f81
+  world-name: world
+  x: 195.51390851403087
+  y: 259.0
+  z: -407.3812880939759
+  yaw: 37.499542236328125
+  pitch: 22.04999351501465

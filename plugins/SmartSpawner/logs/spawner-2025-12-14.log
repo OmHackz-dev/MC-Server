@@ -1,2 +1,36 @@
 [2025-12-14 07:44:54] Command executed by player | Player: OmHackz | full_command=spawner give vanilla_spawner OmHackz bogged command=give
 [2025-12-14 07:45:10] Spawner placed | Player: OmHackz | Location: world (228, 259, -398) | Entity: BOGGED | quantity=1
+[2025-12-14 08:45:01] Command executed by player | Player: OmHackz | full_command=spawner give spawner OmHackz skeleton command=give
+[2025-12-14 08:45:03] Spawner placed | Player: OmHackz | Location: survival (769, 67, -506) | Entity: SKELETON | quantity=1
+[2025-12-14 08:45:16] Spawner stacked by hand | Player: OmHackz | Location: survival (769, 67, -506) | new_stack_size=2 amount_added=1 old_stack_size=1
+[2025-12-14 08:45:18] Spawner stacked by hand | Player: OmHackz | Location: survival (769, 67, -506) | new_stack_size=3 amount_added=1 old_stack_size=2
+[2025-12-14 08:45:18] Spawner stacked by hand | Player: OmHackz | Location: survival (769, 67, -506) | new_stack_size=4 amount_added=1 old_stack_size=3
+[2025-12-14 08:45:19] Spawner stacked by hand | Player: OmHackz | Location: survival (769, 67, -506) | new_stack_size=5 amount_added=1 old_stack_size=4
+[2025-12-14 08:45:19] Spawner stacked by hand | Player: OmHackz | Location: survival (769, 67, -506) | new_stack_size=6 amount_added=1 old_stack_size=5
+[2025-12-14 08:45:19] Spawner stacked by hand | Player: OmHackz | Location: survival (769, 67, -506) | new_stack_size=7 amount_added=1 old_stack_size=6
+[2025-12-14 08:45:20] Spawner stacked by hand | Player: OmHackz | Location: survival (769, 67, -506) | new_stack_size=8 amount_added=1 old_stack_size=7
+[2025-12-14 08:45:20] Spawner stacked by hand | Player: OmHackz | Location: survival (769, 67, -506) | new_stack_size=9 amount_added=1 old_stack_size=8
+[2025-12-14 08:45:26] Command executed by player | Player: OmHackz | full_command=spawner give spawner OmHackz skeleton 64 command=give
+[2025-12-14 08:45:31] Spawner stacked by hand | Player: OmHackz | Location: survival (769, 67, -506) | new_stack_size=73 amount_added=64 old_stack_size=9
+[2025-12-14 08:45:37] Command executed by player | Player: OmHackz | full_command=spawner give spawner OmHackz skeleton 512 command=give
+[2025-12-14 08:45:38] Spawner stacked by hand | Player: OmHackz | Location: survival (769, 67, -506) | new_stack_size=137 amount_added=64 old_stack_size=73
+[2025-12-14 08:45:40] Spawner stacked by hand | Player: OmHackz | Location: survival (769, 67, -506) | new_stack_size=201 amount_added=64 old_stack_size=137
+[2025-12-14 08:45:41] Spawner stacked by hand | Player: OmHackz | Location: survival (769, 67, -506) | new_stack_size=265 amount_added=64 old_stack_size=201
+[2025-12-14 08:45:42] Spawner stacked by hand | Player: OmHackz | Location: survival (769, 67, -506) | new_stack_size=329 amount_added=64 old_stack_size=265
+[2025-12-14 08:45:44] Spawner stacked by hand | Player: OmHackz | Location: survival (769, 67, -506) | new_stack_size=393 amount_added=64 old_stack_size=329
+[2025-12-14 08:45:45] Spawner stacked by hand | Player: OmHackz | Location: survival (769, 67, -506) | new_stack_size=457 amount_added=64 old_stack_size=393
+[2025-12-14 08:45:47] Spawner stacked by hand | Player: OmHackz | Location: survival (769, 67, -506) | new_stack_size=521 amount_added=64 old_stack_size=457
+[2025-12-14 08:45:48] Spawner stacked by hand | Player: OmHackz | Location: survival (769, 67, -506) | new_stack_size=585 amount_added=64 old_stack_size=521
+[2025-12-14 08:46:18] Experience claimed | Player: OmHackz | Location: survival (769, 67, -506) | exp_amount=7370
+[2025-12-14 08:46:28] Items sold | Player: OmHackz | Location: survival (769, 67, -506) | total_value=2194.0 items_sold=2162
+[2025-12-14 08:46:33] Spawner broken | Player: OmHackz | Location: survival (769, 67, -506) | quantity=64
+[2025-12-14 08:46:40] Spawner broken | Player: OmHackz | Location: survival (769, 67, -506) | quantity=64
+[2025-12-14 08:46:44] Spawner broken | Player: OmHackz | Location: survival (769, 67, -506) | quantity=64
+[2025-12-14 08:46:46] Spawner broken | Player: OmHackz | Location: survival (769, 67, -506) | quantity=64
+[2025-12-14 08:46:52] Spawner broken | Player: OmHackz | Location: survival (769, 67, -506) | quantity=64
+[2025-12-14 08:46:53] Spawner broken | Player: OmHackz | Location: survival (769, 67, -506) | quantity=64
+[2025-12-14 08:46:53] Spawner broken | Player: OmHackz | Location: survival (769, 67, -506) | quantity=64
+[2025-12-14 08:46:54] Spawner broken | Player: OmHackz | Location: survival (769, 67, -506) | quantity=64
+[2025-12-14 08:46:56] Spawner broken | Player: OmHackz | Location: survival (769, 67, -506) | quantity=64
+[2025-12-14 08:46:58] Spawner broken | Player: OmHackz | Location: survival (769, 67, -506) | quantity=9
+[2025-12-14 08:48:41] Command executed by player | Player: OmHackz | full_command=spawner give spawner OmHackz skeleton 64 command=give
