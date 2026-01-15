@@ -1,7 +1,65 @@
 player-preferences:
   93a5bf97-e66a-3f0f-893a-c928d492afdb:
     last-auction-page: 0
-items:
+expired-items:
+  93a5bf97-e66a-3f0f-893a-c928d492afdb:
+  - item: |
+      rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph
+      dmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk
+      U2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2
+      YWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABnQAAj09
+      dAALRGF0YVZlcnNpb250AAJpZHQABWNvdW50dAAKY29tcG9uZW50c3QADnNjaGVtYV92ZXJzaW9u
+      dXEAfgAGAAAABnQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1TdGFja3NyABFqYXZhLmxhbmcu
+      SW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5nLk51bWJlcoaslR0LlOCLAgAA
+      eHAAABDldAARbWluZWNyYWZ0OnNwYXduZXJzcQB+ABAAAABAc3IAF2phdmEudXRpbC5MaW5rZWRI
+      YXNoTWFwNMBOXBBswPsCAAFaAAthY2Nlc3NPcmRlcnhyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHD
+      FmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAx3CAAAABAAAAAEdAAObWlu
+      ZWNyYWZ0OmxvcmV0BVNbe2V4dHJhOlt7Ym9sZDowYixjb2xvcjoiIzM0OThEQiIsaXRhbGljOjBi
+      LG9iZnVzY2F0ZWQ6MGIsc3RyaWtldGhyb3VnaDowYix0ZXh0OiLil4ggIix1bmRlcmxpbmVkOjBi
+      fSx7Ym9sZDowYixjb2xvcjoiIzM0OThEQiIsaXRhbGljOjBiLG9iZnVzY2F0ZWQ6MGIsc3RyaWtl
+      dGhyb3VnaDowYix0ZXh0OiLhtIXhtIfhtJvhtIDJqsqf6pyxOiIsdW5kZXJsaW5lZDowYn1dLHRl
+      eHQ6IiJ9LHtleHRyYTpbIiAgIix7Ym9sZDowYixjb2xvcjoiI0VDRjBGMSIsaXRhbGljOjBiLG9i
+      ZnVzY2F0ZWQ6MGIsc3RyaWtldGhyb3VnaDowYix0ZXh0OiLigKIgIOG0h3jhtJjhtIfKgMmq4bSH
+      ybThtIThtIcgyaLJquG0oOG0hzogIix1bmRlcmxpbmVkOjBifSx7Ym9sZDowYixjb2xvcjoiIzM0
+      OThEQiIsaXRhbGljOjBiLG9iZnVzY2F0ZWQ6MGIsc3RyaWtldGhyb3VnaDowYix0ZXh0OiI1Iix1
+      bmRlcmxpbmVkOjBifV0sdGV4dDoiIn0se2V4dHJhOlt7Ym9sZDowYixjb2xvcjoiIzM0OThEQiIs
+      aXRhbGljOjBiLG9iZnVzY2F0ZWQ6MGIsc3RyaWtldGhyb3VnaDowYix0ZXh0OiLil4ggIix1bmRl
+      cmxpbmVkOjBifSx7Ym9sZDowYixjb2xvcjoiIzM0OThEQiIsaXRhbGljOjBiLG9iZnVzY2F0ZWQ6
+      MGIsc3RyaWtldGhyb3VnaDowYix0ZXh0OiLhtIXKgOG0j+G0mOqcsToiLHVuZGVybGluZWQ6MGJ9
+      XSx0ZXh0OiIifSx7ZXh0cmE6WyIgICIse2JvbGQ6MGIsY29sb3I6IiNFQ0YwRjEiLGl0YWxpYzow
+      YixvYmZ1c2NhdGVkOjBiLHN0cmlrZXRocm91Z2g6MGIsdGV4dDoi4oCiICAwLTIg4bSAyoDKgOG0
+      j+G0oSAiLHVuZGVybGluZWQ6MGJ9LHtib2xkOjBiLGNvbG9yOiIjMzQ5OERCIixpdGFsaWM6MGIs
+      b2JmdXNjYXRlZDowYixzdHJpa2V0aHJvdWdoOjBiLHRleHQ6Iig2Ni43JSkiLHVuZGVybGluZWQ6
+      MGJ9XSx0ZXh0OiIifSx7ZXh0cmE6WyIgICIse2JvbGQ6MGIsY29sb3I6IiNFQ0YwRjEiLGl0YWxp
+      YzowYixvYmZ1c2NhdGVkOjBiLHN0cmlrZXRocm91Z2g6MGIsdGV4dDoi4oCiICAwLTIgypnhtI/J
+      tOG0hyAiLHVuZGVybGluZWQ6MGJ9LHtib2xkOjBiLGNvbG9yOiIjMzQ5OERCIixpdGFsaWM6MGIs
+      b2JmdXNjYXRlZDowYixzdHJpa2V0aHJvdWdoOjBiLHRleHQ6Iig2Ni43JSkiLHVuZGVybGluZWQ6
+      MGJ9XSx0ZXh0OiIifSx7ZXh0cmE6WyIgICIse2JvbGQ6MGIsY29sb3I6IiNFQ0YwRjEiLGl0YWxp
+      YzowYixvYmZ1c2NhdGVkOjBiLHN0cmlrZXRocm91Z2g6MGIsdGV4dDoi4oCiICAxIMqZ4bSP4bSh
+      ICIsdW5kZXJsaW5lZDowYn0se2JvbGQ6MGIsY29sb3I6IiMzNDk4REIiLGl0YWxpYzowYixvYmZ1
+      c2NhdGVkOjBiLHN0cmlrZXRocm91Z2g6MGIsdGV4dDoiKDguNSUpIix1bmRlcmxpbmVkOjBifV0s
+      dGV4dDoiIn1ddAAbbWluZWNyYWZ0OmJsb2NrX2VudGl0eV9kYXRhdADVe0RlbGF5OjIwcyxNYXhO
+      ZWFyYnlFbnRpdGllczo2cyxNYXhTcGF3bkRlbGF5OjgwMHMsTWluU3Bhd25EZWxheToyMDBzLFJl
+      cXVpcmVkUGxheWVyUmFuZ2U6MTZzLFNwYXduQ291bnQ6NHMsU3Bhd25EYXRhOntlbnRpdHk6e2lk
+      OiJtaW5lY3JhZnQ6c2tlbGV0b24ifX0sU3Bhd25Qb3RlbnRpYWxzOltdLFNwYXduUmFuZ2U6NHMs
+      aWQ6Im1pbmVjcmFmdDptb2Jfc3Bhd25lciJ9dAAZbWluZWNyYWZ0OnRvb2x0aXBfZGlzcGxheXQC
+      LXtoaWRkZW5fY29tcG9uZW50czpbIm1pbmVjcmFmdDplbmNoYW50bWVudHMiLCJtaW5lY3JhZnQ6
+      YXR0cmlidXRlX21vZGlmaWVycyIsIm1pbmVjcmFmdDp1bmJyZWFrYWJsZSIsIm1pbmVjcmFmdDpi
+      YW5uZXJfcGF0dGVybnMiLCJtaW5lY3JhZnQ6YmxvY2tfZW50aXR5X2RhdGEiLCJtaW5lY3JhZnQ6
+      d3JpdHRlbl9ib29rX2NvbnRlbnQiLCJtaW5lY3JhZnQ6cG90aW9uX2NvbnRlbnRzIiwibWluZWNy
+      YWZ0OmJ1bmRsZV9jb250ZW50cyIsIm1pbmVjcmFmdDpiZWVzIiwibWluZWNyYWZ0OmNvbnRhaW5l
+      cl9sb290IiwibWluZWNyYWZ0OmNoYXJnZWRfcHJvamVjdGlsZXMiLCJtaW5lY3JhZnQ6cGFpbnRp
+      bmcvdmFyaWFudCIsIm1pbmVjcmFmdDpibG9ja19zdGF0ZSIsIm1pbmVjcmFmdDpmaXJld29ya19l
+      eHBsb3Npb24iLCJtaW5lY3JhZnQ6dHJvcGljYWxfZmlzaC9wYXR0ZXJuIiwibWluZWNyYWZ0Om1h
+      cF9pZCIsIm1pbmVjcmFmdDppbnN0cnVtZW50IiwibWluZWNyYWZ0OmZpcmV3b3JrcyIsIm1pbmVj
+      cmFmdDpwb3RfZGVjb3JhdGlvbnMiLCJtaW5lY3JhZnQ6Y29udGFpbmVyIl19dAAVbWluZWNyYWZ0
+      OmN1c3RvbV9uYW1ldACUe2V4dHJhOlt7Ym9sZDowYixjb2xvcjoiIzM0OThEQiIsaXRhbGljOjBi
+      LG9iZnVzY2F0ZWQ6MGIsc3RyaWtldGhyb3VnaDowYix0ZXh0OiLqnLHhtIvhtIfKn+G0h+G0m+G0
+      j8m0IOqcseG0mOG0gOG0ocm04bSHyoAiLHVuZGVybGluZWQ6MGJ9XSx0ZXh0OiIifXgAc3EAfgAQ
+      AAAAAQ==
+    expiration-time: 1765890165328
+    price: 10000.0
+expired-items-extended:
   72793625-b8b6-4896-84f1-e5807d41b284:
     seller: 93a5bf97-e66a-3f0f-893a-c928d492afdb
     item: |
@@ -61,3 +119,4 @@ items:
     price: 10000.0
     listed-time: 1765717365328
     expiration-time: 1765890165328
+    removal-time: 1771132843799

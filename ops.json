@@ -4,5 +4,11 @@
     "name": "OmHackz",
     "level": 4,
     "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "8d729597-eb44-3f6a-9f40-a2b920f649c1",
+    "name": "OmHackz_",
+    "level": 4,
+    "bypassesPlayerLimit": false
   }
 ]
